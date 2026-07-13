@@ -143,22 +143,47 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ── Contact form (demo) ───────────────────────── */
+  /* ── Contact form ──────────────────────────────── */
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('button[type="submit"]');
       var msg = form.querySelector('.form-msg');
+      var data = Object.fromEntries(new FormData(form).entries());
+
       btn.textContent = 'Slanje...';
       btn.disabled = true;
-      setTimeout(function () {
-        if (msg) {
-          msg.style.display = 'block';
-          msg.textContent = 'Hvala! Vaša poruka je primljena. Odgovorićemo u roku od 24h.';
-        }
-        btn.textContent = 'Poruka poslata';
-      }, 1200);
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
+        .then(function (result) {
+          if (msg) {
+            msg.style.display = 'block';
+            msg.textContent = result.ok
+              ? 'Hvala! Vaša poruka je primljena. Odgovorićemo u roku od 24h.'
+              : (result.body && result.body.error) || 'Došlo je do greške. Pokušajte ponovo.';
+          }
+          if (result.ok) {
+            btn.textContent = 'Poruka poslata';
+            form.reset();
+          } else {
+            btn.textContent = 'Pošaljite poruku';
+            btn.disabled = false;
+          }
+        })
+        .catch(function () {
+          if (msg) {
+            msg.style.display = 'block';
+            msg.textContent = 'Došlo je do greške. Proverite konekciju i pokušajte ponovo.';
+          }
+          btn.textContent = 'Pošaljite poruku';
+          btn.disabled = false;
+        });
     });
   }
 

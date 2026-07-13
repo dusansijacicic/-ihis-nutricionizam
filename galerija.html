@@ -3,46 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galerija IHIS Nutricionizma — fotografije sa regionalnih konditorskih savetovanja i konferencija Hrana, ishrana i zdravlje." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ihis-nutricionizam.rs/galerija.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IHIS Nutricionizam" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:title" content="Galerija — IHIS Nutricionizam" />
+  <meta property="og:description" content="Fotografije sa regionalnih konditorskih savetovanja i konferencija Hrana, ishrana i zdravlje." />
+  <meta property="og:url" content="https://ihis-nutricionizam.rs/galerija.html" />
+  <meta property="og:image" content="https://ihis-nutricionizam.rs/assets/img/cover1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Galerija — IHIS Nutricionizam</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-  <link rel="stylesheet" href="ihis.css" />
-  <style>
-    .gal-filter { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
-    .gal-btn { font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; padding:9px 22px; border:1px solid #ccc; background:none; cursor:pointer; color:var(--grey); transition:var(--ease); }
-    .gal-btn.active, .gal-btn:hover { background:var(--accent); border-color:var(--accent); color:#fff; }
-    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:4px; }
-    .gal-item { position:relative; overflow:hidden; aspect-ratio:1; cursor:pointer; }
-    .gal-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
-    .gal-overlay { position:absolute; inset:0; background:rgba(0,0,0,0); display:flex; align-items:center; justify-content:center; transition:background .4s; }
-    .gal-overlay i { font-size:34px; color:#fff; opacity:0; transition:opacity .4s; }
-    .gal-item:hover img { transform:scale(1.08); }
-    .gal-item:hover .gal-overlay { background:rgba(61,122,82,.65); }
-    .gal-item:hover .gal-overlay i { opacity:1; }
-    .gal-item.hidden { display:none; }
-    /* Lightbox */
-    .lb { display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.95); align-items:center; justify-content:center; }
-    .lb.open { display:flex; }
-    .lb-img { max-width:90vw; max-height:88vh; object-fit:contain; display:block; }
-    .lb-close { position:fixed; top:18px; right:24px; color:#fff; font-size:44px; cursor:pointer; opacity:.5; line-height:1; z-index:10000; }
-    .lb-close:hover { opacity:1; }
-    .lb-nav { position:fixed; top:50%; transform:translateY(-50%); font-size:44px; color:#fff; cursor:pointer; opacity:.35; padding:10px 18px; user-select:none; z-index:10000; }
-    .lb-nav:hover { opacity:.9; }
-    .lb-prev { left:6px; }
-    .lb-next { right:6px; }
-    .lb-caption { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.4); font-size:11px; letter-spacing:2px; text-transform:uppercase; white-space:nowrap; }
-    @media (max-width:600px) {
-      .gallery-grid { grid-template-columns:repeat(2, 1fr); }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/ihis.css" />
 </head>
 <body>
   <div id="preloader"><div class="preloader-ring"></div></div>
 
   <header class="masthead">
     <div class="hdr-inner">
-      <a href="index.html" class="main-logo"><img src="storage/logo.png" alt="IHIS Nutricionizam" /></a>
+      <a href="index.html" class="main-logo"><img src="assets/img/logo.png" alt="IHIS Nutricionizam" /></a>
       <ul class="hdr-links">
         <li><a href="o-nama.html">O nama</a></li>
         <li><a href="usluge.html">Usluge</a></li>
@@ -50,6 +33,7 @@
         <li><a href="edukacija.html">Edukacija</a></li>
         <li><a href="galerija.html" class="is-current">Galerija</a></li>
         <li><a href="vesti.html">Vesti</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
       <button class="menu-trigger"><span></span><span></span><span></span></button>
@@ -67,15 +51,16 @@
         <li><a href="edukacija.html"    class="main-link">Edukacija</a></li>
         <li><a href="galerija.html"     class="main-link">Galerija</a></li>
         <li><a href="vesti.html"        class="main-link">Vesti</a></li>
+        <li><a href="blog.html"        class="main-link">Blog</a></li>
         <li><a href="kontakt.html"      class="main-link">Kontakt</a></li>
       </ul>
       <div class="menu-contact">
         <p>Batajnički drum 9 deo, br. 8<br>11080 Beograd, Srbija</p>
-        <p style="margin-top:8px"><a href="tel:+381113341994">+381 11 33 41 994</a></p>
-        <div style="margin-top:16px; display:flex; gap:14px">
-          <a href="https://www.facebook.com/ihis.nutricionizam.7/" target="_blank" style="color:rgba(255,255,255,.5); font-size:20px"><i class="ion-social-facebook"></i></a>
-          <a href="https://www.instagram.com/ihisnutricionizam/" target="_blank" style="color:rgba(255,255,255,.5); font-size:20px"><i class="ion-social-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" style="color:rgba(255,255,255,.5); font-size:20px"><i class="ion-social-linkedin"></i></a>
+        <p class="mt-8"><a href="tel:+381113341994">+381 11 33 41 994</a></p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/ihis.nutricionizam.7/" target="_blank"><i class="ion-social-facebook"></i></a>
+          <a href="https://www.instagram.com/ihisnutricionizam/" target="_blank"><i class="ion-social-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank"><i class="ion-social-linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -83,7 +68,7 @@
 
   <section class="mastwrap top-spaced">
 
-    <div class="page-hero" style="background-image:url('storage/cover1.jpg')">
+    <div class="page-hero" style="background-image:url('assets/img/cover1.jpg')">
       <div class="page-hero-overlay"></div>
       <div class="page-hero-inner">
         <h1 class="page-title">Galerija</h1>
@@ -92,8 +77,8 @@
     </div>
 
     <div class="section-white">
-      <div style="max-width:1200px; margin:0 auto; padding:0 60px">
-        <div class="text-center" style="margin-bottom:40px">
+      <div class="container">
+        <div class="section-head section-head--tight">
           <span class="section-tag">Foto arhiva</span>
           <h2 class="section-h">Savetovanja i aktivnosti</h2>
           <span class="liner"></span>
@@ -108,103 +93,103 @@
         </div>
 
         <!-- Grid -->
-        <div class="gallery-grid" id="galGrid">
+        <div class="gal-grid" id="galGrid">
 
           <!-- 2026 -->
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/1.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/1.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/2.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/2.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/3.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/3.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/4.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/4.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/5.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/5.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/6.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/6.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/8.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/8.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/9.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/9.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="2026" data-caption="Savetovanje 2026">
-            <img src="2026/10.JPG" alt="Savetovanje 2026" loading="lazy" />
+            <img src="assets/img/gallery/2026/10.JPG" alt="Savetovanje 2026" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
 
           <!-- VIII Savetovanje konditorske industrije -->
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841312295.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841312295.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841312341.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841312341.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841312924.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841312924.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313446%20(1).jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313446%20(1).jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313446.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313446.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313579.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313579.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313693.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313693.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313793.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313793.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841313859.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841313859.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="viii" data-caption="VIII Savetovanje konditorske industrije">
-            <img src="8.%20savetovanje/1744841314038.jpg" alt="VIII Savetovanje" loading="lazy" />
+            <img src="assets/img/gallery/8-savetovanje/1744841314038.jpg" alt="VIII Savetovanje" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
 
           <!-- Foto arhiva -->
           <div class="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam">
-            <img src="storage/cover.jpg" alt="IHIS Nutricionizam" loading="lazy" />
+            <img src="assets/img/cover.jpg" alt="IHIS Nutricionizam" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam">
-            <img src="storage/cover1.jpg" alt="IHIS Nutricionizam" loading="lazy" />
+            <img src="assets/img/cover1.jpg" alt="IHIS Nutricionizam" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam">
-            <img src="storage/cover2.jpg" alt="IHIS Nutricionizam" loading="lazy" />
+            <img src="assets/img/cover2.jpg" alt="IHIS Nutricionizam" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
           <div class="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam">
-            <img src="storage/cover3.jpg" alt="IHIS Nutricionizam" loading="lazy" />
+            <img src="assets/img/cover3.jpg" alt="IHIS Nutricionizam" loading="lazy" />
             <div class="gal-overlay"><i class="ion-ios-search-strong"></i></div>
           </div>
 
@@ -214,21 +199,21 @@
 
     <!-- Social CTA -->
     <div class="section-dark text-center">
-      <div style="max-width:540px; margin:0 auto; padding:0 40px">
-        <h2 class="section-h" style="color:#fff">Pratite nas</h2>
+      <div class="container-cta-sm">
+        <h2 class="section-h">Pratite nas</h2>
         <span class="liner"></span>
-        <p style="color:rgba(255,255,255,.5); margin-top:10px">
+        <p class="mt-10">
           Pratite naše aktivnosti, savetovanja i vesti na društvenim mrežama.
         </p>
-        <div style="margin-top:28px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap">
+        <div class="social-row">
           <a href="https://www.facebook.com/ihis.nutricionizam.7/" target="_blank" class="btn-ihis btn-ihis-white">
-            <i class="ion-social-facebook" style="margin-right:8px; font-size:16px"></i>Facebook
+            <i class="ion-social-facebook"></i>Facebook
           </a>
           <a href="https://www.instagram.com/ihisnutricionizam/" target="_blank" class="btn-ihis btn-ihis-white">
-            <i class="ion-social-instagram" style="margin-right:8px; font-size:16px"></i>Instagram
+            <i class="ion-social-instagram"></i>Instagram
           </a>
           <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" class="btn-ihis btn-ihis-white">
-            <i class="ion-social-linkedin" style="margin-right:8px; font-size:16px"></i>LinkedIn
+            <i class="ion-social-linkedin"></i>LinkedIn
           </a>
         </div>
       </div>
@@ -248,7 +233,7 @@
   <footer class="mastfoot">
     <div class="foot-inner">
       <div class="foot-col">
-        <div class="foot-logo"><img src="storage/logo.png" alt="IHIS Nutricionizam" /></div>
+        <div class="foot-logo"><img src="assets/img/logo.png" alt="IHIS Nutricionizam" /></div>
         <p>Naučno-istraživačka kompanija u oblasti nutricionizma.</p>
         <ul class="foot-social">
           <li><a href="https://www.facebook.com/ihis.nutricionizam.7/" target="_blank"><span class="ion-social-facebook"></span></a></li>
@@ -262,18 +247,19 @@
         <p><a href="usluge.html">Usluge</a></p>
         <p><a href="istrazivanje.html">Istraživanje</a></p>
         <p><a href="edukacija.html">Edukacija</a></p>
+        <p><a href="blog.html">Blog</a></p>
         <p><a href="galerija.html">Galerija</a></p>
         <p><a href="vesti.html">Vesti</a></p>
       </div>
       <div class="foot-col">
         <h6>Kontakt</h6>
         <p>Batajnički drum 9 deo, br. 8<br>11080 Beograd, Srbija</p>
-        <p style="margin-top:8px">
+        <p class="mt-8">
           <a href="tel:+381113341994">+381 11 33 41 994</a><br>
           <a href="tel:+381648780117">+381 64 87 80 117</a><br>
           <a href="tel:+381658496845">+381 65 84 96 845</a>
         </p>
-        <p style="margin-top:8px">
+        <p class="mt-8">
           <a href="mailto:office@ihis-nutricionizam.rs">office@ihis-nutricionizam.rs</a>
         </p>
       </div>
@@ -284,68 +270,7 @@
     </div>
   </footer>
 
-  <script src="ihis.js"></script>
-  <script>
-    // Gallery filter
-    const btns = document.querySelectorAll('.gal-btn');
-    const items = document.querySelectorAll('.gal-item');
-    btns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        btns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const f = btn.dataset.filter;
-        items.forEach(it => {
-          it.classList.toggle('hidden', f !== 'all' && it.dataset.group !== f);
-        });
-      });
-    });
-
-    // Lightbox
-    const lb = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lbImg');
-    const lbCaption = document.getElementById('lbCaption');
-    let visibleItems = [], lbIndex = 0;
-
-    function openLb(idx) {
-      visibleItems = [...document.querySelectorAll('.gal-item:not(.hidden)')];
-      lbIndex = idx;
-      const item = visibleItems[lbIndex];
-      lbImg.src = item.querySelector('img').src;
-      lbCaption.textContent = item.dataset.caption || '';
-      lb.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLb() {
-      lb.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    items.forEach((item, i) => {
-      item.addEventListener('click', () => {
-        const allItems = [...document.querySelectorAll('.gal-item:not(.hidden)')];
-        openLb(allItems.indexOf(item));
-      });
-    });
-
-    document.getElementById('lbClose').addEventListener('click', closeLb);
-    document.getElementById('lbPrev').addEventListener('click', () => {
-      lbIndex = (lbIndex - 1 + visibleItems.length) % visibleItems.length;
-      lbImg.src = visibleItems[lbIndex].querySelector('img').src;
-      lbCaption.textContent = visibleItems[lbIndex].dataset.caption || '';
-    });
-    document.getElementById('lbNext').addEventListener('click', () => {
-      lbIndex = (lbIndex + 1) % visibleItems.length;
-      lbImg.src = visibleItems[lbIndex].querySelector('img').src;
-      lbCaption.textContent = visibleItems[lbIndex].dataset.caption || '';
-    });
-    lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
-    document.addEventListener('keydown', e => {
-      if (!lb.classList.contains('open')) return;
-      if (e.key === 'Escape') closeLb();
-      if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
-      if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
-    });
-  </script>
+  <script src="assets/js/ihis.js"></script>
+  <script src="assets/js/galerija.js"></script>
 </body>
 </html>

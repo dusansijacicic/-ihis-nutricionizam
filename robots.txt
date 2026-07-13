@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ihis-nutricionizam.rs/sitemap.xml
