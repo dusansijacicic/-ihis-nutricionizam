@@ -1,51 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ihis-nutricionizam.rs/</loc>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/index.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/o-nama.html</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/o-nama.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/about.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/usluge.html</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/usluge.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/services.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/istrazivanje.html</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/istrazivanje.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/research.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/edukacija.html</loc>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/edukacija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/education.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/galerija.html</loc>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/galerija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/gallery.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/vesti.html</loc>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/vesti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/news.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/blog.html</loc>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju.html</loc>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave.html</loc>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno.html</loc>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels.html" />
   </url>
   <url>
     <loc>https://ihis-nutricionizam.rs/kontakt.html</loc>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/kontakt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/contact.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/index.html</loc>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/index.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/about.html</loc>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/o-nama.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/about.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/services.html</loc>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/usluge.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/services.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/research.html</loc>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/istrazivanje.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/research.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/education.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/edukacija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/education.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/gallery.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/galerija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/gallery.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/news.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/vesti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/news.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/blog.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels.html" />
+  </url>
+  <url>
+    <loc>https://ihis-nutricionizam.rs/en/contact.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://ihis-nutricionizam.rs/kontakt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ihis-nutricionizam.rs/en/contact.html" />
   </url>
 </urlset>

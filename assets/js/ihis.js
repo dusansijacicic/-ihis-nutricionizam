@@ -146,13 +146,30 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Contact form ──────────────────────────────── */
   var form = document.getElementById('contact-form');
   if (form) {
+    var isEn = document.documentElement.lang === 'en';
+    var t = isEn ? {
+      sending: 'Sending...',
+      success: 'Thank you! Your message has been received. We will reply within 24h.',
+      genericError: 'Something went wrong. Please try again.',
+      networkError: 'Something went wrong. Please check your connection and try again.',
+      submit: 'Send message',
+      sent: 'Message sent'
+    } : {
+      sending: 'Slanje...',
+      success: 'Hvala! Vaša poruka je primljena. Odgovorićemo u roku od 24h.',
+      genericError: 'Došlo je do greške. Pokušajte ponovo.',
+      networkError: 'Došlo je do greške. Proverite konekciju i pokušajte ponovo.',
+      submit: 'Pošaljite poruku',
+      sent: 'Poruka poslata'
+    };
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('button[type="submit"]');
       var msg = form.querySelector('.form-msg');
       var data = Object.fromEntries(new FormData(form).entries());
 
-      btn.textContent = 'Slanje...';
+      btn.textContent = t.sending;
       btn.disabled = true;
 
       fetch('/api/contact', {
@@ -165,23 +182,23 @@ document.addEventListener('DOMContentLoaded', function () {
           if (msg) {
             msg.style.display = 'block';
             msg.textContent = result.ok
-              ? 'Hvala! Vaša poruka je primljena. Odgovorićemo u roku od 24h.'
-              : (result.body && result.body.error) || 'Došlo je do greške. Pokušajte ponovo.';
+              ? t.success
+              : (result.body && result.body.error) || t.genericError;
           }
           if (result.ok) {
-            btn.textContent = 'Poruka poslata';
+            btn.textContent = t.sent;
             form.reset();
           } else {
-            btn.textContent = 'Pošaljite poruku';
+            btn.textContent = t.submit;
             btn.disabled = false;
           }
         })
         .catch(function () {
           if (msg) {
             msg.style.display = 'block';
-            msg.textContent = 'Došlo je do greške. Proverite konekciju i pokušajte ponovo.';
+            msg.textContent = t.networkError;
           }
-          btn.textContent = 'Pošaljite poruku';
+          btn.textContent = t.submit;
           btn.disabled = false;
         });
     });
