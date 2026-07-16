@@ -1,14 +1,19 @@
 /* IHIS Nutricionizam — Main JavaScript */
 
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
 
   /* ── Preloader ─────────────────────────────────── */
   var preloader = document.getElementById('preloader');
   if (preloader) {
-    window.addEventListener('load', function () {
+    function hidePreloader() {
       preloader.classList.add('fade-out');
       setTimeout(function () { preloader.style.display = 'none'; }, 600);
-    });
+    }
+    if (document.readyState === 'complete') {
+      hidePreloader();
+    } else {
+      window.addEventListener('load', hidePreloader);
+    }
   }
 
   /* ── Menu Trigger ──────────────────────────────── */
@@ -42,14 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.mastnav-left') &&
       document.querySelector('.mastnav-left').addEventListener('click', closeNav);
   }
-
-  /* ── Mark current page in nav ──────────────────── */
-  var path = window.location.pathname.split('/').pop() || 'index.html';
-  navLinks.forEach(function (a) {
-    if (a.getAttribute('href') === path) {
-      a.classList.add('is-current');
-    }
-  });
 
   /* ── Hero Slider ───────────────────────────────── */
   var slides = document.querySelectorAll('.hero-slide');
@@ -204,4 +201,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-});
+})();

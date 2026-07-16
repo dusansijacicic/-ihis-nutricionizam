@@ -1,6 +1,6 @@
 /* IHIS Nutricionizam — Galerija page: filter tabs + lightbox */
 
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
   const btns = document.querySelectorAll('.gal-btn');
   const items = document.querySelectorAll('.gal-item');
 
@@ -61,4 +61,4 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
     if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
   });
-});
+})();
