@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Script from 'next/script';
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
@@ -21,7 +22,7 @@ export const metadata = {
 
 const conf2026 = [1, 2, 3, 4, 5, 6, 8, 9, 10];
 const conf8 = [
-  '1744841312295', '1744841312341', '1744841312924', '1744841313446%20(1)',
+  '1744841312295', '1744841312341', '1744841312924',
   '1744841313446', '1744841313579', '1744841313693', '1744841313793', '1744841314038',
 ];
 
@@ -57,22 +58,22 @@ export default function GalleryEn() {
 
             <div className="gal-grid" id="galGrid">
               {conf2026.map((n) => (
-                <div className="gal-item" data-group="2026" data-caption="2026 Conference" key={`2026-${n}`}>
-                  <img src={`/assets/img/gallery/2026/${n}.JPG`} alt="2026 Conference" loading="lazy" />
+                <div className="gal-item" data-group="2026" data-caption="2026 Conference" data-full={`/assets/img/gallery/2026/${n}.JPG`} key={`2026-${n}`}>
+                  <Image src={`/assets/img/gallery/2026/${n}.JPG`} alt="2026 Conference" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
                   <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
                 </div>
               ))}
 
               {conf8.map((f) => (
-                <div className="gal-item" data-group="viii" data-caption="8th Regional Confectionery Conference" key={`viii-${f}`}>
-                  <img src={`/assets/img/gallery/8-savetovanje/${f}.jpg`} alt="8th Conference" loading="lazy" />
+                <div className="gal-item" data-group="viii" data-caption="8th Regional Confectionery Conference" data-full={`/assets/img/gallery/8-savetovanje/${f}.jpg`} key={`viii-${f}`}>
+                  <Image src={`/assets/img/gallery/8-savetovanje/${f}.jpg`} alt="8th Conference" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
                   <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
                 </div>
               ))}
 
               {['cover', 'cover1', 'cover2', 'cover3'].map((f) => (
-                <div className="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam" key={f}>
-                  <img src={`/assets/img/${f}.jpg`} alt="IHIS Nutricionizam" loading="lazy" />
+                <div className="gal-item" data-group="arhiva" data-caption="IHIS Nutricionizam" data-full={`/assets/img/${f}.jpg`} key={f}>
+                  <Image src={`/assets/img/${f}.jpg`} alt="IHIS Nutricionizam" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
                   <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
                 </div>
               ))}

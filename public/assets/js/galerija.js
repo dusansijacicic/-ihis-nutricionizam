@@ -25,7 +25,7 @@
     visibleItems = [...document.querySelectorAll('.gal-item:not(.hidden)')];
     lbIndex = idx;
     const item = visibleItems[lbIndex];
-    lbImg.src = item.querySelector('img').src;
+    lbImg.src = item.dataset.full;
     lbCaption.textContent = item.dataset.caption || '';
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -46,12 +46,12 @@
   document.getElementById('lbClose').addEventListener('click', closeLb);
   document.getElementById('lbPrev').addEventListener('click', function () {
     lbIndex = (lbIndex - 1 + visibleItems.length) % visibleItems.length;
-    lbImg.src = visibleItems[lbIndex].querySelector('img').src;
+    lbImg.src = visibleItems[lbIndex].dataset.full;
     lbCaption.textContent = visibleItems[lbIndex].dataset.caption || '';
   });
   document.getElementById('lbNext').addEventListener('click', function () {
     lbIndex = (lbIndex + 1) % visibleItems.length;
-    lbImg.src = visibleItems[lbIndex].querySelector('img').src;
+    lbImg.src = visibleItems[lbIndex].dataset.full;
     lbCaption.textContent = visibleItems[lbIndex].dataset.caption || '';
   });
   lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
