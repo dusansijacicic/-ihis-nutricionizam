@@ -47,7 +47,7 @@ export default function PostEn3() {
               essentially marketing phrasing without a solid regulatory basis.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Non-GMO"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Non-GMO"</h3>
             <p className="mb-16">
               This is a regulated label — a product declared „non-GMO" must genuinely meet the
               legally prescribed conditions regarding the absence of genetically modified
@@ -55,14 +55,14 @@ export default function PostEn3() {
               packaging takes on legal responsibility for the claim being accurate.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Gluten-free"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Gluten-free"</h3>
             <p className="mb-16">
               Also a regulated label, with precise threshold values for gluten content that a
               product must meet to carry this claim — important for people with celiac disease and
               gluten intolerance, for whom an inaccurate label can cause serious harm.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Natural"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Natural"</h3>
             <p className="mb-16">
               Unlike the previous two, the label „natural" generally does not have a single, strictly
               prescribed legal definition to the same degree as non-GMO or gluten labels, meaning

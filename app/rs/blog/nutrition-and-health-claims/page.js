@@ -48,7 +48,7 @@ export default function PostSr2() {
               doživljavaju proizvod.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Nutritivna izjava</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Nutritivna izjava</h3>
             <p className="mb-16">
               Nutritivna izjava tvrdi ili sugeriše da proizvod ima određena korisna nutritivna
               svojstva — na primer da je „izvor proteina", „bez dodatog šećera" ili „sa smanjenim
@@ -56,7 +56,7 @@ export default function PostSr2() {
               propisane količinske uslove za taj sastojak.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Zdravstvena izjava</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Zdravstvena izjava</h3>
             <p className="mb-16">
               Zdravstvena izjava ide korak dalje — tvrdi da postoji veza između sastojka i zdravlja
               (npr. „kalcijum doprinosi normalnoj funkciji mišića"). Ovakve izjave moraju biti
@@ -64,7 +64,7 @@ export default function PostSr2() {
               zdravstvenu tvrdnju bez osnova u važećim propisima.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Zašto je ovo bitno za potrošače</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Zašto je ovo bitno za potrošače</h3>
             <p>
               Kada proizvođač koristi izjavu koja nije potkrepljena ili prekoračuje ono što je
               dozvoljeno, potrošač dobija pogrešnu sliku o proizvodu — što može uticati na izbor

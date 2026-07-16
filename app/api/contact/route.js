@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
@@ -19,6 +20,21 @@ export async function POST(request) {
 
   if (error) {
     return NextResponse.json({ error: 'Greška pri čuvanju poruke.' }, { status: 500 });
+  }
+
+  if (process.env.RESEND_API_KEY && process.env.CONTACT_NOTIFY_EMAIL) {
+    try {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      await resend.emails.send({
+        from: 'IHIS Nutricionizam <onboarding@resend.dev>',
+        to: process.env.CONTACT_NOTIFY_EMAIL,
+        replyTo: email,
+        subject: `Nova poruka sa sajta — ${name}`,
+        text: `Ime: ${name}\nEmail: ${email}\nKompanija: ${company || '-'}\n\nPoruka:\n${message}`,
+      });
+    } catch (emailError) {
+      console.error('Resend notification failed:', emailError);
+    }
   }
 
   return NextResponse.json({ ok: true });

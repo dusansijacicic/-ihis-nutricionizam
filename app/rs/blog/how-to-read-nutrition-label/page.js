@@ -48,7 +48,7 @@ export default function PostSr1() {
               zanemaruje ostatak koji često govori više o kvalitetu proizvoda.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Šta obavezno mora da piše</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Šta obavezno mora da piše</h3>
             <p className="mb-16">
               Standardna nutritivna deklaracija sadrži: energetsku vrednost (u kJ i kcal), količinu
               masti i zasićenih masnih kiselina, ugljenih hidrata i šećera, proteina i soli — sve
@@ -56,7 +56,7 @@ export default function PostSr1() {
               po porciji, što olakšava poređenje sa preporučenim dnevnim unosom.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Referentni unos (RI)</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Referentni unos (RI)</h3>
             <p className="mb-16">
               Referentni dnevni unos je procenjena količina energije i hranljivih materija potrebna
               prosečnoj odrasloj osobi. Kada na pakovanju vidite da porcija proizvoda „pokriva 15%
@@ -64,7 +64,7 @@ export default function PostSr1() {
               šećera — koristan orijentir, ali ne apsolutno pravilo za svaku osobu.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Na šta obratiti pažnju</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Na šta obratiti pažnju</h3>
             <p className="mb-16">
               Energetska vrednost sama po sebi ne govori dovoljno — dva proizvoda sa istim brojem
               kalorija mogu imati potpuno različit sastav šećera, masti i vlakana. Umesto da gledate

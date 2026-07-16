@@ -48,7 +48,7 @@ export default function PostEn2() {
               consumers perceive a product.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Nutrition claim</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Nutrition claim</h3>
             <p className="mb-16">
               A nutrition claim states or implies that a product has particular beneficial
               nutritional properties — for example that it is a „source of protein," „no added
@@ -56,7 +56,7 @@ export default function PostEn2() {
               prescribed quantitative requirements for that nutrient.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Health claim</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Health claim</h3>
             <p className="mb-16">
               A health claim goes a step further — it asserts a relationship between a nutrient and
               health (e.g. „calcium contributes to normal muscle function"). Such claims must be
@@ -64,7 +64,7 @@ export default function PostEn2() {
               formulate a new health claim without a basis in applicable regulations.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Why this matters to consumers</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Why this matters to consumers</h3>
             <p>
               When a manufacturer uses a claim that isn't substantiated or that exceeds what is
               permitted, the consumer gets a misleading picture of the product — which can affect

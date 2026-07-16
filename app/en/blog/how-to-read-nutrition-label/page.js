@@ -48,7 +48,7 @@ export default function PostEn1() {
               often says more about a product's quality.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>What must be included</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>What must be included</h3>
             <p className="mb-16">
               A standard nutrition label includes: energy value (in kJ and kcal), the amount of fat
               and saturated fatty acids, carbohydrates and sugars, protein and salt — all expressed
@@ -56,7 +56,7 @@ export default function PostEn1() {
               which makes it easier to compare against recommended daily intake.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Reference intake (RI)</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>Reference intake (RI)</h3>
             <p className="mb-16">
               Reference daily intake is the estimated amount of energy and nutrients an average
               adult needs. When a pack shows that a serving „covers 15% RI for sugars", it means
@@ -64,7 +64,7 @@ export default function PostEn1() {
               an absolute rule for every individual.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>What to pay attention to</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>What to pay attention to</h3>
             <p className="mb-16">
               Energy value alone doesn't tell you enough — two products with the same calorie count
               can have completely different sugar, fat and fiber content. Instead of looking only at

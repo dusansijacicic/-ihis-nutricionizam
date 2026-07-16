@@ -47,7 +47,7 @@ export default function PostSr3() {
               druge suštinski predstavljaju marketinšku formulaciju bez čvrste regulatorne osnove.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Bez GMO"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Bez GMO"</h3>
             <p className="mb-16">
               Ovo je regulisana oznaka — proizvod deklarisan kao „bez GMO" zaista mora da ispuni
               zakonom propisane uslove o odsustvu genetski modifikovanih sastojaka iznad dozvoljenog
@@ -55,14 +55,14 @@ export default function PostSr3() {
               tvrdnja tačna.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Bez glutena"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Bez glutena"</h3>
             <p className="mb-16">
               Takođe regulisana oznaka, sa preciznim graničnim vrednostima sadržaja glutena koje
               proizvod mora da zadovolji da bi smeo da nosi ovu deklaraciju — bitno za osobe sa
               celijakijom i intolerancijom na gluten, kojima netačna oznaka može ozbiljno naškoditi.
             </p>
 
-            <h3 className="mb-16" style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Prirodno"</h3>
+            <h3 className="mb-16" style={{ fontFamily: "var(--font-raleway), sans-serif", fontWeight: 300, letterSpacing: '1px' }}>„Prirodno"</h3>
             <p className="mb-16">
               Za razliku od prethodne dve, oznaka „prirodno" najčešće nema jedinstvenu, strogo
               propisanu zakonsku definiciju u istoj meri kao GMO ili gluten oznake, što znači da
