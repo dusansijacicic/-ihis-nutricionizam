@@ -1,14 +1,14 @@
-import Header from '../../../components/Header';
-import MobileNav from '../../../components/MobileNav';
-import Footer from '../../../components/Footer';
+import Header from '../../../../components/Header';
+import MobileNav from '../../../../components/MobileNav';
+import Footer from '../../../../components/Footer';
 
 export const metadata = {
   title: 'Kako pravilno čitati nutritivnu deklaraciju — IHIS Nutricionizam',
   description: 'Kako pravilno čitati nutritivnu deklaraciju na prehrambenim proizvodima — šta znače brojevi, referentni unos i energetska vrednost.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju',
+    canonical: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
       en: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
     },
   },
@@ -16,7 +16,7 @@ export const metadata = {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Kako pravilno čitati nutritivnu deklaraciju',
     description: 'Šta znače brojevi na poleđini pakovanja, referentni unos i energetska vrednost.',
-    url: 'https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju',
+    url: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
@@ -32,7 +32,7 @@ export default function PostSr1() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Nutritivna deklaracija</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; Kako čitati nutritivnu deklaraciju</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Kako čitati nutritivnu deklaraciju</p>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ export default function PostSr1() {
 
             <p>
               Pravilno tumačenje nutritivne deklaracije jedan je od osnovnih alata za informisan
-              izbor hrane — i tema kojom se IHIS Nutricionizam bavi u okviru <a href="/usluge">stručnog
+              izbor hrane — i tema kojom se IHIS Nutricionizam bavi u okviru <a href="/rs/services">stručnog
               konsaltinga za deklarisanje proizvoda</a>.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function PostSr1() {
 
         <div className="section-light text-center">
           <div className="container-cta">
-            <a href="/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
+            <a href="/rs/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ export const metadata = {
   description: 'IHIS Nutricionizam research — nutritional and energy value of food, functional ingredients, effects on metabolism, and food contaminants.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/research',
-    languages: { sr: 'https://ihis-nutricionizam.rs/istrazivanje', en: 'https://ihis-nutricionizam.rs/en/research' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function ResearchEn() {
   return (
     <>
-      <Header locale="en" current="research" langHref="/istrazivanje" />
+      <Header locale="en" current="research" langHref="/rs/research" />
       <MobileNav locale="en" current="research" />
 
       <section className="mastwrap top-spaced">

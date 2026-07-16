@@ -7,7 +7,7 @@ export const metadata = {
   description: 'IHIS Nutricionizam services — technology consulting, food labeling and health claims, new product development, alignment with Serbian and EU legislation.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/services',
-    languages: { sr: 'https://ihis-nutricionizam.rs/usluge', en: 'https://ihis-nutricionizam.rs/en/services' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function ServicesEn() {
   return (
     <>
-      <Header locale="en" current="services" langHref="/usluge" />
+      <Header locale="en" current="services" langHref="/rs/services" />
       <MobileNav locale="en" current="services" />
 
       <section className="mastwrap top-spaced">

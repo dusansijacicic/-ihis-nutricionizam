@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Usluge — IHIS Nutricionizam',
   description: 'Usluge IHIS Nutricionizma — tehnološki konsalting, deklarisanje i zdravstvene izjave, razvoj novih prehrambenih proizvoda, usklađivanje sa zakonodavstvom Srbije i EU.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/usluge',
-    languages: { sr: 'https://ihis-nutricionizam.rs/usluge', en: 'https://ihis-nutricionizam.rs/en/services' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/services',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Usluge — IHIS Nutricionizam',
     description: 'Tehnološki konsalting, deklarisanje i zdravstvene izjave, razvoj novih prehrambenih proizvoda.',
-    url: 'https://ihis-nutricionizam.rs/usluge',
+    url: 'https://ihis-nutricionizam.rs/rs/services',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Usluge() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Usluge</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Usluge</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Usluge</p>
           </div>
         </div>
 
@@ -120,7 +120,7 @@ export default function Usluge() {
             <h2 className="section-h">Zatražite ponudu</h2>
             <span className="liner"></span>
             <p className="mt-10">Opišite nam vaše potrebe i kontaktiraćemo vas u najkraćem roku sa predlogom saradnje.</p>
-            <a href="/kontakt" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
+            <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
           </div>
         </div>
       </section>

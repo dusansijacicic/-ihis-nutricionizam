@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Blog — IHIS Nutricionizam',
   description: 'Blog IHIS Nutricionizma — stručni tekstovi o nutritivnim deklaracijama, zdravstvenim izjavama i oznakama na prehrambenim proizvodima.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/blog',
-    languages: { sr: 'https://ihis-nutricionizam.rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/blog',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Blog — IHIS Nutricionizam',
     description: 'Stručni tekstovi o nutritivnim deklaracijama, zdravstvenim izjavama i oznakama na prehrambenim proizvodima.',
-    url: 'https://ihis-nutricionizam.rs/blog',
+    url: 'https://ihis-nutricionizam.rs/rs/blog',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Blog() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Blog</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Blog</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Blog</p>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function Blog() {
                     Šta tačno znače brojevi na poleđini pakovanja, šta je referentni unos (RI) i
                     zašto energetska vrednost nije jedino što treba da gledate.
                   </p>
-                  <a href="/blog/kako-citati-nutritivnu-deklaraciju" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/blog/how-to-read-nutrition-label" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
 
@@ -71,7 +71,7 @@ export default function Blog() {
                     Razlika između nutritivnih i zdravstvenih izjava, ko odobrava njihovu upotrebu,
                     i zašto neke tvrdnje proizvođači ne smeju da stavljaju na ambalažu.
                   </p>
-                  <a href="/blog/zdravstvene-i-nutritivne-izjave" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/blog/nutrition-and-health-claims" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function Blog() {
                     Koje od ovih oznaka su regulisane zakonom, koje nisu, i kako da ih tumačite
                     kada birate proizvode u prodavnici.
                   </p>
-                  <a href="/blog/gmo-bez-glutena-prirodno" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/blog/natural-non-gmo-gluten-free-labels" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
             </div>

@@ -1,21 +1,21 @@
 import Image from 'next/image';
 import Script from 'next/script';
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Galerija — IHIS Nutricionizam',
   description: 'Galerija IHIS Nutricionizma — fotografije sa regionalnih konditorskih savetovanja i konferencija Hrana, ishrana i zdravlje.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/galerija',
-    languages: { sr: 'https://ihis-nutricionizam.rs/galerija', en: 'https://ihis-nutricionizam.rs/en/gallery' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/gallery',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/gallery', en: 'https://ihis-nutricionizam.rs/en/gallery' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Galerija — IHIS Nutricionizam',
     description: 'Fotografije sa regionalnih konditorskih savetovanja i konferencija Hrana, ishrana i zdravlje.',
-    url: 'https://ihis-nutricionizam.rs/galerija',
+    url: 'https://ihis-nutricionizam.rs/rs/gallery',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
@@ -37,7 +37,7 @@ export default function Galerija() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Galerija</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Galerija</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Galerija</p>
           </div>
         </div>
 

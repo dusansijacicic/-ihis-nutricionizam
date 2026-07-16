@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Istraživanje — IHIS Nutricionizam',
   description: 'Istraživanje IHIS Nutricionizma — nutritivna i energetska vrednost hrane, funkcionalne sirovine, uticaj na metabolizam i zagađivači hrane.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/istrazivanje',
-    languages: { sr: 'https://ihis-nutricionizam.rs/istrazivanje', en: 'https://ihis-nutricionizam.rs/en/research' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/research',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Istraživanje — IHIS Nutricionizam',
     description: 'Nutritivna i energetska vrednost hrane, funkcionalne sirovine, uticaj na metabolizam i zagađivači hrane.',
-    url: 'https://ihis-nutricionizam.rs/istrazivanje',
+    url: 'https://ihis-nutricionizam.rs/rs/research',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Istrazivanje() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Istraživanje</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Istraživanje</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Istraživanje</p>
           </div>
         </div>
 

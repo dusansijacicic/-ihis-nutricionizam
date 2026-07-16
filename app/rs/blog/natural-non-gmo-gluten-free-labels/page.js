@@ -1,14 +1,14 @@
-import Header from '../../../components/Header';
-import MobileNav from '../../../components/MobileNav';
-import Footer from '../../../components/Footer';
+import Header from '../../../../components/Header';
+import MobileNav from '../../../../components/MobileNav';
+import Footer from '../../../../components/Footer';
 
 export const metadata = {
   title: 'Šta znače oznake „prirodno", „bez GMO" i „bez glutena" — IHIS Nutricionizam',
   description: "Šta zapravo znače oznake 'prirodno', 'bez GMO' i 'bez glutena' na prehrambenim proizvodima — koje su regulisane, a koje nisu.",
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno',
+    canonical: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
       en: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
     },
   },
@@ -16,7 +16,7 @@ export const metadata = {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: "Šta zapravo znače oznake 'prirodno', 'bez GMO' i 'bez glutena'",
     description: 'Koje od ovih oznaka su regulisane zakonom, a koje nisu.',
-    url: 'https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno',
+    url: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
@@ -32,7 +32,7 @@ export default function PostSr3() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Oznake na proizvodu</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; Prirodno, bez GMO, bez glutena</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Prirodno, bez GMO, bez glutena</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ export default function PostSr3() {
 
             <p>
               Razlikovanje regulisanih od neregulisanih oznaka jedan je od razloga zašto je stručna
-              provera deklaracije pre lansiranja proizvoda važna — i deo je <a href="/usluge">konsaltinga
+              provera deklaracije pre lansiranja proizvoda važna — i deo je <a href="/rs/services">konsaltinga
               za deklarisanje</a> koji IHIS Nutricionizam pruža proizvođačima hrane.
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function PostSr3() {
 
         <div className="section-light text-center">
           <div className="container-cta">
-            <a href="/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
+            <a href="/rs/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
           </div>
         </div>
       </section>

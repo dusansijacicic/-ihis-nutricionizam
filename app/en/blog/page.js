@@ -7,7 +7,7 @@ export const metadata = {
   description: 'IHIS Nutricionizam blog — articles on nutrition labels, health claims, and food product marks.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/blog',
-    languages: { sr: 'https://ihis-nutricionizam.rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function BlogEn() {
   return (
     <>
-      <Header locale="en" current="blog" langHref="/blog" />
+      <Header locale="en" current="blog" langHref="/rs/blog" />
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">

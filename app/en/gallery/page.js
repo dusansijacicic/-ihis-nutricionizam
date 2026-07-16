@@ -9,7 +9,7 @@ export const metadata = {
   description: 'IHIS Nutricionizam gallery — photos from regional confectionery conferences and Food, Nutrition and Health conferences.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/gallery',
-    languages: { sr: 'https://ihis-nutricionizam.rs/galerija', en: 'https://ihis-nutricionizam.rs/en/gallery' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/gallery', en: 'https://ihis-nutricionizam.rs/en/gallery' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -29,7 +29,7 @@ const conf8 = [
 export default function GalleryEn() {
   return (
     <>
-      <Header locale="en" current="gallery" langHref="/galerija" />
+      <Header locale="en" current="gallery" langHref="/rs/gallery" />
       <MobileNav locale="en" current="gallery" />
 
       <section className="mastwrap top-spaced">

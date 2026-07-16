@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Edukacija — IHIS Nutricionizam',
   description: 'Edukacija i savetovanja IHIS Nutricionizma — godišnje konferencije Hrana, ishrana i zdravlje i Regionalno konditorsko savetovanje.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/edukacija',
-    languages: { sr: 'https://ihis-nutricionizam.rs/edukacija', en: 'https://ihis-nutricionizam.rs/en/education' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/education',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education', en: 'https://ihis-nutricionizam.rs/en/education' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Edukacija — IHIS Nutricionizam',
     description: 'Godišnje konferencije Hrana, ishrana i zdravlje i Regionalno konditorsko savetovanje.',
-    url: 'https://ihis-nutricionizam.rs/edukacija',
+    url: 'https://ihis-nutricionizam.rs/rs/education',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Edukacija() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Edukacija</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Edukacija</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Edukacija</p>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function Edukacija() {
                   Teme: ispravno deklarisanje, EU usklađivanje, funkcionalna hrana,
                   nutritivne i zdravstvene tvrdnje, bezbednost hrane.
                 </p>
-                <a href="/kontakt" className="btn-ihis btn-ihis-white mt-24">Prijavite se</a>
+                <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Prijavite se</a>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function Edukacija() {
               Zainteresovani za internu obuku za vaš tim ili za prisustvo sledećem
               javnom savetovanju? Kontaktirajte nas.
             </p>
-            <a href="/kontakt" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
+            <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
           </div>
         </div>
       </section>

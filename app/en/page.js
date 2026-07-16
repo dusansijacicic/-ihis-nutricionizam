@@ -8,7 +8,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/',
+      sr: 'https://ihis-nutricionizam.rs/rs',
       en: 'https://ihis-nutricionizam.rs/en',
     },
   },
@@ -26,7 +26,7 @@ export const metadata = {
 export default function HomeEn() {
   return (
     <>
-      <Header locale="en" current="home" langHref="/" />
+      <Header locale="en" current="home" langHref="/rs" />
       <MobileNav locale="en" current="home" />
 
       <section className="mastwrap">

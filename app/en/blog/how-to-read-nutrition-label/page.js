@@ -8,7 +8,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/kako-citati-nutritivnu-deklaraciju',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
       en: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
     },
   },
@@ -24,7 +24,7 @@ export const metadata = {
 export default function PostEn1() {
   return (
     <>
-      <Header locale="en" current="blog" langHref="/blog/kako-citati-nutritivnu-deklaraciju" />
+      <Header locale="en" current="blog" langHref="/rs/blog/how-to-read-nutrition-label" />
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">

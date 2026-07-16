@@ -8,7 +8,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/gmo-bez-glutena-prirodno',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
       en: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
     },
   },
@@ -24,7 +24,7 @@ export const metadata = {
 export default function PostEn3() {
   return (
     <>
-      <Header locale="en" current="blog" langHref="/blog/gmo-bez-glutena-prirodno" />
+      <Header locale="en" current="blog" langHref="/rs/blog/natural-non-gmo-gluten-free-labels" />
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">

@@ -1,14 +1,14 @@
-import Header from '../../../components/Header';
-import MobileNav from '../../../components/MobileNav';
-import Footer from '../../../components/Footer';
+import Header from '../../../../components/Header';
+import MobileNav from '../../../../components/MobileNav';
+import Footer from '../../../../components/Footer';
 
 export const metadata = {
   title: 'Šta znače zdravstvene i nutritivne izjave na hrani — IHIS Nutricionizam',
   description: 'Šta znače zdravstvene i nutritivne izjave na hrani, ko ih odobrava, i zašto ih proizvođači ne mogu slobodno da koriste.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave',
+    canonical: 'https://ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
       en: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
     },
   },
@@ -16,7 +16,7 @@ export const metadata = {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Šta znače zdravstvene i nutritivne izjave na hrani',
     description: 'Razlika između nutritivnih i zdravstvenih izjava i ko odobrava njihovu upotrebu.',
-    url: 'https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave',
+    url: 'https://ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
@@ -32,7 +32,7 @@ export default function PostSr2() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Zdravstvene izjave</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; Zdravstvene i nutritivne izjave</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Zdravstvene i nutritivne izjave</p>
           </div>
         </div>
 
@@ -70,14 +70,14 @@ export default function PostSr2() {
               dozvoljeno, potrošač dobija pogrešnu sliku o proizvodu — što može uticati na izbor
               hrane, posebno kod osoba sa specifičnim zdravstvenim potrebama. Upravo zato je
               pravilno deklarisanje jedna od osnovnih usluga koje IHIS Nutricionizam pruža
-              proizvođačima — pogledajte <a href="/usluge">usluge deklarisanja i zdravstvenih izjava</a>.
+              proizvođačima — pogledajte <a href="/rs/services">usluge deklarisanja i zdravstvenih izjava</a>.
             </p>
           </div>
         </div>
 
         <div className="section-light text-center">
           <div className="container-cta">
-            <a href="/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
+            <a href="/rs/blog" className="btn-ihis btn-ihis-dark">&larr; Nazad na blog</a>
           </div>
         </div>
       </section>

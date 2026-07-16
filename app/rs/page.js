@@ -1,14 +1,14 @@
-import Header from '../components/Header';
-import MobileNav from '../components/MobileNav';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import MobileNav from '../../components/MobileNav';
+import Footer from '../../components/Footer';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
   description: 'IHIS Nutricionizam — naučno-istraživačka kompanija za deklarisanje i razvoj prehrambenih proizvoda, Beograd.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/',
+    canonical: 'https://ihis-nutricionizam.rs/rs',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/',
+      sr: 'https://ihis-nutricionizam.rs/rs',
       en: 'https://ihis-nutricionizam.rs/en',
     },
   },
@@ -18,7 +18,7 @@ export const metadata = {
     locale: 'sr_RS',
     title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
     description: 'Naučno-istraživačka kompanija za deklarisanje i razvoj prehrambenih proizvoda, Beograd.',
-    url: 'https://ihis-nutricionizam.rs/',
+    url: 'https://ihis-nutricionizam.rs/rs',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
@@ -61,7 +61,7 @@ export default function Home() {
             evropskom tržištu. Pored istraživačke misije, pružamo stručnu podršku
             kompanijama u prehrambenoj industriji i edukujemo potrošače i proizvođače.
           </p>
-          <a href="/o-nama" className="btn-ihis btn-ihis-color mt-30">Saznajte više</a>
+          <a href="/rs/about" className="btn-ihis btn-ihis-color mt-30">Saznajte više</a>
         </div>
       </section>
 
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-30">
-            <a href="/usluge" className="btn-ihis btn-ihis-dark">Sve usluge</a>
+            <a href="/rs/services" className="btn-ihis btn-ihis-dark">Sve usluge</a>
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function Home() {
                 <div className="news-block-inner">
                   <h3>6. Regionalno<br />konditorsko savetovanje</h3>
                   <h1>Maj 2022 &bull; Beograd</h1>
-                  <a href="/edukacija" className="btn-ihis btn-ihis-outline">Više informacija</a>
+                  <a href="/rs/education" className="btn-ihis btn-ihis-outline">Više informacija</a>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
                 <div className="news-block-inner">
                   <h3>V savetovanje<br />konditorske industrije regiona</h3>
                   <h1>April 2019 &bull; Beograd</h1>
-                  <a href="/vesti" className="btn-ihis btn-ihis-outline">Pročitajte više</a>
+                  <a href="/rs/news" className="btn-ihis btn-ihis-outline">Pročitajte više</a>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
             Imate pitanje o deklarisanju proizvoda, nutritivnim tvrdnjama ili razvoju
             funkcionalnih namirnica? Naš stručni tim je na raspolaganju.
           </p>
-          <a href="/kontakt" className="btn-ihis btn-ihis-white mt-30">Pošaljite upit</a>
+          <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-30">Pošaljite upit</a>
         </div>
       </section>
 

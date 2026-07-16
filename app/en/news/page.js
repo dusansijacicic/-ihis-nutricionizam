@@ -7,7 +7,7 @@ export const metadata = {
   description: 'IHIS Nutricionizam news — the latest on conferences and company activities.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/news',
-    languages: { sr: 'https://ihis-nutricionizam.rs/vesti', en: 'https://ihis-nutricionizam.rs/en/news' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/news', en: 'https://ihis-nutricionizam.rs/en/news' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function NewsEn() {
   return (
     <>
-      <Header locale="en" current="news" langHref="/vesti" />
+      <Header locale="en" current="news" langHref="/rs/news" />
       <MobileNav locale="en" current="news" />
 
       <section className="mastwrap top-spaced">

@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Contact IHIS Nutricionizam — Batajnicki drum 9 deo br. 8, Belgrade. Phone, email and location map.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/contact',
-    languages: { sr: 'https://ihis-nutricionizam.rs/kontakt', en: 'https://ihis-nutricionizam.rs/en/contact' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/contact', en: 'https://ihis-nutricionizam.rs/en/contact' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function ContactEn() {
   return (
     <>
-      <Header locale="en" current="contact" langHref="/kontakt" />
+      <Header locale="en" current="contact" langHref="/rs/contact" />
       <MobileNav locale="en" current="contact" />
 
       <section className="mastwrap top-spaced">

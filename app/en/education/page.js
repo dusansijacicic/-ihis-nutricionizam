@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Education and conferences by IHIS Nutricionizam — the annual Food, Nutrition and Health conference and the Regional Confectionery Conference.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/education',
-    languages: { sr: 'https://ihis-nutricionizam.rs/edukacija', en: 'https://ihis-nutricionizam.rs/en/education' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education', en: 'https://ihis-nutricionizam.rs/en/education' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function EducationEn() {
   return (
     <>
-      <Header locale="en" current="education" langHref="/edukacija" />
+      <Header locale="en" current="education" langHref="/rs/education" />
       <MobileNav locale="en" current="education" />
 
       <section className="mastwrap top-spaced">

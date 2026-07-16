@@ -8,7 +8,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/blog/zdravstvene-i-nutritivne-izjave',
+      sr: 'https://ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
       en: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
     },
   },
@@ -24,7 +24,7 @@ export const metadata = {
 export default function PostEn2() {
   return (
     <>
-      <Header locale="en" current="blog" langHref="/blog/zdravstvene-i-nutritivne-izjave" />
+      <Header locale="en" current="blog" langHref="/rs/blog/nutrition-and-health-claims" />
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">

@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Vesti — IHIS Nutricionizam',
   description: 'Vesti IHIS Nutricionizma — najnovije informacije o savetovanjima, konferencijama i aktivnostima kompanije.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/vesti',
-    languages: { sr: 'https://ihis-nutricionizam.rs/vesti', en: 'https://ihis-nutricionizam.rs/en/news' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/news',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/news', en: 'https://ihis-nutricionizam.rs/en/news' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Vesti — IHIS Nutricionizam',
     description: 'Najnovije informacije o savetovanjima, konferencijama i aktivnostima kompanije.',
-    url: 'https://ihis-nutricionizam.rs/vesti',
+    url: 'https://ihis-nutricionizam.rs/rs/news',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Vesti() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Vesti</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Vesti</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Vesti</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export default function Vesti() {
                   prof.dr Biljana Pajin, doc.dr Ivana Nikolić i doc.dr Senka Popović (TF Novi Sad),
                   i dr vet. med. Mina Mitrović Jeremić (MC Labor). Sponzor: MC LABOR.
                 </p>
-                <a href="/edukacija" className="btn-ihis btn-ihis-color mt-10">Pročitajte više</a>
+                <a href="/rs/education" className="btn-ihis btn-ihis-color mt-10">Pročitajte više</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Vesti() {
                     prof.dr Marica Rakin, prof.dr Vera Lazić, dipl.ing. Bojan Tomić (Jaffa DOO Crvenka),
                     prof.dr Đerđ Karlović, prof.dr Zita Šereš i dr Danica Zarić (IHIS Nutricionizam, direktor).
                   </p>
-                  <a href="/edukacija" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/education" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ export default function Vesti() {
                     evropske dijetarne referentne vrednosti i izračunavanje hranjive vrednosti hrane.
                     U okviru savetovanja održan je i okrugli sto „Od propisa do prakse".
                   </p>
-                  <a href="/edukacija" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/education" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ export default function Vesti() {
                     polifenolima, visokoproteinski proizvodi, antioksidansi u kakao masi i mlečnim
                     čokoladama, modifikovani skrobovi i smanjenje akrilamida u konditorskim proizvodima.
                   </p>
-                  <a href="/edukacija" className="read-more">Pročitajte više &rarr;</a>
+                  <a href="/rs/education" className="read-more">Pročitajte više &rarr;</a>
                 </div>
               </div>
             </div>

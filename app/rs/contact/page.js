@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Kontakt — IHIS Nutricionizam',
   description: 'Kontaktirajte IHIS Nutricionizam — Batajnički drum 9 deo br. 8, Beograd. Telefon, email i mapa lokacije.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/kontakt',
-    languages: { sr: 'https://ihis-nutricionizam.rs/kontakt', en: 'https://ihis-nutricionizam.rs/en/contact' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/contact',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/contact', en: 'https://ihis-nutricionizam.rs/en/contact' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Kontakt — IHIS Nutricionizam',
     description: 'Batajnički drum 9 deo br. 8, Beograd. Telefon, email i mapa lokacije.',
-    url: 'https://ihis-nutricionizam.rs/kontakt',
+    url: 'https://ihis-nutricionizam.rs/rs/contact',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function Kontakt() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Kontakt</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; Kontakt</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Kontakt</p>
           </div>
         </div>
 

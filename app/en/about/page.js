@@ -7,7 +7,7 @@ export const metadata = {
   description: 'About IHIS Nutricionizam — a scientific research company for nutrition science and food labeling in Belgrade, founded in 2012, part of the IHIS Science and Technology Park Zemun.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/about',
-    languages: { sr: 'https://ihis-nutricionizam.rs/o-nama', en: 'https://ihis-nutricionizam.rs/en/about' },
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/about', en: 'https://ihis-nutricionizam.rs/en/about' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
 export default function AboutEn() {
   return (
     <>
-      <Header locale="en" current="about" langHref="/o-nama" />
+      <Header locale="en" current="about" langHref="/rs/about" />
       <MobileNav locale="en" current="about" />
 
       <section className="mastwrap top-spaced">

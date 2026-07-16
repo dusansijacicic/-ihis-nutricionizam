@@ -1,19 +1,19 @@
-import Header from '../../components/Header';
-import MobileNav from '../../components/MobileNav';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import MobileNav from '../../../components/MobileNav';
+import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'O nama — IHIS Nutricionizam',
   description: 'O nama — IHIS Nutricionizam, naučno-istraživačka kompanija za nutricionizam i deklarisanje hrane u Beogradu, osnovana 2012. godine, deo IHIS Naučno Tehnološkog Parka Zemun.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/o-nama',
-    languages: { sr: 'https://ihis-nutricionizam.rs/o-nama', en: 'https://ihis-nutricionizam.rs/en/about' },
+    canonical: 'https://ihis-nutricionizam.rs/rs/about',
+    languages: { sr: 'https://ihis-nutricionizam.rs/rs/about', en: 'https://ihis-nutricionizam.rs/en/about' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'O nama — IHIS Nutricionizam',
     description: 'Naučno-istraživačka kompanija za nutricionizam i deklarisanje hrane u Beogradu.',
-    url: 'https://ihis-nutricionizam.rs/o-nama',
+    url: 'https://ihis-nutricionizam.rs/rs/about',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function ONama() {
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">O nama</h1>
-            <p className="page-crumbs"><a href="/">Početna</a> &rsaquo; O nama</p>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; O nama</p>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ export default function ONama() {
             <h2 className="section-h">Kontaktirajte nas</h2>
             <span className="liner"></span>
             <p className="mt-10">Zainteresovani ste za saradnju ili imate pitanje? Rado ćemo odgovoriti.</p>
-            <a href="/kontakt" className="btn-ihis btn-ihis-white mt-24">Pišite nam</a>
+            <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Pišite nam</a>
           </div>
         </div>
       </section>
