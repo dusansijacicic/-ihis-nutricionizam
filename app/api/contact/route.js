@@ -22,20 +22,26 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Greška pri čuvanju poruke.' }, { status: 500 });
   }
 
+  let emailDebug = null;
+
   if (process.env.RESEND_API_KEY && process.env.CONTACT_NOTIFY_EMAIL) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
-      await resend.emails.send({
+      const result = await resend.emails.send({
         from: 'IHIS Nutricionizam <onboarding@resend.dev>',
         to: process.env.CONTACT_NOTIFY_EMAIL,
         replyTo: email,
         subject: `Nova poruka sa sajta — ${name}`,
         text: `Ime: ${name}\nEmail: ${email}\nKompanija: ${company || '-'}\n\nPoruka:\n${message}`,
       });
+      emailDebug = { sent: true, result };
     } catch (emailError) {
       console.error('Resend notification failed:', emailError);
+      emailDebug = { sent: false, error: emailError?.message || String(emailError) };
     }
+  } else {
+    emailDebug = { sent: false, error: 'RESEND_API_KEY or CONTACT_NOTIFY_EMAIL missing' };
   }
-/// commmit nesto
-  return NextResponse.json({ ok: true });
+
+  return NextResponse.json({ ok: true, emailDebug });
 }
