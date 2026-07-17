@@ -22,7 +22,7 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Greška pri čuvanju poruke.' }, { status: 500 });
   }
 
-  let emailDebug = null;
+  let emailDebug = null; // ajd sadfixfi
 
   if (process.env.RESEND_API_KEY && process.env.CONTACT_NOTIFY_EMAIL) {
     try {
