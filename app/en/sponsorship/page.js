@@ -51,12 +51,14 @@ export default function SponsorshipPage() {
           <div className="container">
             <div className="tier-grid">
               {t.tiers.map((tier, i) => (
-                <div className={`tier-card${i === 0 ? ' tier-card--featured' : ''}`} key={i}>
-                  <span className="tier-name">{tier.name}</span>
-                  <span className="tier-price">{tier.price}</span>
-                  <ul className="tier-list">
-                    {tier.items.map((it, j) => <li key={j}>{it}</li>)}
-                  </ul>
+                <div className="fade-in" key={i}>
+                  <div className={`tier-card${i === 0 ? ' tier-card--featured' : ''}`}>
+                    <span className="tier-name">{tier.name}</span>
+                    <span className="tier-price">{tier.price}</span>
+                    <ul className="tier-list">
+                      {tier.items.map((it, j) => <li key={j}>{it}</li>)}
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>

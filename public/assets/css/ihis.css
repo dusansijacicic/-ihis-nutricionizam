@@ -272,6 +272,26 @@ nav.mastnav.is-open .mastnav-right { transform: translateX(0); }
   .hero-poziv-title { font-size: 22px; }
   .hero-poziv-panel { padding: 100px 18px 50px; }
 }
+
+@keyframes heroPozivIn {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-poziv-tag,
+.hero-poziv-title,
+.hero-poziv-sub,
+.hero-poziv-meta,
+.hero-poziv-intro,
+.hero-poziv-actions {
+  opacity: 0;
+  animation: heroPozivIn .7s ease forwards;
+}
+.hero-poziv-tag      { animation-delay: .05s; }
+.hero-poziv-title    { animation-delay: .15s; }
+.hero-poziv-sub      { animation-delay: .25s; }
+.hero-poziv-meta     { animation-delay: .32s; }
+.hero-poziv-intro    { animation-delay: .4s; }
+.hero-poziv-actions  { animation-delay: .5s; }
 .hero-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: rgba(255,255,255,.35);
@@ -364,7 +384,13 @@ section.mastwrap.top-spaced { margin-top: var(--nav-h); }
 /* Dark feature block (service page) */
 .section-dark .feature-block h3 { color: rgba(255,255,255,.85); }
 .section-dark .feature-block p  { color: rgba(255,255,255,.5); }
-.section-dark .feature-block .icon { color: var(--accent); }
+.section-dark .feature-block .icon { color: var(--cream); }
+
+/* Accent-colored text/icons don't have enough contrast on the dark
+   maroon section background — swap to cream there. */
+.section-dark .section-tag,
+.section-dark .contact-icon,
+.section-dark .reg-msg--ok { color: var(--cream); }
 
 /* ─── News / Journal blocks ─────────────────────────────────────── */
 .news-block {
@@ -422,16 +448,16 @@ section.mastwrap.top-spaced { margin-top: var(--nav-h); }
 
 /* ─── Contact form ──────────────────────────────────────────────── */
 .cf-input {
-  background: transparent;
-  border: none; border-bottom: 2px solid rgba(255,255,255,.25);
-  border-radius: 0; box-shadow: none;
-  font-size: 16px; font-weight: 300; color: #fff;
-  padding: 10px 0; width: 100%; margin-bottom: 28px;
-  outline: none; transition: border-color .4s;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 4px; box-shadow: none;
+  font-size: 15px; font-weight: 300; color: #fff;
+  padding: 13px 16px; width: 100%; margin-bottom: 18px;
+  outline: none; transition: border-color .3s, background .3s;
   font-family: var(--font-montserrat), sans-serif;
 }
-.cf-input::placeholder { color: rgba(255,255,255,.35); }
-.cf-input:focus { border-bottom-color: rgba(255,255,255,.8); }
+.cf-input::placeholder { color: rgba(255,255,255,.45); }
+.cf-input:focus { border-color: var(--cream); background: rgba(255,255,255,.1); }
 
 /* ─── Skills/stats bar ──────────────────────────────────────────── */
 .stat-row { display: flex; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,.08); }
@@ -611,7 +637,11 @@ footer.mastfoot {
   .grid-2 > *, .grid-3 > * { flex:0 0 100%; }
 }
 
-.card-accent { padding:30px; background:#fff; border-left:3px solid var(--accent); height:100%; }
+.card-accent {
+  padding:30px; background:#fff; border-left:3px solid var(--accent); height:100%;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card-accent:hover { transform: translateY(-5px); box-shadow: 0 14px 34px rgba(36,17,19,.12); }
 .card-icon   { font-size:36px; color:var(--accent); display:block; margin-bottom:14px; }
 .card-title  {
   font-family:var(--font-raleway), sans-serif; font-size:13px; letter-spacing:2px;
@@ -844,12 +874,21 @@ footer.mastfoot {
 
 /* ─── Registration form / Lecture gate ─────────────────────────────── */
 .cf-input--light {
-  color: var(--dark); border-bottom-color: rgba(0,0,0,.15);
+  background: #faf7f4; color: var(--dark); border-color: rgba(36,17,19,.15);
 }
-.cf-input--light::placeholder { color: rgba(0,0,0,.35); }
-.cf-input--light:focus { border-bottom-color: var(--accent); }
+.cf-input--light::placeholder { color: rgba(36,17,19,.4); }
+.cf-input--light:focus { border-color: var(--accent); background: #fff; }
 .registration-form .btn-ihis,
 .lecture-gate-form .btn-ihis { margin-top: 6px; }
+.registration-form {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px;
+}
+.registration-form input[name="name"],
+.registration-form input[name="email"],
+.registration-form button { grid-column: 1 / -1; }
+@media (max-width: 480px) {
+  .registration-form { grid-template-columns: 1fr; }
+}
 .reg-msg { margin-top: 14px; font-size: 13px; line-height: 20px; }
 .reg-msg--ok { color: var(--accent); }
 .reg-msg--err { color: #b33; }
@@ -886,7 +925,9 @@ footer.mastfoot {
 .tier-card {
   background: #fff; border: 1px solid rgba(130,53,54,.15); border-radius: 6px;
   padding: 36px 28px; text-align: center; display: flex; flex-direction: column;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
+.tier-card:hover { transform: translateY(-6px); box-shadow: 0 16px 38px rgba(36,17,19,.14); }
 .tier-card--featured { border-color: var(--accent); box-shadow: 0 10px 30px rgba(130,53,54,.12); }
 .tier-name { font-family: var(--font-raleway), sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--dark); }
 .tier-price { font-size: 26px; font-weight: 700; color: var(--accent); margin: 14px 0 20px; }

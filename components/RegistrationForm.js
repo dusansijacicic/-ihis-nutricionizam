@@ -58,12 +58,12 @@ export default function RegistrationForm({ locale }) {
 
   return (
     <form onSubmit={onSubmit} className="registration-form">
-      <input type="text" name="name" className="cf-input cf-input--light" placeholder={t.name} required />
-      <input type="text" name="company" className="cf-input cf-input--light" placeholder={t.company} />
-      <input type="text" name="pib" className="cf-input cf-input--light" placeholder={t.pib} />
-      <input type="text" name="address" className="cf-input cf-input--light" placeholder={t.address} />
-      <input type="tel" name="phone" className="cf-input cf-input--light" placeholder={t.phone} />
-      <input type="email" name="email" className="cf-input cf-input--light" placeholder={t.email} required />
+      <input type="text" name="name" className="cf-input" placeholder={t.name} required />
+      <input type="text" name="company" className="cf-input" placeholder={t.company} />
+      <input type="text" name="pib" className="cf-input" placeholder={t.pib} />
+      <input type="text" name="address" className="cf-input" placeholder={t.address} />
+      <input type="tel" name="phone" className="cf-input" placeholder={t.phone} />
+      <input type="email" name="email" className="cf-input" placeholder={t.email} required />
       <button type="submit" className="btn-ihis btn-ihis-color" disabled={status === 'sending'}>
         {status === 'sending' ? t.sending : t.submit}
       </button>
