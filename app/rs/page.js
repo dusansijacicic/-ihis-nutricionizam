@@ -1,12 +1,7 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
-import Modal from '../../components/Modal';
-import PozivContent from '../../components/PozivContent';
-import SponsorshipContent from '../../components/SponsorshipContent';
-import RegistrationForm from '../../components/RegistrationForm';
 import { POZIV } from '../../lib/content/poziv';
-import { SPONSORSHIP } from '../../lib/content/sponsorship';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
@@ -36,49 +31,29 @@ export default function Home() {
       <MobileNav locale="sr" current="home" />
 
       <section className="mastwrap">
-        <div className="hero-slider">
-          <div className="hero-slide hero-slide--poziv is-active">
+        <div className="hero-slider hero-slider--single">
+          <div className="hero-slide hero-slide--poziv is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
             <div className="hero-poziv-panel">
               <span className="hero-poziv-tag">Aktuelno</span>
-              <h2 className="hero-poziv-title">Pozivamo vas na 13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h2>
+              <h1 className="hero-poziv-title">Pozivamo vas na 13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h1>
+              <p className="hero-poziv-sub">{POZIV.sr.subtitle}</p>
               <p className="hero-poziv-meta">{POZIV.sr.when} &middot; {POZIV.sr.where}</p>
+              <p className="hero-poziv-intro">{POZIV.sr.intro[0]}</p>
               <div className="icon-row icon-row--dark hero-poziv-actions">
-                <Modal
-                  title={POZIV.sr.title}
-                  trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Poziv</span></span>}
-                >
-                  <PozivContent locale="sr" />
-                </Modal>
-                <Modal
-                  title="Prijava za savetovanje"
-                  trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Prijava</span></span>}
-                >
-                  <RegistrationForm locale="sr" />
-                </Modal>
-                <Modal
-                  title={SPONSORSHIP.sr.title}
-                  trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Poziv za sponzorstvo</span></span>}
-                >
-                  <SponsorshipContent locale="sr" />
-                </Modal>
+                <a href="/rs/invitation" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
+                  <span className="icon-btn-label">Poziv</span>
+                </a>
+                <a href="/rs/registration" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-edit"></i></span>
+                  <span className="icon-btn-label">Prijava</span>
+                </a>
+                <a href="/rs/sponsorship" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-star"></i></span>
+                  <span className="icon-btn-label">Poziv za sponzorstvo</span>
+                </a>
               </div>
             </div>
-          </div>
-          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}></div>
-          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}></div>
-          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}></div>
-          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}></div>
-          <div className="hero-overlay"></div>
-          <div className="hero-caption">
-            <h1 className="hero-title">IHIS Nutricionizam</h1>
-            <span className="hero-sub">Hrana &bull; Ishrana &bull; Zdravlje</span>
-          </div>
-          <div className="hero-dots">
-            <div className="hero-dot is-active"></div>
-            <div className="hero-dot"></div>
-            <div className="hero-dot"></div>
-            <div className="hero-dot"></div>
-            <div className="hero-dot"></div>
           </div>
         </div>
       </section>

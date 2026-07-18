@@ -2,8 +2,6 @@ import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import Modal from '../../../components/Modal';
-import PozivContent from '../../../components/PozivContent';
-import RegistrationForm from '../../../components/RegistrationForm';
 import LectureGate from '../../../components/LectureGate';
 import { POZIV } from '../../../lib/content/poziv';
 
@@ -69,18 +67,18 @@ export default function EducationEn() {
                   representatives of the relevant ministries, and leading food safety experts.
                 </p>
                 <div className="icon-row icon-row--dark" style={{ justifyContent: 'flex-start', marginTop: 24 }}>
-                  <Modal
-                    title={POZIV.en.title}
-                    trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Invitation</span></span>}
-                  >
-                    <PozivContent locale="en" />
-                  </Modal>
-                  <Modal
-                    title="Conference registration"
-                    trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Registration</span></span>}
-                  >
-                    <RegistrationForm locale="en" />
-                  </Modal>
+                  <a href="/en/invitation" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
+                    <span className="icon-btn-label">Invitation</span>
+                  </a>
+                  <a href="/en/registration" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-edit"></i></span>
+                    <span className="icon-btn-label">Registration</span>
+                  </a>
+                  <a href="/en/sponsorship" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-star"></i></span>
+                    <span className="icon-btn-label">Sponsorship</span>
+                  </a>
                 </div>
               </div>
             </div>

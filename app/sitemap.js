@@ -2,6 +2,9 @@ const BASE = 'https://ihis-nutricionizam.rs';
 
 const PAGES = [
   { sr: '/rs', en: '/en', priority: 1.0 },
+  { sr: '/rs/invitation', en: '/en/invitation', priority: 0.9 },
+  { sr: '/rs/registration', en: '/en/registration', priority: 0.9 },
+  { sr: '/rs/sponsorship', en: '/en/sponsorship', priority: 0.8 },
   { sr: '/rs/about', en: '/en/about', priority: 0.8 },
   { sr: '/rs/services', en: '/en/services', priority: 0.8 },
   { sr: '/rs/research', en: '/en/research', priority: 0.8 },
