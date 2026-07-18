@@ -37,7 +37,34 @@ export default function Home() {
 
       <section className="mastwrap">
         <div className="hero-slider">
-          <div className="hero-slide is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}></div>
+          <div className="hero-slide hero-slide--poziv is-active">
+            <div className="hero-poziv-panel">
+              <span className="hero-poziv-tag">Aktuelno</span>
+              <h2 className="hero-poziv-title">Pozivamo vas na 13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h2>
+              <p className="hero-poziv-meta">{POZIV.sr.when} &middot; {POZIV.sr.where}</p>
+              <div className="icon-row icon-row--dark hero-poziv-actions">
+                <Modal
+                  title={POZIV.sr.title}
+                  trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Poziv</span></span>}
+                >
+                  <PozivContent locale="sr" />
+                </Modal>
+                <Modal
+                  title="Prijava za savetovanje"
+                  trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Prijava</span></span>}
+                >
+                  <RegistrationForm locale="sr" />
+                </Modal>
+                <Modal
+                  title={SPONSORSHIP.sr.title}
+                  trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Poziv za sponzorstvo</span></span>}
+                >
+                  <SponsorshipContent locale="sr" />
+                </Modal>
+              </div>
+            </div>
+          </div>
+          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}></div>
@@ -48,6 +75,7 @@ export default function Home() {
           </div>
           <div className="hero-dots">
             <div className="hero-dot is-active"></div>
+            <div className="hero-dot"></div>
             <div className="hero-dot"></div>
             <div className="hero-dot"></div>
             <div className="hero-dot"></div>
@@ -134,40 +162,6 @@ export default function Home() {
           </div>
           <div className="text-center mt-30">
             <a href="/rs/services" className="btn-ihis btn-ihis-dark">Sve usluge</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-white text-center">
-        <div className="container-40">
-          <div className="section-head">
-            <span className="section-tag">Aktuelno</span>
-            <h2 className="section-h">Pozivamo vas na 13. SAVETOVANJE HRANA, ISHRANA &amp; ZDRAVLJE</h2>
-            <span className="liner"></span>
-            <p className="section-lead grey mt-10">
-              Savetovanje će se održati {POZIV.sr.when} u Beogradu, u hotelu Crowne Plaza,
-              Vladimira Popovića 10, Novi Beograd, Srbija.
-            </p>
-          </div>
-          <div className="icon-row">
-            <Modal
-              title={POZIV.sr.title}
-              trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Poziv</span></span>}
-            >
-              <PozivContent locale="sr" />
-            </Modal>
-            <Modal
-              title="Prijava za savetovanje"
-              trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Prijava</span></span>}
-            >
-              <RegistrationForm locale="sr" />
-            </Modal>
-            <Modal
-              title={SPONSORSHIP.sr.title}
-              trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Poziv za sponzorstvo</span></span>}
-            >
-              <SponsorshipContent locale="sr" />
-            </Modal>
           </div>
         </div>
       </section>

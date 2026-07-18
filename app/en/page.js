@@ -37,7 +37,34 @@ export default function HomeEn() {
 
       <section className="mastwrap">
         <div className="hero-slider">
-          <div className="hero-slide is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}></div>
+          <div className="hero-slide hero-slide--poziv is-active">
+            <div className="hero-poziv-panel">
+              <span className="hero-poziv-tag">Latest</span>
+              <h2 className="hero-poziv-title">Join the 13th Conference &quot;FOOD, NUTRITION &amp; HEALTH&quot;</h2>
+              <p className="hero-poziv-meta">{POZIV.en.when} &middot; {POZIV.en.where}</p>
+              <div className="icon-row icon-row--dark hero-poziv-actions">
+                <Modal
+                  title={POZIV.en.title}
+                  trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Invitation</span></span>}
+                >
+                  <PozivContent locale="en" />
+                </Modal>
+                <Modal
+                  title="Conference registration"
+                  trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Registration</span></span>}
+                >
+                  <RegistrationForm locale="en" />
+                </Modal>
+                <Modal
+                  title={SPONSORSHIP.en.title}
+                  trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Sponsorship</span></span>}
+                >
+                  <SponsorshipContent locale="en" />
+                </Modal>
+              </div>
+            </div>
+          </div>
+          <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}></div>
           <div className="hero-slide" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}></div>
@@ -48,6 +75,7 @@ export default function HomeEn() {
           </div>
           <div className="hero-dots">
             <div className="hero-dot is-active"></div>
+            <div className="hero-dot"></div>
             <div className="hero-dot"></div>
             <div className="hero-dot"></div>
             <div className="hero-dot"></div>
@@ -134,40 +162,6 @@ export default function HomeEn() {
           </div>
           <div className="text-center mt-30">
             <a href="/en/services" className="btn-ihis btn-ihis-dark">All services</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-white text-center">
-        <div className="container-40">
-          <div className="section-head">
-            <span className="section-tag">Latest</span>
-            <h2 className="section-h">Join the 13th Conference &quot;FOOD, NUTRITION &amp; HEALTH&quot;</h2>
-            <span className="liner"></span>
-            <p className="section-lead grey mt-10">
-              The conference will take place on {POZIV.en.when} in Belgrade, at Hotel Crowne
-              Plaza, Vladimira Popovića 10, Novi Beograd, Serbia.
-            </p>
-          </div>
-          <div className="icon-row">
-            <Modal
-              title={POZIV.en.title}
-              trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Invitation</span></span>}
-            >
-              <PozivContent locale="en" />
-            </Modal>
-            <Modal
-              title="Conference registration"
-              trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Registration</span></span>}
-            >
-              <RegistrationForm locale="en" />
-            </Modal>
-            <Modal
-              title={SPONSORSHIP.en.title}
-              trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Sponsorship</span></span>}
-            >
-              <SponsorshipContent locale="en" />
-            </Modal>
           </div>
         </div>
       </section>
