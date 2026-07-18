@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="sr" className={`${raleway.variable} ${montserrat.variable} ${openSans.variable}`}>
+    <html lang="sr" className={`${sora.variable} ${inter.variable}`}>
       <head>
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
       </head>
