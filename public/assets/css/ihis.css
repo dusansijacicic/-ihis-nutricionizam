@@ -720,3 +720,97 @@ footer.mastfoot {
 .font1 { font-family: var(--font-open-sans), sans-serif; }
 .font2 { font-family: var(--font-montserrat), sans-serif; }
 .font3 { font-family: var(--font-raleway), sans-serif; }
+
+/* ─── Icon row (Aktuelno / Godišnji event triggers) ────────────────── */
+.icon-row {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 40px; margin-top: 36px;
+}
+.icon-btn {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 10px; cursor: pointer;
+}
+.icon-btn-icon {
+  font-size: 34px; color: var(--accent);
+  width: 68px; height: 68px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(61,122,82,.35);
+  transition: var(--ease);
+}
+.icon-btn:hover .icon-btn-icon { background: var(--accent); color: #fff; }
+.icon-btn-label {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+}
+.icon-row--dark .icon-btn-label { color: #fff; }
+.icon-row--dark .icon-btn-icon { border-color: rgba(255,255,255,.35); color: #fff; }
+.icon-row--dark .icon-btn:hover .icon-btn-icon { background: #fff; color: var(--dark); }
+
+/* ─── Modal ─────────────────────────────────────────────────────── */
+.modal-trigger {
+  background: none; border: none; padding: 0; margin: 0;
+  font: inherit; cursor: pointer; color: inherit;
+}
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 10000;
+  background: rgba(20,20,20,.75);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 60px 20px; overflow-y: auto;
+}
+.modal-panel {
+  position: relative; background: #fff; color: var(--dark);
+  max-width: 720px; width: 100%; border-radius: 4px;
+  padding: 50px 44px; margin: auto;
+}
+.modal-close {
+  position: absolute; top: 14px; right: 18px;
+  background: none; border: none; font-size: 28px; line-height: 1;
+  color: var(--grey); cursor: pointer;
+}
+.modal-close:hover { color: var(--dark); }
+.modal-title {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 22px; margin-bottom: 20px; padding-right: 20px;
+}
+.modal-body { font-size: 14px; line-height: 24px; color: #444; }
+.modal-body h4 {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--accent); margin: 28px 0 12px;
+}
+.modal-body h5 { font-size: 14px; font-weight: 700; margin: 0 0 6px; color: var(--dark); }
+.modal-body ul { margin: 0 0 10px; padding-left: 20px; }
+.modal-body li { margin-bottom: 4px; }
+.modal-body p { margin: 0 0 12px; }
+.modal-lead { font-weight: 600; color: var(--dark); }
+.modal-meta { font-size: 12px; letter-spacing: 1px; color: var(--grey); text-transform: uppercase; }
+.modal-block { margin-bottom: 18px; }
+.modal-price { color: var(--accent); font-weight: 700; }
+.modal-contact { font-weight: 600; margin-top: 20px; }
+
+@media (max-width: 600px) {
+  .modal-panel { padding: 40px 22px; }
+  .icon-row { gap: 24px; }
+}
+
+/* ─── Registration form / Lecture gate ─────────────────────────────── */
+.cf-input--light {
+  color: var(--dark); border-bottom-color: rgba(0,0,0,.15);
+}
+.cf-input--light::placeholder { color: rgba(0,0,0,.35); }
+.cf-input--light:focus { border-bottom-color: var(--accent); }
+.registration-form .btn-ihis,
+.lecture-gate-form .btn-ihis { margin-top: 6px; }
+.reg-msg { margin-top: 14px; font-size: 13px; line-height: 20px; }
+.reg-msg--ok { color: var(--accent); }
+.reg-msg--err { color: #b33; }
+.lecture-gate-form { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.lecture-gate-form .cf-input { margin-bottom: 0; max-width: 220px; }
+.lecture-list { list-style: none; padding: 0; margin: 0; }
+.lecture-list li { margin-bottom: 8px; }
+.lecture-list a {
+  color: var(--accent); font-weight: 600; text-decoration: underline;
+}
+
+/* ─── Edukacija: event blocks (predavanja / galerija po savetovanju) ── */
+.event-block-actions { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }

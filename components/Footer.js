@@ -47,6 +47,7 @@ export default function Footer({ locale }) {
           </p>
           <p className="mt-8">
             <a href="mailto:office@ihis-nutricionizam.rs">office@ihis-nutricionizam.rs</a><br />
+            <a href="mailto:branko.zaric@ihis-nutricionizam.rs">branko.zaric@ihis-nutricionizam.rs</a><br />
             <a href="mailto:danica.zaric@ihis-nutricionizam.rs">danica.zaric@ihis-nutricionizam.rs</a>
           </p>
         </div>

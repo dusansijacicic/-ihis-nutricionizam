@@ -5,6 +5,7 @@ const PAGES = [
   { sr: '/rs/about', en: '/en/about', priority: 0.8 },
   { sr: '/rs/services', en: '/en/services', priority: 0.8 },
   { sr: '/rs/research', en: '/en/research', priority: 0.8 },
+  { sr: '/rs/tech', en: '/en/tech', priority: 0.8 },
   { sr: '/rs/education', en: '/en/education', priority: 0.7 },
   { sr: '/rs/gallery', en: '/en/gallery', priority: 0.6 },
   { sr: '/rs/news', en: '/en/news', priority: 0.7 },

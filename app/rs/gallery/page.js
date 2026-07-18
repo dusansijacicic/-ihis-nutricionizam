@@ -21,6 +21,10 @@ export const metadata = {
 };
 
 const conf2026 = [1, 2, 3, 4, 5, 6, 8, 9, 10];
+// Popunjava se kad stignu fotografije sa 12. Savetovanja HRANA, ISHRANA & ZDRAVLJE
+const conf12 = [];
+// Popunjava se kad stignu fotografije sa 9. Regionalnog savetovanja konditorske industrije
+const conf9 = [];
 const conf8 = [
   '1744841312295', '1744841312341', '1744841312924',
   '1744841313446', '1744841313579', '1744841313693', '1744841313793', '1744841314038',
@@ -52,6 +56,8 @@ export default function Galerija() {
             <div className="gal-filter">
               <button className="gal-btn active" data-filter="all">Sve slike</button>
               <button className="gal-btn" data-filter="2026">Savetovanje 2026</button>
+              <button className="gal-btn" data-filter="12-savetovanje">12. Savetovanje</button>
+              <button className="gal-btn" data-filter="9-savetovanje">9. Regionalno savetovanje</button>
               <button className="gal-btn" data-filter="viii">VIII Savetovanje</button>
               <button className="gal-btn" data-filter="arhiva">Foto arhiva</button>
             </div>
@@ -60,6 +66,20 @@ export default function Galerija() {
               {conf2026.map((n) => (
                 <div className="gal-item" data-group="2026" data-caption="Savetovanje 2026" data-full={`/assets/img/gallery/2026/${n}.JPG`} key={`2026-${n}`}>
                   <Image src={`/assets/img/gallery/2026/${n}.JPG`} alt="Savetovanje 2026" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
+                  <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
+                </div>
+              ))}
+
+              {conf12.map((n) => (
+                <div className="gal-item" data-group="12-savetovanje" data-caption="12. Savetovanje HRANA, ISHRANA & ZDRAVLJE" data-full={`/assets/img/gallery/12-savetovanje/${n}.jpg`} key={`12-${n}`}>
+                  <Image src={`/assets/img/gallery/12-savetovanje/${n}.jpg`} alt="12. Savetovanje" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
+                  <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
+                </div>
+              ))}
+
+              {conf9.map((n) => (
+                <div className="gal-item" data-group="9-savetovanje" data-caption="9. Regionalno savetovanje konditorske industrije" data-full={`/assets/img/gallery/9-savetovanje/${n}.jpg`} key={`9-${n}`}>
+                  <Image src={`/assets/img/gallery/9-savetovanje/${n}.jpg`} alt="9. Regionalno savetovanje" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
                   <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
                 </div>
               ))}

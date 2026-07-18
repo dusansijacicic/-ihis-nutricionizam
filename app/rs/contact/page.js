@@ -80,6 +80,10 @@ export default function Kontakt() {
                   <span className="ion-ios-email contact-icon"></span>
                   <a href="mailto:office@ihis-nutricionizam.rs" className="contact-mail">office@ihis-nutricionizam.rs</a>
                 </div>
+                <div className="contact-info-block">
+                  <span className="ion-ios-email contact-icon"></span>
+                  <a href="mailto:branko.zaric@ihis-nutricionizam.rs" className="contact-mail">branko.zaric@ihis-nutricionizam.rs</a>
+                </div>
                 <div>
                   <span className="ion-ios-email contact-icon"></span>
                   <a href="mailto:danica.zaric@ihis-nutricionizam.rs" className="contact-mail">danica.zaric@ihis-nutricionizam.rs</a>
@@ -124,7 +128,8 @@ export default function Kontakt() {
                   <h4>E-mail</h4>
                   <p>
                     <a href="mailto:office@ihis-nutricionizam.rs">office@ihis-nutricionizam.rs</a><br />
-                    <a href="mailto:danica.zaric@ihis-nutricionizam.rs">danica.zaric@</a>
+                    <a href="mailto:branko.zaric@ihis-nutricionizam.rs">branko.zaric@ihis-nutricionizam.rs</a><br />
+                    <a href="mailto:danica.zaric@ihis-nutricionizam.rs">danica.zaric@ihis-nutricionizam.rs</a>
                   </p>
                 </div>
               </div>

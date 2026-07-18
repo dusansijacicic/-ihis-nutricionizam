@@ -41,32 +41,24 @@ export default function AboutEn() {
                 <h2 className="section-h">IHIS Nutricionizam</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  IHIS-Nutricionizam is a member of the <strong>IHIS Science and Technology Park Zemun a.d.</strong>{' '}
-                  (founded in 1971). IHIS STP Zemun is listed in the Register of Innovation Activity
-                  Entities of the Ministry of Education and Science of the Republic of Serbia.
+                  <strong>IHIS-NUTRICIONIZAM</strong> is a scientific research organization specializing in the
+                  development of food, dietary supplements and functional products. We connect modern
+                  scientific achievements with the needs of the food industry, creating innovative,
+                  technologically feasible and regulatory-compliant solutions.
                 </p>
                 <p className="mb-16">
-                  IHIS-Nutricionizam is a scientific institution oriented toward businesses in the
-                  food technology sector. It provides excellent technical support, working with
-                  numerous relevant partners at home and abroad. Alongside its own experts, it proudly
-                  brings together the highest-quality specialists in technology, biotechnology,
-                  nutrition science, quality and food safety.
-                </p>
-                <p className="mb-16">
-                  IHIS-Nutricionizam conducts research in the field of nutrition, food, and the
-                  nutrients our bodies need to function optimally. Guided by Hippocrates' saying{' '}
-                  <em>„Let food be thy medicine and medicine be thy food"</em>, beyond its core
-                  research mission IHIS-Nutricionizam supports companies in improving product
-                  quality on the market and in educating producers and consumers.
+                  Our mission is to turn scientific knowledge into market-successful products – from the
+                  initial idea, formulation development and selection of functional ingredients, to
+                  industrial production and market launch. We are a partner to companies at every stage
+                  of product development, providing expert support grounded in experience, research and
+                  an understanding of today's market requirements and consumer needs.
                 </p>
                 <p>
-                  We specialize in advising on product development with particular emphasis on
-                  correct product labeling, the use of health and nutrition claims, the proper
-                  selection and labeling of functional ingredients, and clear labeling of functional
-                  products for both producers and consumers. We also provide marketing support to
-                  help differentiate functional products from existing similar products on the
-                  market. Our strategic partner in the confectionery industry is{' '}
-                  <strong>Chocolate Science</strong> from Belgrade.
+                  Beyond product development, we provide complete support in realizing new production
+                  capacities and greenfield investments – from defining the technological concept,
+                  selecting and contracting equipment, designing and organizing production lines,
+                  sourcing raw materials and establishing production processes, to launching and
+                  optimizing production.
                 </p>
               </div>
               <div className="col-img fade-in">

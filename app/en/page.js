@@ -1,6 +1,12 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
+import PozivContent from '../../components/PozivContent';
+import SponsorshipContent from '../../components/SponsorshipContent';
+import RegistrationForm from '../../components/RegistrationForm';
+import { POZIV } from '../../lib/content/poziv';
+import { SPONSORSHIP } from '../../lib/content/sponsorship';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Food, Nutrition and Health',
@@ -56,10 +62,14 @@ export default function HomeEn() {
           <span className="liner"></span>
           <p className="section-lead">„Let food be thy medicine and medicine be thy food." — Hippocrates</p>
           <p className="section-lead grey mt-20">
-            IHIS Nutricionizam is a scientific research company dedicated to improving the
-            quality and correct labeling of food products on the Serbian and European market.
-            Alongside our research mission, we provide expert support to companies in the food
-            industry and educate consumers and producers.
+            IHIS NUTRICIONIZAM connects science, innovation and the food industry through
+            the development of food, dietary supplements and functional products. As a
+            research and development partner, we help companies turn their ideas into
+            safe, regulatory-compliant and market-competitive products.
+          </p>
+          <p className="section-lead grey mt-10">
+            We develop innovative products and provide expert technological and regulatory
+            support to companies that want to stay a step ahead.
           </p>
           <a href="/en/about" className="btn-ihis btn-ihis-color mt-30">Learn more</a>
         </div>
@@ -75,50 +85,50 @@ export default function HomeEn() {
           <div className="grid-3">
             <div className="fade-in">
               <div className="feature-block">
-                <i className="icon ion-document-text"></i>
-                <h3>Product labeling</h3>
+                <i className="icon ion-ios-flask"></i>
+                <h3>Product development</h3>
                 <div className="liner-small color"></div>
-                <p>Review and creation of correct labels in line with Serbian and EU food labeling regulations.</p>
+                <p>From idea to finished product – formulation development, ingredient selection and technological support.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
-                <i className="icon ion-ribbon-a"></i>
-                <h3>Nutrition claims</h3>
+                <i className="icon ion-gear-b"></i>
+                <h3>Technology consulting &amp; investments</h3>
                 <div className="liner-small color"></div>
-                <p>Advice on the use of permitted nutrition and health claims on food packaging.</p>
+                <p>Support in technology and equipment selection, production line organization and capacity realization.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-leaf"></i>
-                <h3>Functional ingredients</h3>
+                <h3>Functional ingredients &amp; functional food</h3>
                 <div className="liner-small color"></div>
-                <p>Selection and labeling of functional ingredients; development of functional food products.</p>
+                <p>Expert selection, application and labeling of functional ingredients for innovative product development.</p>
+              </div>
+            </div>
+            <div className="fade-in">
+              <div className="feature-block">
+                <i className="icon ion-document-text"></i>
+                <h3>Labeling &amp; regulatory compliance</h3>
+                <div className="liner-small color"></div>
+                <p>Preparation and review of labels in line with the regulations of Serbia and the European Union.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-ios-search"></i>
-                <h3>Scientific research</h3>
+                <h3>Scientific research &amp; expertise</h3>
                 <div className="liner-small color"></div>
-                <p>Research into label accuracy across samples of thousands of food products on the market.</p>
+                <p>Research, expert analysis and support grounded in current scientific knowledge.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-university"></i>
-                <h3>Education</h3>
+                <h3>Education &amp; expert support</h3>
                 <div className="liner-small color"></div>
-                <p>Organizing conferences and lectures for food producers, distributors and consumers.</p>
-              </div>
-            </div>
-            <div className="fade-in">
-              <div className="feature-block">
-                <i className="icon ion-star"></i>
-                <h3>Marketing support</h3>
-                <div className="liner-small color"></div>
-                <p>Positioning functional and healthy products on the market; communication with consumers.</p>
+                <p>Workshops and advisory services for producers, distributors and expert teams.</p>
               </div>
             </div>
           </div>
@@ -128,32 +138,36 @@ export default function HomeEn() {
         </div>
       </section>
 
-      <section className="section-white">
+      <section className="section-white text-center">
         <div className="container-40">
           <div className="section-head">
             <span className="section-tag">Latest</span>
-            <h2 className="section-h">News and conferences</h2>
+            <h2 className="section-h">Join the 13th Conference &quot;FOOD, NUTRITION &amp; HEALTH&quot;</h2>
             <span className="liner"></span>
+            <p className="section-lead grey mt-10">
+              The conference will take place on {POZIV.en.when} in Belgrade, at Hotel Crowne
+              Plaza, Vladimira Popovića 10, Novi Beograd, Serbia.
+            </p>
           </div>
-          <div className="home-news-grid">
-            <div className="fade-in">
-              <div className="news-block" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
-                <div className="news-block-inner">
-                  <h3>6th Regional<br />Confectionery Conference</h3>
-                  <h1>May 2022 &bull; Belgrade</h1>
-                  <a href="/en/education" className="btn-ihis btn-ihis-outline">More information</a>
-                </div>
-              </div>
-            </div>
-            <div className="fade-in">
-              <div className="news-block" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
-                <div className="news-block-inner">
-                  <h3>5th Regional<br />Confectionery Conference</h3>
-                  <h1>April 2019 &bull; Belgrade</h1>
-                  <a href="/en/news" className="btn-ihis btn-ihis-outline">Read more</a>
-                </div>
-              </div>
-            </div>
+          <div className="icon-row">
+            <Modal
+              title={POZIV.en.title}
+              trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Invitation</span></span>}
+            >
+              <PozivContent locale="en" />
+            </Modal>
+            <Modal
+              title="Conference registration"
+              trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Registration</span></span>}
+            >
+              <RegistrationForm locale="en" />
+            </Modal>
+            <Modal
+              title={SPONSORSHIP.en.title}
+              trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Sponsorship</span></span>}
+            >
+              <SponsorshipContent locale="en" />
+            </Modal>
           </div>
         </div>
       </section>
@@ -164,8 +178,10 @@ export default function HomeEn() {
           <h2 className="section-h mt-8">Let's work together</h2>
           <span className="liner"></span>
           <p className="mt-10" style={{ lineHeight: '28px' }}>
-            Have a question about product labeling, nutrition claims, or developing functional
-            food products? Our expert team is here to help.
+            Have an idea for a new food product, or need support in formulation
+            development, choosing functional ingredients, aligning your product with food
+            legislation, or improving your production process? Our expert team is here to
+            help with reliable, science-based solutions tailored to your needs.
           </p>
           <a href="/en/contact" className="btn-ihis btn-ihis-white mt-30">Send an inquiry</a>
         </div>

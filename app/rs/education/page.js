@@ -1,6 +1,11 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
+import Modal from '../../../components/Modal';
+import PozivContent from '../../../components/PozivContent';
+import RegistrationForm from '../../../components/RegistrationForm';
+import LectureGate from '../../../components/LectureGate';
+import { POZIV } from '../../../lib/content/poziv';
 
 export const metadata = {
   title: 'Edukacija — IHIS Nutricionizam',
@@ -39,9 +44,9 @@ export default function Edukacija() {
             <h2 className="section-h">Deljenje znanja je naša misija</h2>
             <span className="liner"></span>
             <p className="section-lead">
-              IHIS Nutricionizam organizuje godišnja savetovanja, radionice i predavanja
-              namijenjena proizvođačima hrane, distributerima, maloprodajnim lancima i
-              svima koji žele da unaprede znanje iz oblasti prehrambene regulative i nutricionizma.
+              IHIS-Nutricionizam organizuje različite oblike stručne edukacije namenjene
+              proizvođačima hrane i dodataka ishrani, stručnim timovima i svima koji žele da
+              unaprede znanje iz oblasti hrane, dodataka ishrani, regulative i inovacija.
             </p>
           </div>
         </div>
@@ -54,22 +59,29 @@ export default function Edukacija() {
               </div>
               <div className="col-text fade-in">
                 <span className="section-tag">Godišnji event</span>
-                <h2 className="section-h">Hrana, ishrana i zdravlje</h2>
+                <h2 className="section-h">13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h2>
                 <span className="liner mb-20"></span>
-                <p className="mb-16">
-                  Međunarodno savetovanje „Hrana, ishrana i zdravlje" je vodeće regionalno
-                  stručno okupljanje posvećeno aktuelnim temama u oblasti prehrambene
-                  industrije, nauke o ishrani i regulative.
-                </p>
-                <p className="mb-16">
-                  Učesnici su stručnjaci iz prehrambeih kompanija, akademske zajednice,
-                  regulatornih tela i medija iz Srbije i regiona.
-                </p>
+                <p className="mb-16">{POZIV.sr.subtitle}</p>
+                <p className="mb-16">{POZIV.sr.when} &middot; {POZIV.sr.where}</p>
                 <p>
-                  Teme: ispravno deklarisanje, EU usklađivanje, funkcionalna hrana,
-                  nutritivne i zdravstvene tvrdnje, bezbednost hrane.
+                  Na jednom mestu saznajte sve najvažnije izmene propisa Republike Srbije i
+                  Evropske unije, direktno od njihovih kreatora, predstavnika nadležnih
+                  ministarstava i vodećih stručnjaka iz oblasti bezbednosti hrane.
                 </p>
-                <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Prijavite se</a>
+                <div className="icon-row icon-row--dark" style={{ justifyContent: 'flex-start', marginTop: 24 }}>
+                  <Modal
+                    title={POZIV.sr.title}
+                    trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Poziv</span></span>}
+                  >
+                    <PozivContent locale="sr" />
+                  </Modal>
+                  <Modal
+                    title="Prijava za savetovanje"
+                    trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Prijava</span></span>}
+                  >
+                    <RegistrationForm locale="sr" />
+                  </Modal>
+                </div>
               </div>
             </div>
           </div>
@@ -79,33 +91,81 @@ export default function Edukacija() {
           <div className="container">
             <div className="section-head">
               <span className="section-tag">Programi</span>
-              <h2 className="section-h">Oblici edukacije</h2>
+              <h2 className="section-h">Prenos znanja za razvoj savremene prehrambene industrije</h2>
               <span className="liner"></span>
             </div>
             <div className="grid-3">
               <div className="fade-in">
                 <div className="feature-block">
                   <i className="icon ion-ios-people"></i>
-                  <h3>Javna savetovanja</h3>
+                  <h3>Javna stručna savetovanja</h3>
                   <div className="liner-small color" style={{ display: 'block', margin: '10px auto 12px' }}></div>
-                  <p>Godišnja i tematska savetovanja otvorena za sve zainteresovane iz prehrambene industrije.</p>
+                  <p>Organizujemo godišnja i tematska savetovanja koja okupljaju stručnjake iz prehrambene industrije, nauke i regulatornih oblasti, omogućavajući razmenu znanja, iskustava i aktuelnih informacija.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="feature-block">
                   <i className="icon ion-ios-home"></i>
-                  <h3>Interne obuke</h3>
+                  <h3>Interne edukacije i radionice</h3>
                   <div className="liner-small color" style={{ display: 'block', margin: '10px auto 12px' }}></div>
-                  <p>Prilagođene radionice za timove unutar kompanije — razvoj, marketing, QA, regulativa.</p>
+                  <p>Kreiramo prilagođene programe za kompanije i njihove timove iz oblasti razvoja proizvoda, proizvodnje, kvaliteta i regulatornih poslova, u skladu sa specifičnim potrebama organizacije.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="feature-block">
                   <i className="icon ion-ios-book"></i>
-                  <h3>Stručna predavanja</h3>
+                  <h3>Stručna predavanja i partnerske aktivnosti</h3>
                   <div className="liner-small color" style={{ display: 'block', margin: '10px auto 12px' }}></div>
-                  <p>Predavanja na konferencijama, sajmovima i u saradnji sa visokoškolskim institucijama.</p>
+                  <p>Naši stručnjaci učestvuju na konferencijama, stručnim skupovima, sajmovima i edukativnim programima u saradnji sa akademskim i industrijskim partnerima.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-light">
+          <div className="container-sm">
+            <div className="section-head">
+              <span className="section-tag">Materijali</span>
+              <h2 className="section-h">Predavanja i galerija sa prethodnih savetovanja</h2>
+              <span className="liner"></span>
+            </div>
+
+            <div className="archive-entry fade-in">
+              <div className="archive-head">
+                <h3>12. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h3>
+              </div>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje uz šifru, a fotografije u galeriji.</p>
+              <div className="event-block-actions">
+                <Modal
+                  title="12. Savetovanje HRANA, ISHRANA & ZDRAVLJE — predavanja"
+                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Predavanja</span></span>}
+                >
+                  <LectureGate locale="sr" event="12-savetovanje" />
+                </Modal>
+                <a href="/rs/gallery#12-savetovanje" className="icon-btn">
+                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-label">Galerija</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="archive-entry fade-in">
+              <div className="archive-head">
+                <h3>9. Regionalno savetovanje konditorske industrije</h3>
+              </div>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje uz šifru, a fotografije u galeriji.</p>
+              <div className="event-block-actions">
+                <Modal
+                  title="9. Regionalno savetovanje konditorske industrije — predavanja"
+                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Predavanja</span></span>}
+                >
+                  <LectureGate locale="sr" event="9-savetovanje" />
+                </Modal>
+                <a href="/rs/gallery#9-savetovanje" className="icon-btn">
+                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-label">Galerija</span>
+                </a>
               </div>
             </div>
           </div>

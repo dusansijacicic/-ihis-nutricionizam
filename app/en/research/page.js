@@ -3,8 +3,8 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Research — IHIS Nutricionizam',
-  description: 'IHIS Nutricionizam research — nutritional and energy value of food, functional ingredients, effects on metabolism, and food contaminants.',
+  title: 'Research & Development (R&D) — IHIS Nutricionizam',
+  description: 'IHIS Nutricionizam research and development — nutritional and energy value of food, functional ingredients, effects on metabolism, and food contaminants.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/research',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
@@ -28,8 +28,8 @@ export default function ResearchEn() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Research</h1>
-            <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Research</p>
+            <h1 className="page-title">Research &amp; Development (R&amp;D)</h1>
+            <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Research &amp; Development</p>
           </div>
         </div>
 
@@ -97,35 +97,6 @@ export default function ResearchEn() {
           </div>
         </div>
 
-        <div className="section-white">
-          <div className="container">
-            <div className="section-head">
-              <span className="section-tag">Media</span>
-              <h2 className="section-h">Our experts in the public eye</h2>
-              <span className="liner"></span>
-            </div>
-            <div className="grid-3">
-              <div className="fade-in">
-                <a href="https://www.rts.rs/page/stories/sr/story/125/drustvo/2301133/koliko-je-zdrava-hrana-zaista-zdrava.html" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">RTS — How healthy is „healthy food" really?</h4>
-                  <p>Dr Danica Zarić discusses how reliable „healthy food" claims really are for consumers. (2016)</p>
-                </a>
-              </div>
-              <div className="fade-in">
-                <a href="https://www.ekapija.com/people/697465/danica-zaric-direktorka-ihis-nutricionizma-doktorka-za-cokoladu" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">eKapija — The Chocolate Doctor</h4>
-                  <p>A profile of Dr Danica Zarić, director of IHIS Nutricionizam — the path from researcher to founder of her own scientific company. (2013)</p>
-                </a>
-              </div>
-              <div className="fade-in">
-                <a href="https://www.intermagazin.rs/zdravo-organik-u-soku-od-100-sargarepe-ima-60-jabuke/" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">Intermagazin — Healthy organic?</h4>
-                  <p>An analysis of misleading juice labels — Dr Danica Zarić explains what consumers should pay attention to. (2018)</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <Footer locale="en" />

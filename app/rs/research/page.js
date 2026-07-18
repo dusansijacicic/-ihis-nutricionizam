@@ -3,7 +3,7 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Istraživanje — IHIS Nutricionizam',
+  title: 'Istraživanje i razvoj (R&D) — IHIS Nutricionizam',
   description: 'Istraživanje IHIS Nutricionizma — nutritivna i energetska vrednost hrane, funkcionalne sirovine, uticaj na metabolizam i zagađivači hrane.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs/research',
@@ -28,8 +28,8 @@ export default function Istrazivanje() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Istraživanje</h1>
-            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Istraživanje</p>
+            <h1 className="page-title">Istraživanje i razvoj (R&amp;D)</h1>
+            <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Istraživanje i razvoj</p>
           </div>
         </div>
 
@@ -97,35 +97,6 @@ export default function Istrazivanje() {
           </div>
         </div>
 
-        <div className="section-white">
-          <div className="container">
-            <div className="section-head">
-              <span className="section-tag">Mediji</span>
-              <h2 className="section-h">Naši stručnjaci u javnosti</h2>
-              <span className="liner"></span>
-            </div>
-            <div className="grid-3">
-              <div className="fade-in">
-                <a href="https://www.rts.rs/page/stories/sr/story/125/drustvo/2301133/koliko-je-zdrava-hrana-zaista-zdrava.html" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">RTS — Koliko je zdrava hrana zaista zdrava?</h4>
-                  <p>Dr Danica Zarić komentariše koliko su deklaracije „zdrave hrane" zaista pouzdane potrošačima. (2016)</p>
-                </a>
-              </div>
-              <div className="fade-in">
-                <a href="https://www.ekapija.com/people/697465/danica-zaric-direktorka-ihis-nutricionizma-doktorka-za-cokoladu" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">eKapija — Doktorka za čokoladu</h4>
-                  <p>Profil dr Danice Zarić, direktorke IHIS Nutricionizma — put od istraživača do sopstvene naučne kompanije. (2013)</p>
-                </a>
-              </div>
-              <div className="fade-in">
-                <a href="https://www.intermagazin.rs/zdravo-organik-u-soku-od-100-sargarepe-ima-60-jabuke/" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
-                  <h4 className="card-title">Intermagazin — Zdravo organik?</h4>
-                  <p>Analiza obmanjujućih deklaracija na sokovima — dr Danica Zarić objašnjava na šta potrošači treba da obrate pažnju. (2018)</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <Footer locale="sr" />

@@ -89,6 +89,36 @@ export default function BlogEn() {
             </div>
           </div>
         </div>
+
+        <div className="section-white">
+          <div className="container">
+            <div className="section-head">
+              <span className="section-tag">Media</span>
+              <h2 className="section-h">Our experts in the public eye</h2>
+              <span className="liner"></span>
+            </div>
+            <div className="grid-3">
+              <div className="fade-in">
+                <a href="https://www.rts.rs/page/stories/sr/story/125/drustvo/2301133/koliko-je-zdrava-hrana-zaista-zdrava.html" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
+                  <h4 className="card-title">RTS — How healthy is „healthy food" really?</h4>
+                  <p>Dr Danica Zarić discusses how reliable „healthy food" claims really are for consumers. (2016)</p>
+                </a>
+              </div>
+              <div className="fade-in">
+                <a href="https://www.ekapija.com/people/697465/danica-zaric-direktorka-ihis-nutricionizma-doktorka-za-cokoladu" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
+                  <h4 className="card-title">eKapija — The Chocolate Doctor</h4>
+                  <p>A profile of Dr Danica Zarić, director of IHIS Nutricionizam — the path from researcher to founder of her own scientific company. (2013)</p>
+                </a>
+              </div>
+              <div className="fade-in">
+                <a href="https://www.intermagazin.rs/zdravo-organik-u-soku-od-100-sargarepe-ima-60-jabuke/" target="_blank" rel="noopener" className="card-accent" style={{ display: 'block' }}>
+                  <h4 className="card-title">Intermagazin — Healthy organic?</h4>
+                  <p>An analysis of misleading juice labels — Dr Danica Zarić explains what consumers should pay attention to. (2018)</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Footer locale="en" />

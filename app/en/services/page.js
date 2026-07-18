@@ -41,17 +41,16 @@ export default function ServicesEn() {
                 <h2 className="section-h">Expert support for the food industry</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  Efficiently managing your investment in technology and new product development
-                  is a core component of your profitable growth. In today's era of intensive
-                  technological development, it is essential to have a reliable advisor who ensures
-                  you always have the best solutions and answers to every challenge that comes with
-                  managing new technologies.
+                  A successful food product requires a combination of science, technology,
+                  regulatory compliance and market understanding. IHIS-Nutricionizam provides
+                  complete support to companies – from concept and product formulation
+                  development, through technology selection and production process setup, to
+                  bringing the product to market.
                 </p>
                 <p>
-                  Your top-quality product must be backed by a flawless label that highlights all
-                  of its benefits while respecting legal regulations. Consumers must be offered a
-                  friendly, appropriate claim — but one that also complies with both national and
-                  EU legislation.
+                  Our goal is to enable companies to develop more efficiently, reduce risk, and
+                  create products that meet the demands of today's consumers and current
+                  regulatory standards.
                 </p>
               </div>
               <div className="col-img fade-in">
@@ -71,44 +70,58 @@ export default function ServicesEn() {
             <div className="grid-2">
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-ios-flask card-icon"></i>
-                  <h4 className="card-title">Technology consulting</h4>
-                  <p>Improving the quality of existing products and introducing innovations; expert assistance in launching new functional products.</p>
+                  <i className="ion-leaf card-icon"></i>
+                  <h4 className="card-title">New product development</h4>
+                  <p>We develop innovative food products, dietary supplements and functional food – from the initial idea and ingredient selection to formulation and industrial realization.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-gear-b card-icon"></i>
+                  <h4 className="card-title">Technology consulting &amp; greenfield investments</h4>
+                  <p>We provide complete support in establishing new production capacities – from defining the technological concept, equipment selection and contracting, production line organization, raw material selection and process design, to launching and optimizing operations.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
                   <i className="ion-document-text card-icon"></i>
-                  <h4 className="card-title">Labeling and health claims</h4>
-                  <p>We propose health and nutrition claims for food products; we align your labeling requirements with Serbian and EU legislation.</p>
+                  <h4 className="card-title">Labeling &amp; regulatory support</h4>
+                  <p>We prepare and review food product labels, align them with the requirements of Serbian and EU legislation, and advise on the use of nutrition and health claims.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-ios-world card-icon"></i>
-                  <h4 className="card-title">Implementation of legal norms</h4>
-                  <p>We implement legal norms (Serbian and EU) relating to product quality and accompanying documentation; we provide expert opinions on products with a specific health claim.</p>
+                  <i className="ion-ios-flask card-icon"></i>
+                  <h4 className="card-title">Functional ingredients &amp; functional products</h4>
+                  <p>We help select, apply and correctly label functional ingredients, and support the development of products with added nutritional value.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-leaf card-icon"></i>
-                  <h4 className="card-title">New product development</h4>
-                  <p>We develop new food products — from concept to final labeling. Special expertise: functional foods, confectionery products, food supplements.</p>
-                </div>
-              </div>
-              <div className="fade-in">
-                <div className="card-accent">
-                  <i className="ion-star card-icon"></i>
-                  <h4 className="card-title">Marketing support</h4>
-                  <p>We provide marketing support to help differentiate your functional products from existing similar products on the market.</p>
+                  <i className="ion-ios-search card-icon"></i>
+                  <h4 className="card-title">Scientific research support</h4>
+                  <p>We carry out research and expert analysis that enable science-based product development and sound business decisions.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
                   <i className="ion-university card-icon"></i>
-                  <h4 className="card-title">Workshops and education</h4>
-                  <p>We organize sensory analysis workshops and labeling workshops for producer and distributor teams.</p>
+                  <h4 className="card-title">Education &amp; knowledge transfer</h4>
+                  <p>We organize expert workshops, conferences and educational programs for food producers, distributors and expert teams, aimed at advancing knowledge, quality and the application of modern technologies and regulations in the food industry.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-ios-people card-icon"></i>
+                  <h4 className="card-title">Industry conferences &amp; networking</h4>
+                  <p>We organize expert gatherings that connect science, industry and regulation, including our traditional annual conferences: the Regional Confectionery Conference in April and the "Food, Nutrition & Health" Conference in October.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-star card-icon"></i>
+                  <h4 className="card-title">Marketing support &amp; product positioning</h4>
+                  <p>We help companies clearly define product value, communicate its benefits, and position innovative and functional products on the market.</p>
                 </div>
               </div>
             </div>

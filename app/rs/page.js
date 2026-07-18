@@ -1,6 +1,12 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
+import PozivContent from '../../components/PozivContent';
+import SponsorshipContent from '../../components/SponsorshipContent';
+import RegistrationForm from '../../components/RegistrationForm';
+import { POZIV } from '../../lib/content/poziv';
+import { SPONSORSHIP } from '../../lib/content/sponsorship';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
@@ -56,10 +62,14 @@ export default function Home() {
           <span className="liner"></span>
           <p className="section-lead">„Neka hrana bude tvoj lek, a lek tvoja hrana." — Hipokrat</p>
           <p className="section-lead grey mt-20">
-            IHIS Nutricionizam je naučno-istraživačka kompanija posvećena unapređenju
-            kvaliteta i ispravnog deklarisanja prehrambenih proizvoda na srpskom i
-            evropskom tržištu. Pored istraživačke misije, pružamo stručnu podršku
-            kompanijama u prehrambenoj industriji i edukujemo potrošače i proizvođače.
+            IHIS NUTRICIONIZAM povezuje nauku, inovacije i prehrambenu industriju kroz
+            razvoj hrane, dodataka ishrani i funkcionalnih proizvoda. Kao istraživačko-razvojni
+            partner, pomažemo kompanijama da svoje ideje pretvore u bezbedne, regulatorno
+            usklađene i tržišno konkurentne proizvode.
+          </p>
+          <p className="section-lead grey mt-10">
+            Razvijamo inovativne proizvode i pružamo stručnu tehnološku i regulatornu
+            podršku kompanijama koje žele da budu korak ispred.
           </p>
           <a href="/rs/about" className="btn-ihis btn-ihis-color mt-30">Saznajte više</a>
         </div>
@@ -75,50 +85,50 @@ export default function Home() {
           <div className="grid-3">
             <div className="fade-in">
               <div className="feature-block">
-                <i className="icon ion-document-text"></i>
-                <h3>Deklarisanje proizvoda</h3>
+                <i className="icon ion-ios-flask"></i>
+                <h3>Razvoj proizvoda</h3>
                 <div className="liner-small color"></div>
-                <p>Provera i izrada ispravnih deklaracija u skladu sa srpskim i EU propisima o označavanju hrane.</p>
+                <p>Od ideje do finalnog proizvoda – razvoj formulacija, izbor sastojaka i tehnološka podrška.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
-                <i className="icon ion-ribbon-a"></i>
-                <h3>Nutritivne tvrdnje</h3>
+                <i className="icon ion-gear-b"></i>
+                <h3>Tehnološki konsalting i investicije</h3>
                 <div className="liner-small color"></div>
-                <p>Savetovanje o primeni dozvoljenih nutritivnih i zdravstvenih tvrdnji na ambalaži prehrambenih proizvoda.</p>
+                <p>Podrška u izboru tehnologije, opreme, organizaciji proizvodnih linija i realizaciji proizvodnih kapaciteta.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-leaf"></i>
-                <h3>Funkcionalni sastojci</h3>
+                <h3>Funkcionalni sastojci i funkcionalna hrana</h3>
                 <div className="liner-small color"></div>
-                <p>Odabir i deklarisanje funkcionalnih sastojaka; razvoj funkcionalnih prehrambenih proizvoda.</p>
+                <p>Stručni izbor, primena i deklarisanje funkcionalnih sastojaka za razvoj inovativnih proizvoda.</p>
+              </div>
+            </div>
+            <div className="fade-in">
+              <div className="feature-block">
+                <i className="icon ion-document-text"></i>
+                <h3>Deklarisanje i regulatorna usklađenost</h3>
+                <div className="liner-small color"></div>
+                <p>Izrada i provera deklaracija u skladu sa propisima Republike Srbije i Evropske unije.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-ios-search"></i>
-                <h3>Naučno istraživanje</h3>
+                <h3>Naučna istraživanja i ekspertiza</h3>
                 <div className="liner-small color"></div>
-                <p>Istraživanja ispravnosti deklaracija na uzorcima od više hiljada prehrambenih proizvoda na tržištu.</p>
+                <p>Istraživanja, stručne analize i podrška zasnovana na savremenim naučnim saznanjima.</p>
               </div>
             </div>
             <div className="fade-in">
               <div className="feature-block">
                 <i className="icon ion-university"></i>
-                <h3>Edukacija</h3>
+                <h3>Edukacija i stručna podrška</h3>
                 <div className="liner-small color"></div>
-                <p>Organizacija savetovanja i predavanja za proizvođače hrane, distributere i potrošače.</p>
-              </div>
-            </div>
-            <div className="fade-in">
-              <div className="feature-block">
-                <i className="icon ion-star"></i>
-                <h3>Marketinška podrška</h3>
-                <div className="liner-small color"></div>
-                <p>Pozicioniranje funkcionalnih i zdravih proizvoda na tržištu; komunikacija prema potrošačima.</p>
+                <p>Radionice i savetovanje za proizvođače, distributere i stručne timove.</p>
               </div>
             </div>
           </div>
@@ -128,32 +138,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-white">
+      <section className="section-white text-center">
         <div className="container-40">
           <div className="section-head">
             <span className="section-tag">Aktuelno</span>
-            <h2 className="section-h">Vesti i savetovanja</h2>
+            <h2 className="section-h">Pozivamo vas na 13. SAVETOVANJE HRANA, ISHRANA &amp; ZDRAVLJE</h2>
             <span className="liner"></span>
+            <p className="section-lead grey mt-10">
+              Savetovanje će se održati {POZIV.sr.when} u Beogradu, u hotelu Crowne Plaza,
+              Vladimira Popovića 10, Novi Beograd, Srbija.
+            </p>
           </div>
-          <div className="home-news-grid">
-            <div className="fade-in">
-              <div className="news-block" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
-                <div className="news-block-inner">
-                  <h3>6. Regionalno<br />konditorsko savetovanje</h3>
-                  <h1>Maj 2022 &bull; Beograd</h1>
-                  <a href="/rs/education" className="btn-ihis btn-ihis-outline">Više informacija</a>
-                </div>
-              </div>
-            </div>
-            <div className="fade-in">
-              <div className="news-block" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
-                <div className="news-block-inner">
-                  <h3>V savetovanje<br />konditorske industrije regiona</h3>
-                  <h1>April 2019 &bull; Beograd</h1>
-                  <a href="/rs/news" className="btn-ihis btn-ihis-outline">Pročitajte više</a>
-                </div>
-              </div>
-            </div>
+          <div className="icon-row">
+            <Modal
+              title={POZIV.sr.title}
+              trigger={<span className="icon-btn"><i className="ion-ios-email-outline icon-btn-icon"></i><span className="icon-btn-label">Poziv</span></span>}
+            >
+              <PozivContent locale="sr" />
+            </Modal>
+            <Modal
+              title="Prijava za savetovanje"
+              trigger={<span className="icon-btn"><i className="ion-edit icon-btn-icon"></i><span className="icon-btn-label">Prijava</span></span>}
+            >
+              <RegistrationForm locale="sr" />
+            </Modal>
+            <Modal
+              title={SPONSORSHIP.sr.title}
+              trigger={<span className="icon-btn"><i className="ion-star icon-btn-icon"></i><span className="icon-btn-label">Poziv za sponzorstvo</span></span>}
+            >
+              <SponsorshipContent locale="sr" />
+            </Modal>
           </div>
         </div>
       </section>
@@ -164,8 +178,11 @@ export default function Home() {
           <h2 className="section-h mt-8">Radimo zajedno</h2>
           <span className="liner"></span>
           <p className="mt-10" style={{ lineHeight: '28px' }}>
-            Imate pitanje o deklarisanju proizvoda, nutritivnim tvrdnjama ili razvoju
-            funkcionalnih namirnica? Naš stručni tim je na raspolaganju.
+            Imate ideju za novi prehrambeni proizvod, potrebnu podršku u razvoju
+            formulacije, izboru funkcionalnih sastojaka, usklađenosti vašeg proizvoda sa
+            zakonodavstvom hrane ili unapređenju proizvodnog procesa? Naš stručni tim
+            stoji vam na raspolaganju za pouzdana naučno zasnovana rešenja prilagođena
+            vašim potrebama.
           </p>
           <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-30">Pošaljite upit</a>
         </div>

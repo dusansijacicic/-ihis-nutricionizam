@@ -41,30 +41,22 @@ export default function ONama() {
                 <h2 className="section-h">IHIS Nutricionizam</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  IHIS-Nutricionizam je članica <strong>IHIS Naučno Tehnološkog Parka Zemun a.d.</strong>{' '}
-                  (osnovan 1971.g.). IHIS NTP Zemun se nalazi u Registru subjekata inovacione delatnosti
-                  Ministarstva prosvete i nauke Republike Srbije.
+                  <strong>IHIS-NUTRICIONIZAM</strong> je naučno-istraživačka organizacija specijalizovana za razvoj
+                  hrane, dodataka ishrani i funkcionalnih proizvoda. Povezujemo savremena naučna dostignuća sa
+                  potrebama prehrambene industrije, stvarajući inovativna, tehnološki izvodljiva i regulatorno
+                  usklađena rešenja.
                 </p>
                 <p className="mb-16">
-                  Ihis-Nutricionizam je naučna institucija orijentisana na privredne subjekte prehrambene
-                  tehnologije. Pruža izvanrednu tehničku podršku poslujući sa brojnim relevantnim partnerima
-                  u zemlji i inostranstvu. Sa ponosom, pored sopstvenih stručnjaka, okuplja najkvalitetnije
-                  stručnjake iz oblasti tehnologije, biotehnologije, nutricionizma, kvaliteta i bezbednosti hrane.
-                </p>
-                <p className="mb-16">
-                  IHIS-Nutricionizam se bavi istraživanjem u oblasti ishrane, hrane i hranljivih materija koje su
-                  potrebne našem telu za optimalan rad. Vodeći se Hipokratovom izrekom{' '}
-                  <em>„Neka hrana bude vaš lek, a vaš lek hrana"</em>, pored osnovne istraživačke misije
-                  IHIS-Nutricionizam pruža podršku preduzećima za poboljšanje kvaliteta proizvoda na tržištu
-                  i edukaciji proizvođača i potrošača hrane.
+                  Naša misija je da naučna znanja pretvorimo u tržišno uspešne proizvode – od početne ideje,
+                  razvoja formulacije i izbora funkcionalnih sastojaka, do industrijske proizvodnje i plasmana na
+                  tržište. Partner smo kompanijama u svim fazama razvoja proizvoda, pružajući stručnu podršku
+                  zasnovanu na iskustvu, istraživanju i razumevanju savremenih tržišnih zahteva i potreba potrošača.
                 </p>
                 <p>
-                  Specijalizovani smo za savetovanje o razvoju proizvoda sa naročitim akcentom na pravilno
-                  označavanje proizvoda, primenu zdravstvenih i nutritivnih izjava, pravilan izbor i deklarisanje
-                  funkcionalnih sastojaka, jasno označavanje funkcionalnih proizvoda za proizvođača i potrošača.
-                  Pružamo i marketinšku podršku za razdvajanje dobijenih funkcionalnih proizvoda od postojećih
-                  sličnih proizvoda na tržištu. Naš strateški partner u oblasti konditorske industrije je firma{' '}
-                  <strong>Chocolate Science</strong> iz Beograda.
+                  Pored razvoja proizvoda, pružamo kompletnu podršku u realizaciji novih proizvodnih kapaciteta i
+                  greenfield investicija – od definisanja tehnološkog koncepta, izbora i ugovaranja opreme,
+                  projektovanja i organizacije proizvodnih linija, izbora sirovina i uspostavljanja proizvodnih
+                  procesa, do pokretanja i optimizacije proizvodnje.
                 </p>
               </div>
               <div className="col-img fade-in">

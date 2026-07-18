@@ -41,17 +41,16 @@ export default function Usluge() {
                 <h2 className="section-h">Stručna podrška prehrambenoj industriji</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  Efikasno upravljanje vaše investicije u tehnologiju i razvoj novih proizvoda
-                  predstavlja osnovnu komponentu vašeg profitabilnog rasta. U današnje vreme
-                  intenzivnog razvoja tehnologija, veoma je važno imati pouzdanog savetnika koji
-                  će vam omogućiti da uvek imate najbolja rešenja i odgovore za sve izazove koje
-                  donosi upravljanje novim tehnologijama.
+                  Uspešan prehrambeni proizvod zahteva spoj nauke, tehnologije, regulatorne
+                  usklađenosti i razumevanja tržišta. IHIS-Nutricionizam pruža kompletnu podršku
+                  kompanijama – od razvoja koncepta i formulacije proizvoda, preko izbora
+                  tehnologije i uspostavljanja proizvodnih procesa, do plasmana proizvoda na
+                  tržište.
                 </p>
                 <p>
-                  Vaš proizvod vrhunskog kvaliteta mora biti pokriven besprekornom deklaracijom,
-                  koja će istaći sve koristi proizvoda uz istovremeno poštovanje zakonske regulative.
-                  Potrošaču se mora ponuditi prijateljska, prikladna izjava — ali takođe ona mora biti
-                  u skladu sa nacionalnim zakonodavstvom kao i sa zakonodavstvom EU.
+                  Naš cilj je da kompanijama omogućimo efikasniji razvoj, smanjenje rizika i
+                  stvaranje proizvoda koji odgovaraju zahtevima savremenog potrošača i važećim
+                  regulatornim standardima.
                 </p>
               </div>
               <div className="col-img fade-in">
@@ -71,44 +70,58 @@ export default function Usluge() {
             <div className="grid-2">
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-ios-flask card-icon"></i>
-                  <h4 className="card-title">Tehnološki konsalting</h4>
-                  <p>Poboljšanje kvaliteta postojećih proizvoda i uvođenje inovacija; ekspertska pomoć pri puštanju novih funkcionalnih proizvoda na tržište.</p>
+                  <i className="ion-leaf card-icon"></i>
+                  <h4 className="card-title">Razvoj novih proizvoda</h4>
+                  <p>Razvijamo inovativne prehrambene proizvode, dodatke ishrani i funkcionalnu hranu – od početne ideje, izbora sastojaka i formulacije, do industrijske realizacije.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-gear-b card-icon"></i>
+                  <h4 className="card-title">Tehnološki konsalting i greenfield investicije</h4>
+                  <p>Pružamo kompletnu podršku pri uspostavljanju novih proizvodnih kapaciteta – od definisanja tehnološkog koncepta, izbora i ugovaranja opreme, organizacije proizvodnih linija, izbora sirovina i procesa proizvodnje, do pokretanja i optimizacije rada.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
                   <i className="ion-document-text card-icon"></i>
-                  <h4 className="card-title">Deklarisanje i zdravstvene izjave</h4>
-                  <p>Predlažemo zdravstvene i nutritivne izjave za prehrambene proizvode; usklađujemo vaše želje za deklarisanje sa zakonodavstvom Srbije i EU.</p>
+                  <h4 className="card-title">Deklarisanje i regulatorna podrška</h4>
+                  <p>Izrađujemo i proveravamo deklaracije prehrambenih proizvoda, usklađujemo ih sa zahtevima zakonodavstva Srbije i EU i savetujemo u primeni nutritivnih i zdravstvenih izjava.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-ios-world card-icon"></i>
-                  <h4 className="card-title">Implementacija zakonskih normi</h4>
-                  <p>Implementiramo zakonske norme (SRB i EU) koje se tiču kvaliteta proizvoda i prateće dokumentacije; dajemo stručna mišljenja o proizvodima sa određenom zdravstvenom izjavom.</p>
+                  <i className="ion-ios-flask card-icon"></i>
+                  <h4 className="card-title">Funkcionalni sastojci i funkcionalni proizvodi</h4>
+                  <p>Pomažemo u izboru, primeni i pravilnom deklarisanju funkcionalnih sastojaka, kao i u razvoju proizvoda sa dodatom nutritivnom vrednošću.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <i className="ion-leaf card-icon"></i>
-                  <h4 className="card-title">Razvoj novih proizvoda</h4>
-                  <p>Razvijamo nove prehrambene proizvode — od koncepta do finalnog deklarisanja. Posebna ekspertiza: funkcionalna hrana, konditorski proizvodi, dodaci ishrani.</p>
-                </div>
-              </div>
-              <div className="fade-in">
-                <div className="card-accent">
-                  <i className="ion-star card-icon"></i>
-                  <h4 className="card-title">Marketinška podrška</h4>
-                  <p>Pružamo marketinšku podršku za razdvajanje dobijenih funkcionalnih proizvoda od postojećih sličnih proizvoda na tržištu.</p>
+                  <i className="ion-ios-search card-icon"></i>
+                  <h4 className="card-title">Naučno-istraživačka podrška</h4>
+                  <p>Sprovodimo istraživanja i stručne analize koje omogućavaju naučno utemeljen razvoj proizvoda i donošenje kvalitetnih poslovnih odluka.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
                   <i className="ion-university card-icon"></i>
-                  <h4 className="card-title">Radionice i edukacija</h4>
-                  <p>Organizujemo radionice za senzorsku analizu proizvoda i radionice za deklarisanje — za timove proizvođača i distributere.</p>
+                  <h4 className="card-title">Edukacija i transfer znanja</h4>
+                  <p>Organizujemo stručne radionice, savetovanja i edukacije za proizvođače hrane, distributere i stručne timove, sa ciljem unapređenja znanja, kvaliteta i primene savremenih tehnologija i propisa u prehrambenoj industriji.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-ios-people card-icon"></i>
+                  <h4 className="card-title">Stručna savetovanja i povezivanje industrije</h4>
+                  <p>Organizujemo stručne skupove koji povezuju nauku, industriju i regulativu, uključujući tradicionalna godišnja savetovanja: Regionalno konditorsko savetovanje u aprilu i Savetovanje „Hrana, ishrana &amp; zdravlje" u oktobru.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <i className="ion-star card-icon"></i>
+                  <h4 className="card-title">Marketinška podrška i pozicioniranje proizvoda</h4>
+                  <p>Pomažemo kompanijama u jasnom definisanju vrednosti proizvoda, komunikaciji njegovih prednosti i pozicioniranju inovativnih i funkcionalnih proizvoda na tržištu.</p>
                 </div>
               </div>
             </div>

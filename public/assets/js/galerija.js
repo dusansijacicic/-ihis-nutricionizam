@@ -4,16 +4,24 @@
   const btns = document.querySelectorAll('.gal-btn');
   const items = document.querySelectorAll('.gal-item');
 
-  btns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      btns.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      const f = btn.dataset.filter;
-      items.forEach(function (it) {
-        it.classList.toggle('hidden', f !== 'all' && it.dataset.group !== f);
-      });
+  function applyFilter(btn) {
+    btns.forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(function (it) {
+      it.classList.toggle('hidden', f !== 'all' && it.dataset.group !== f);
     });
+  }
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () { applyFilter(btn); });
   });
+
+  if (window.location.hash) {
+    const targetFilter = window.location.hash.slice(1);
+    const targetBtn = document.querySelector('.gal-btn[data-filter="' + targetFilter + '"]');
+    if (targetBtn) applyFilter(targetBtn);
+  }
 
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lbImg');
