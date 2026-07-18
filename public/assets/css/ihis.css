@@ -918,7 +918,7 @@ footer.mastfoot {
   border: 1px solid rgba(130,53,54,.25); border-radius: 4px;
   padding: 24px 40px; background: var(--cream-light);
 }
-.fee-box-line { font-size: 18px; font-weight: 600; color: var(--accent); margin: 0; }
+.fee-box .fee-box-line { font-size: 18px; font-weight: 600; color: var(--accent); margin: 0; }
 
 .tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 @media (max-width: 900px) { .tier-grid { grid-template-columns: 1fr; } }
