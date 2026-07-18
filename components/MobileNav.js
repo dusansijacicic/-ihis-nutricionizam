@@ -10,11 +10,22 @@ export default function MobileNav({ locale, current }) {
         <button className="mastnav-close">&times;</button>
         <ul className="nav-links">
           {nav.items.map((item) => (
-            <li key={item.key}>
-              <a href={item.href} className={`main-link${current === item.key ? ' is-current' : ''}`}>
-                {item.label}
-              </a>
-            </li>
+            item.children ? (
+              <li key={item.key} className="mnav-group">
+                <span className="main-link mnav-highlight">{item.label}</span>
+                <ul className="mnav-sublist">
+                  {item.children.map((child) => (
+                    <li key={child.key}><a href={child.href} className="mnav-sublink">{child.label}</a></li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={item.key}>
+                <a href={item.href} className={`main-link${current === item.key ? ' is-current' : ''}`}>
+                  {item.label}
+                </a>
+              </li>
+            )
           ))}
         </ul>
         <div className="menu-contact">

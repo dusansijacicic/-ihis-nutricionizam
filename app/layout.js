@@ -1,25 +1,18 @@
 import '../public/assets/css/ihis.css';
 import Script from 'next/script';
-import { Raleway, Montserrat, Open_Sans } from 'next/font/google';
+import { Sora, Inter } from 'next/font/google';
 
-const raleway = Raleway({
+const sora = Sora({
   subsets: ['latin', 'latin-ext'],
-  weight: ['200', '300', '400', '600'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-raleway',
   display: 'swap',
 });
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '600'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const openSans = Open_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '700'],
-  variable: '--font-open-sans',
   display: 'swap',
 });
 

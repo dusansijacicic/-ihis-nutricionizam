@@ -12,11 +12,24 @@ export default function Header({ locale, current, langHref }) {
         </a>
         <ul className="hdr-links">
           {nav.items.map((item) => (
-            <li key={item.key}>
-              <a href={item.href} className={current === item.key ? 'is-current' : ''}>
-                {item.label}
-              </a>
-            </li>
+            item.children ? (
+              <li key={item.key} className="hdr-dropdown-wrap">
+                <a href={item.children[0].href} className={`hdr-highlight${current === item.key ? ' is-current' : ''}`}>
+                  {item.label}
+                </a>
+                <ul className="hdr-dropdown">
+                  {item.children.map((child) => (
+                    <li key={child.key}><a href={child.href}>{child.label}</a></li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={item.key}>
+                <a href={item.href} className={current === item.key ? 'is-current' : ''}>
+                  {item.label}
+                </a>
+              </li>
+            )
           ))}
         </ul>
         <a href={langHref} className="lang-switch">{other}</a>
