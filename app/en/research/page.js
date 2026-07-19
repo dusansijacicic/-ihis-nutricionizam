@@ -4,15 +4,15 @@ import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Research & Development (R&D) — IHIS Nutricionizam',
-  description: 'IHIS Nutricionizam research and development — nutritional and energy value of food, functional ingredients, effects on metabolism, and food contaminants.',
+  description: 'IHIS Nutricionizam research and development — product development, labeling and regulatory compliance, functional ingredients, nutritional value and scientific expertise.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/research',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
-    title: 'Research — IHIS Nutricionizam',
-    description: 'Nutritional and energy value of food, functional ingredients, effects on metabolism, and food contaminants.',
+    title: 'Research & Development (R&D) — IHIS Nutricionizam',
+    description: 'Product development, labeling and regulatory compliance, functional ingredients, nutritional value and scientific expertise.',
     url: 'https://ihis-nutricionizam.rs/en/research',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
@@ -37,25 +37,24 @@ export default function ResearchEn() {
           <div className="container">
             <div className="row-intro">
               <div className="col-text fade-in">
-                <span className="section-tag">Our research</span>
-                <h2 className="section-h">The scientific foundation of everything we do</h2>
+                <span className="section-tag">Research & Development (R&amp;D)</span>
+                <h2 className="section-h">Science turned into innovative products</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  According to the FAO/WHO World Declaration on Nutrition (1992), ensuring a
-                  sufficient quantity of varied, safe food is a fundamental human right. Meeting
-                  nutritional needs and ensuring food safety are key factors in preventing a wide
-                  range of diseases and disorders. A healthy diet and food safety are therefore
-                  prerequisites for achieving, maintaining and improving human health.
+                  IHIS-Nutricionizam connects scientific research, product development and
+                  regulatory expertise to help companies develop safe, innovative and
+                  market-competitive food products and dietary supplements.
                 </p>
                 <p className="mb-16">
-                  Food is essential for human growth, development and bodily functions. Good
-                  nutrition requires a well-balanced diet that provides an adequate daily amount of
-                  all classes of nutrients and optimal energy intake for the human body. Food must
-                  be safe, nutritious and available in a sustainable way.
+                  Through a multidisciplinary approach, we provide support from defining the
+                  product concept and formulation development, through the selection of
+                  functional ingredients and nutritional value assessment, to preparing labels
+                  and aligning products with the legislation of the Republic of Serbia and the
+                  European Union.
                 </p>
               </div>
               <div className="col-img fade-in">
-                <img src="/assets/img/cover3.jpg" alt="Research" />
+                <img src="/assets/img/cover3.jpg" alt="Research and Development" />
               </div>
             </div>
           </div>
@@ -64,33 +63,39 @@ export default function ResearchEn() {
         <div className="section-light">
           <div className="container">
             <div className="section-head">
-              <span className="section-tag">Areas</span>
-              <h2 className="section-h">Research topics</h2>
+              <span className="section-tag">What we do</span>
+              <h2 className="section-h">Our R&amp;D activities</h2>
               <span className="liner"></span>
             </div>
-            <div className="grid-2">
+            <div className="grid-3">
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-flask color"></i>Nutritional and energy value</h4>
-                  <p>Basic research into food products and food supplements, exploring opportunities for their improvement, innovation, and proposing innovative products for the market.</p>
+                  <h4 className="card-title--icon"><i className="ion-leaf color"></i>New product development</h4>
+                  <p>Development and improvement of food products, dietary supplements and functional food – from idea and formulation to a market-ready product.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-leaf color"></i>Functional ingredients and health</h4>
-                  <p>Research into the effects of functional ingredients on human health and metabolism — clinical efficacy, effective doses, safety of use.</p>
+                  <h4 className="card-title--icon"><i className="ion-document-text color"></i>Labeling and regulatory compliance</h4>
+                  <p>Preparing and reviewing labels for all categories of food products and dietary supplements, determining nutritional values, applying nutrition and health claims, and aligning with the legislation of Serbia and the EU.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-pulse color"></i>Effects on metabolism</h4>
-                  <p>Research into the effects of a food product's nutrients on metabolism — bioavailability, absorption, interactions with the body.</p>
+                  <h4 className="card-title--icon"><i className="ion-ios-flask color"></i>Functional ingredients</h4>
+                  <p>Selection, evaluation and application of functional ingredients and bioactive components in line with scientific evidence, technological requirements and the regulatory framework.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-warning color"></i>Food contaminants</h4>
-                  <p>Research into the effects of contaminants that enter food from the environment or during processing and production — risk identification and preventive measures.</p>
+                  <h4 className="card-title--icon"><i className="ion-ios-pulse color"></i>Nutritional value and product quality</h4>
+                  <p>Composition analysis, nutritional profile optimization and development of products that meet the needs of today's market and consumers.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <h4 className="card-title--icon"><i className="ion-ios-search color"></i>Scientific and expert know-how</h4>
+                  <p>Applying current scientific knowledge, analysis and expert opinions in developing new products, improving existing formulations, and solving technological and regulatory challenges.</p>
                 </div>
               </div>
             </div>

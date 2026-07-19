@@ -4,15 +4,15 @@ import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'Istraživanje i razvoj (R&D) — IHIS Nutricionizam',
-  description: 'Istraživanje IHIS Nutricionizma — nutritivna i energetska vrednost hrane, funkcionalne sirovine, uticaj na metabolizam i zagađivači hrane.',
+  description: 'Istraživanje i razvoj IHIS Nutricionizma — razvoj proizvoda, deklarisanje i regulatorna usklađenost, funkcionalni sastojci, nutritivna vrednost i naučna ekspertiza.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs/research',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
-    title: 'Istraživanje — IHIS Nutricionizam',
-    description: 'Nutritivna i energetska vrednost hrane, funkcionalne sirovine, uticaj na metabolizam i zagađivači hrane.',
+    title: 'Istraživanje i razvoj (R&D) — IHIS Nutricionizam',
+    description: 'Razvoj proizvoda, deklarisanje i regulatorna usklađenost, funkcionalni sastojci, nutritivna vrednost i naučna ekspertiza.',
     url: 'https://ihis-nutricionizam.rs/rs/research',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
@@ -37,25 +37,23 @@ export default function Istrazivanje() {
           <div className="container">
             <div className="row-intro">
               <div className="col-text fade-in">
-                <span className="section-tag">Naša istraživanja</span>
-                <h2 className="section-h">Naučna osnova svega što radimo</h2>
+                <span className="section-tag">Istraživanje i razvoj (R&amp;D)</span>
+                <h2 className="section-h">Nauka pretvorena u inovativne proizvode</h2>
                 <span className="liner"></span>
                 <p className="mb-16">
-                  Prema FAO/WHO World Declaration on Nutrition (1992) osiguranje dovoljne količine
-                  raznovrsne, zdravstveno bezbedne hrane osnovno je ljudsko pravo. Zadovoljenje
-                  nutritivnih potreba i osiguranje zdravstvene bezbednosti hrane važni su faktori
-                  u prevenciji nastanka čitavog niza bolesti i poremećaja. Stoga su zdrava ishrana
-                  i bezbednost hrane uslov postizanja, održavanja i unapređenja zdravlja ljudi.
+                  IHIS-Nutricionizam povezuje naučna istraživanja, razvoj proizvoda i regulatornu
+                  ekspertizu kako bi kompanijama omogućio razvoj bezbednih, inovativnih i tržišno
+                  konkurentnih prehrambenih proizvoda i dodataka ishrani.
                 </p>
                 <p className="mb-16">
-                  Hrana je neophodna za ljudski rast, razvoj i telesne funkcije. Dobra ishrana
-                  zahteva dobro izbalansiranu hranu koja obezbeđuje adekvatnu dnevnu količinu svih
-                  klasa hranljivih materija i optimalni unos energije za ljudsko telo. Hrana mora
-                  biti bezbedna, hranljiva i dostupna na održiv način.
+                  Kroz multidisciplinarni pristup pružamo podršku od definisanja koncepta proizvoda
+                  i razvoja formulacije, preko izbora funkcionalnih sastojaka i procene nutritivne
+                  vrednosti, do izrade deklaracija i usklađivanja proizvoda sa zakonodavstvom
+                  Republike Srbije i Evropske unije.
                 </p>
               </div>
               <div className="col-img fade-in">
-                <img src="/assets/img/cover3.jpg" alt="Istraživanje" />
+                <img src="/assets/img/cover3.jpg" alt="Istraživanje i razvoj" />
               </div>
             </div>
           </div>
@@ -64,33 +62,39 @@ export default function Istrazivanje() {
         <div className="section-light">
           <div className="container">
             <div className="section-head">
-              <span className="section-tag">Oblasti</span>
-              <h2 className="section-h">Istraživačke teme</h2>
+              <span className="section-tag">Šta radimo</span>
+              <h2 className="section-h">Naše R&amp;D aktivnosti</h2>
               <span className="liner"></span>
             </div>
-            <div className="grid-2">
+            <div className="grid-3">
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-flask color"></i>Nutritivna i energetska vrednost</h4>
-                  <p>Osnovno istraživanje prehrambenih proizvoda i dodataka ishrani, istraživanje mogućnosti za njihovo unapređenje, inovacije i predlaganje inovacionih proizvoda na tržištu.</p>
+                  <h4 className="card-title--icon"><i className="ion-leaf color"></i>Razvoj novih proizvoda</h4>
+                  <p>Razvoj i unapređenje prehrambenih proizvoda, dodataka ishrani i funkcionalne hrane – od ideje i formulacije do proizvoda spremnog za tržište.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-leaf color"></i>Funkcionalne sirovine i zdravlje</h4>
-                  <p>Istraživanje uticaja funkcionalnih sirovina na zdravlje ljudi i na metabolizam — klinička efikasnost, efektivne doze, bezbednost primene.</p>
+                  <h4 className="card-title--icon"><i className="ion-document-text color"></i>Deklarisanje i regulatorna usklađenost</h4>
+                  <p>Izrada i provera deklaracija za sve kategorije prehrambenih proizvoda i dodataka ishrani, određivanje nutritivnih vrednosti, primena nutritivnih i zdravstvenih izjava i usklađivanje sa propisima Republike Srbije i Evropske unije.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-pulse color"></i>Uticaj na metabolizam</h4>
-                  <p>Istraživanje uticaja hranljivih sastojaka prehrambenog proizvoda na metabolizam — bioraspoloživost, apsorpcija, interakcije sa organizmom.</p>
+                  <h4 className="card-title--icon"><i className="ion-ios-flask color"></i>Funkcionalni sastojci</h4>
+                  <p>Izbor, evaluacija i primena funkcionalnih sastojaka i bioaktivnih komponenti u skladu sa naučnim dokazima, tehnološkim zahtevima i regulatornim okvirom.</p>
                 </div>
               </div>
               <div className="fade-in">
                 <div className="card-accent">
-                  <h4 className="card-title--icon"><i className="ion-ios-warning color"></i>Zagađivači hrane</h4>
-                  <p>Istraživanje uticaja zagađivača hrane koji su u nju dospeli iz životne sredine ili tokom prerade i proizvodnje — identifikacija rizika i preventivne mere.</p>
+                  <h4 className="card-title--icon"><i className="ion-ios-pulse color"></i>Nutritivna vrednost i kvalitet proizvoda</h4>
+                  <p>Analiza sastava, optimizacija nutritivnog profila i razvoj proizvoda koji odgovaraju potrebama savremenog tržišta i potrošača.</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="card-accent">
+                  <h4 className="card-title--icon"><i className="ion-ios-search color"></i>Naučna i stručna ekspertiza</h4>
+                  <p>Primena savremenih naučnih saznanja, analiza i stručnih mišljenja u razvoju novih proizvoda, unapređenju postojećih formulacija i rešavanju tehnoloških i regulatornih izazova.</p>
                 </div>
               </div>
             </div>
