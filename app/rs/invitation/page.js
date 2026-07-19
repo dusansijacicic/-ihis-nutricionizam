@@ -1,6 +1,7 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
+import PaymentSlip from '../../../components/PaymentSlip';
 import { POZIV } from '../../../lib/content/poziv';
 
 export const metadata = {
@@ -116,11 +117,9 @@ export default function PozivStranica() {
               {t.fees.map((f, i) => <p className="fee-box-line" key={i}>{f}</p>)}
             </div>
             <p className="section-lead grey mt-16">{t.feeNote}</p>
-            <div className="payment-box mt-24">
-              <h4>{t.paymentHeading}</h4>
-              <p>{t.paymentAccount}</p>
-              <p>{t.paymentForeign}</p>
-            </div>
+            <h3 className="payment-heading mt-30">{t.paymentHeading}</h3>
+            <PaymentSlip locale="sr" t={t} />
+            <p className="section-lead grey mt-16">{t.paymentForeign}</p>
             <p className="section-lead grey mt-16">{t.contact}</p>
             <a href="/rs/registration" className="btn-ihis btn-ihis-color mt-30">Prijavite se</a>
           </div>

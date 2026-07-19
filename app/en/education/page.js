@@ -1,8 +1,6 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import Modal from '../../../components/Modal';
-import LectureGate from '../../../components/LectureGate';
 import { POZIV } from '../../../lib/content/poziv';
 
 export const metadata = {
@@ -133,16 +131,14 @@ export default function EducationEn() {
               <div className="archive-head">
                 <h3>12th Conference FOOD, NUTRITION &amp; HEALTH</h3>
               </div>
-              <p>Lectures from the conference are available for download with a code, and photos are in the gallery.</p>
+              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request), and photos are in the gallery.</p>
               <div className="event-block-actions">
-                <Modal
-                  title="12th Conference FOOD, NUTRITION & HEALTH — lectures"
-                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Lectures</span></span>}
-                >
-                  <LectureGate locale="en" event="12-savetovanje" />
-                </Modal>
+                <a href="/assets/docs/12-savetovanje.zip" download className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Lectures (ZIP)</span>
+                </a>
                 <a href="/en/gallery#12-savetovanje" className="icon-btn">
-                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
                   <span className="icon-btn-label">Gallery</span>
                 </a>
               </div>
@@ -152,16 +148,14 @@ export default function EducationEn() {
               <div className="archive-head">
                 <h3>9th Regional Confectionery Conference</h3>
               </div>
-              <p>Lectures from the conference are available for download with a code, and photos are in the gallery.</p>
+              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request), and photos are in the gallery.</p>
               <div className="event-block-actions">
-                <Modal
-                  title="9th Regional Confectionery Conference — lectures"
-                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Lectures</span></span>}
-                >
-                  <LectureGate locale="en" event="9-savetovanje" />
-                </Modal>
+                <a href="/assets/docs/9-savetovanje.zip" download className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Lectures (ZIP)</span>
+                </a>
                 <a href="/en/gallery#9-savetovanje" className="icon-btn">
-                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
                   <span className="icon-btn-label">Gallery</span>
                 </a>
               </div>

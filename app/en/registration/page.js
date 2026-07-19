@@ -2,6 +2,7 @@ import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
+import PaymentSlip from '../../../components/PaymentSlip';
 import { POZIV } from '../../../lib/content/poziv';
 
 export const metadata = {
@@ -83,11 +84,9 @@ export default function RegistrationPage() {
                   {t.fees.map((f, i) => <p className="fee-box-line" key={i}>{f}</p>)}
                 </div>
                 <p className="mt-16" style={{ fontSize: 14, lineHeight: '22px', opacity: .85 }}>{t.feeNote}</p>
-                <div className="payment-box mt-16">
-                  <h4>{t.paymentHeading}</h4>
-                  <p>{t.paymentAccount}</p>
-                  <p>{t.paymentForeign}</p>
-                </div>
+                <h3 className="payment-heading mt-24">{t.paymentHeading}</h3>
+                <PaymentSlip locale="en" t={t} />
+                <p className="mt-16" style={{ fontSize: 13, opacity: .85 }}>{t.paymentForeign}</p>
                 <p className="mt-16"><a href="/en/invitation" style={{ color: '#fff', textDecoration: 'underline' }}>View the full invitation and program &rarr;</a></p>
               </div>
             </div>

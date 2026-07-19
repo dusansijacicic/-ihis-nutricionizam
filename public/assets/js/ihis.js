@@ -178,6 +178,8 @@
         .then(function (result) {
           if (msg) {
             msg.style.display = 'block';
+            msg.classList.toggle('form-msg--ok', result.ok);
+            msg.classList.toggle('form-msg--err', !result.ok);
             msg.textContent = result.ok
               ? t.success
               : (result.body && result.body.error) || t.genericError;
@@ -193,6 +195,8 @@
         .catch(function () {
           if (msg) {
             msg.style.display = 'block';
+            msg.classList.remove('form-msg--ok');
+            msg.classList.add('form-msg--err');
             msg.textContent = t.networkError;
           }
           btn.textContent = t.submit;

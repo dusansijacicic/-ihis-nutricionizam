@@ -1,8 +1,6 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import Modal from '../../../components/Modal';
-import LectureGate from '../../../components/LectureGate';
 import { POZIV } from '../../../lib/content/poziv';
 
 export const metadata = {
@@ -133,16 +131,14 @@ export default function Edukacija() {
               <div className="archive-head">
                 <h3>12. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h3>
               </div>
-              <p>Predavanja sa savetovanja dostupna su za preuzimanje uz šifru, a fotografije u galeriji.</p>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit), a fotografije u galeriji.</p>
               <div className="event-block-actions">
-                <Modal
-                  title="12. Savetovanje HRANA, ISHRANA & ZDRAVLJE — predavanja"
-                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Predavanja</span></span>}
-                >
-                  <LectureGate locale="sr" event="12-savetovanje" />
-                </Modal>
+                <a href="/assets/docs/12-savetovanje.zip" download className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Predavanja (ZIP)</span>
+                </a>
                 <a href="/rs/gallery#12-savetovanje" className="icon-btn">
-                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
                   <span className="icon-btn-label">Galerija</span>
                 </a>
               </div>
@@ -152,16 +148,14 @@ export default function Edukacija() {
               <div className="archive-head">
                 <h3>9. Regionalno savetovanje konditorske industrije</h3>
               </div>
-              <p>Predavanja sa savetovanja dostupna su za preuzimanje uz šifru, a fotografije u galeriji.</p>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit), a fotografije u galeriji.</p>
               <div className="event-block-actions">
-                <Modal
-                  title="9. Regionalno savetovanje konditorske industrije — predavanja"
-                  trigger={<span className="icon-btn"><i className="ion-ios-book icon-btn-icon"></i><span className="icon-btn-label">Predavanja</span></span>}
-                >
-                  <LectureGate locale="sr" event="9-savetovanje" />
-                </Modal>
+                <a href="/assets/docs/9-savetovanje.zip" download className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Predavanja (ZIP)</span>
+                </a>
                 <a href="/rs/gallery#9-savetovanje" className="icon-btn">
-                  <i className="ion-images icon-btn-icon"></i>
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
                   <span className="icon-btn-label">Galerija</span>
                 </a>
               </div>
