@@ -37,6 +37,34 @@ export default function PrijavaStranica() {
           </div>
         </div>
 
+        <div className="section-white">
+          <div className="container">
+            <div className="grid-3 grid-3--tight">
+              <div className="fade-in">
+                <div className="contact-label-box">
+                  <span className="ion-ios-calendar"></span>
+                  <h4>Datum</h4>
+                  <p>{t.when}</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="contact-label-box">
+                  <span className="ion-ios-location"></span>
+                  <h4>Lokacija</h4>
+                  <p>{t.where}</p>
+                </div>
+              </div>
+              <div className="fade-in">
+                <div className="contact-label-box">
+                  <span className="ion-document-text"></span>
+                  <h4>Tema savetovanja</h4>
+                  <p>{t.subtitle}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="section-dark">
           <div className="container">
             <div className="contact-row">
@@ -47,17 +75,14 @@ export default function PrijavaStranica() {
                 <RegistrationForm locale="sr" />
               </div>
 
-              <div className="contact-info fade-in">
-                <span className="section-tag">Detalji</span>
-                <h2 className="section-h">Kada i gde</h2>
+              <div className="contact-info reg-sidebar fade-in">
+                <span className="section-tag">Kotizacija</span>
+                <h2 className="section-h">Uslovi učešća</h2>
                 <span className="liner"></span>
-                <p className="mb-16">{t.when}</p>
-                <p className="mb-16">{t.where}</p>
-                <p className="mb-16">{t.subtitle}</p>
                 <div className="fee-box mt-10">
                   {t.fees.map((f, i) => <p className="fee-box-line" key={i}>{f}</p>)}
                 </div>
-                <p className="mt-16" style={{ fontSize: 13, opacity: .85 }}>{t.feeNote}</p>
+                <p className="mt-16" style={{ fontSize: 14, lineHeight: '22px', opacity: .85 }}>{t.feeNote}</p>
                 <div className="payment-box mt-16">
                   <h4>{t.paymentHeading}</h4>
                   <p>{t.paymentAccount}</p>

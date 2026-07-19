@@ -744,6 +744,7 @@ footer.mastfoot {
 /* ─── Contact page ───────────────────────────────────────────────── */
 .contact-row  { display:flex; flex-wrap:wrap; gap:80px; }
 .contact-info { flex:0 0 320px; }
+.reg-sidebar  { flex: 1 1 420px; max-width: 460px; }
 .contact-info-block            { margin-bottom:18px; }
 .contact-info-block--last      { margin-bottom:30px; }
 .contact-icon  { font-size:20px; color:var(--accent); margin-right:10px; vertical-align:middle; }
