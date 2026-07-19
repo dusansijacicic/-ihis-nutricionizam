@@ -63,7 +63,6 @@ export default function Home() {
           <span className="section-tag">O kompaniji</span>
           <h2 className="section-h">Nauka u službi ishrane</h2>
           <span className="liner"></span>
-          <p className="section-lead">„Neka hrana bude tvoj lek, a lek tvoja hrana." — Hipokrat</p>
           <p className="section-lead grey mt-20">
             IHIS NUTRICIONIZAM povezuje nauku, inovacije i prehrambenu industriju kroz
             razvoj hrane, dodataka ishrani i funkcionalnih proizvoda. Kao istraživačko-razvojni

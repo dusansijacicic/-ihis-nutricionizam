@@ -63,7 +63,6 @@ export default function HomeEn() {
           <span className="section-tag">About the company</span>
           <h2 className="section-h">Science in the service of nutrition</h2>
           <span className="liner"></span>
-          <p className="section-lead">„Let food be thy medicine and medicine be thy food." — Hippocrates</p>
           <p className="section-lead grey mt-20">
             IHIS NUTRICIONIZAM connects science, innovation and the food industry through
             the development of food, dietary supplements and functional products. As a

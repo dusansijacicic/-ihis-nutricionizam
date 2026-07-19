@@ -26,7 +26,7 @@ export async function POST(request) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
-        from: 'IHIS Nutricionizam <onboarding@resend.dev>',
+        from: 'IHIS Nutricionizam <noreply@ihis-nutricionizam.rs>',
         to: process.env.CONTACT_NOTIFY_EMAIL,
         replyTo: email,
         subject: `Nova prijava za savetovanje — ${name}`,

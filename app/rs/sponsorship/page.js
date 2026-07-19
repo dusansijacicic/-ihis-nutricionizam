@@ -44,6 +44,20 @@ export default function SponzorstvoStranica() {
             <p className="section-lead grey mt-10">{t.where}</p>
             <p className="section-lead grey mt-16">{t.intro}</p>
             <p className="section-lead grey mt-10">{t.lead}</p>
+            <div className="stat-row">
+              <div className="stat-item">
+                <span className="stat-num">150+</span>
+                <span className="stat-label">Učesnika</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-num">13.</span>
+                <span className="stat-label">Savetovanje po redu</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-num">06.10.</span>
+                <span className="stat-label">Datum održavanja</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -62,7 +76,9 @@ export default function SponzorstvoStranica() {
                 </div>
               ))}
             </div>
-            <p className="text-center grey mt-30">{t.note}</p>
+            <div className="text-center mt-30">
+              <span className="callout-note"><i className="ion-information-circled"></i>{t.note}</span>
+            </div>
           </div>
         </div>
 

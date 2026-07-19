@@ -19,6 +19,8 @@ export const metadata = {
   },
 };
 
+const TOPIC_ICONS = ['ion-leaf', 'ion-ios-briefcase', 'ion-waterdrop', 'ion-ios-pulse', 'ion-ios-people', 'ion-flash', 'ion-ios-book'];
+
 export default function PozivStranica() {
   const t = POZIV.sr;
 
@@ -61,6 +63,7 @@ export default function PozivStranica() {
               {t.topics.map((topic, i) => (
                 <div className="fade-in" key={i}>
                   <div className="card-accent">
+                    <span className="topic-card-icon"><i className={TOPIC_ICONS[i % TOPIC_ICONS.length]}></i></span>
                     <h4 className="card-title">{topic.title}</h4>
                     {topic.items.length > 0 && (
                       <ul className="poziv-topic-list">
@@ -81,8 +84,13 @@ export default function PozivStranica() {
               <h2 className="section-h">{t.speakersHeading}</h2>
               <span className="liner"></span>
             </div>
-            <div className="pill-row">
-              {t.speakers.map((s, i) => <span className="pill" key={i}>{s}</span>)}
+            <div className="speaker-grid">
+              {t.speakers.map((s, i) => (
+                <div className="speaker-card fade-in" key={i}>
+                  <span className="speaker-avatar">{s.charAt(0)}</span>
+                  <span>{s}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
