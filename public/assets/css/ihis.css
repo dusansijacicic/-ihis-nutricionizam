@@ -677,7 +677,7 @@ footer.mastfoot {
 .grid-2      { display:flex; flex-wrap:wrap; margin:0 -15px; }
 .grid-2 > *  { flex:0 0 50%; padding:0 15px; margin-bottom:30px; }
 .grid-3      { display:flex; flex-wrap:wrap; margin:0 -20px; }
-.grid-3 > *  { flex:0 0 33.33%; padding:0 20px; }
+.grid-3 > *  { flex:0 0 33.33%; padding:0 20px; margin-bottom:36px; }
 .grid-3--tight     { margin:0 -15px; }
 .grid-3--tight > * { padding:0 15px; }
 @media (max-width:900px) {
