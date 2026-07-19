@@ -116,7 +116,12 @@ export default function PozivStranica() {
               {t.fees.map((f, i) => <p className="fee-box-line" key={i}>{f}</p>)}
             </div>
             <p className="section-lead grey mt-16">{t.feeNote}</p>
-            <p className="section-lead grey mt-10">{t.contact}</p>
+            <div className="payment-box mt-24">
+              <h4>{t.paymentHeading}</h4>
+              <p>{t.paymentAccount}</p>
+              <p>{t.paymentForeign}</p>
+            </div>
+            <p className="section-lead grey mt-16">{t.contact}</p>
             <a href="/rs/registration" className="btn-ihis btn-ihis-color mt-30">Prijavite se</a>
           </div>
         </div>

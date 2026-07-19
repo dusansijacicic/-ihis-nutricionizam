@@ -971,6 +971,14 @@ footer.mastfoot {
 }
 .fee-box .fee-box-line { font-size: 21px; font-weight: 700; color: var(--accent); margin: 0; }
 
+.payment-box {
+  text-align: left; background: var(--cream-light); border: 1px solid rgba(130,53,54,.2);
+  border-radius: 6px; padding: 22px 26px;
+}
+.payment-box h4 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+.payment-box p { font-size: 13px; line-height: 20px; color: #444; margin: 0 0 8px; }
+.payment-box p:last-child { margin-bottom: 0; }
+
 .pill { font-size: 13px; padding: 9px 18px; border-radius: 20px; }
 .pill-row { gap: 10px; }
 

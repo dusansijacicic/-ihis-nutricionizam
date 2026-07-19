@@ -58,6 +58,11 @@ export default function PrijavaStranica() {
                   {t.fees.map((f, i) => <p className="fee-box-line" key={i}>{f}</p>)}
                 </div>
                 <p className="mt-16" style={{ fontSize: 13, opacity: .85 }}>{t.feeNote}</p>
+                <div className="payment-box mt-16">
+                  <h4>{t.paymentHeading}</h4>
+                  <p>{t.paymentAccount}</p>
+                  <p>{t.paymentForeign}</p>
+                </div>
                 <p className="mt-16"><a href="/rs/invitation" style={{ color: '#fff', textDecoration: 'underline' }}>Pogledajte kompletan poziv i program &rarr;</a></p>
               </div>
             </div>
