@@ -44,21 +44,19 @@ export default function AboutEn() {
                   <strong>IHIS-NUTRICIONIZAM</strong> is a scientific research organization specializing in the
                   development of food, dietary supplements and functional products. We connect modern
                   scientific achievements with the needs of the food industry, creating innovative,
-                  technologically feasible and regulatory-compliant solutions.
+                  technologically feasible and regulatory-compliant solutions. Our mission is to turn
+                  scientific knowledge into market-successful products, as a partner to companies at
+                  every stage of development:
                 </p>
-                <p className="mb-16">
-                  Our mission is to turn scientific knowledge into market-successful products – from the
-                  initial idea, formulation development and selection of functional ingredients, to
-                  industrial production and market launch. We are a partner to companies at every stage
-                  of product development, providing expert support grounded in experience, research and
-                  an understanding of today's market requirements and consumer needs.
-                </p>
+                <ul className="poziv-topic-list mb-16">
+                  <li>Concept development, formulation and selection of functional ingredients</li>
+                  <li>Industrial production and market launch</li>
+                  <li>Defining the technological concept, equipment selection and contracting</li>
+                  <li>Production line organization and greenfield investments</li>
+                </ul>
                 <p>
-                  Beyond product development, we provide complete support in realizing new production
-                  capacities and greenfield investments – from defining the technological concept,
-                  selecting and contracting equipment, designing and organizing production lines,
-                  sourcing raw materials and establishing production processes, to launching and
-                  optimizing production.
+                  We ground our expert support in experience, research and an understanding of
+                  today's market requirements and consumer needs.
                 </p>
               </div>
               <div className="col-img fade-in">
@@ -80,11 +78,17 @@ export default function AboutEn() {
                 <div className="team-photo" style={{ backgroundImage: "url('/assets/img/branko.jpg')" }}></div>
                 <h4>M.Sc. Tech. Branko Zarić</h4>
                 <h6>Director</h6>
+                <a href="#" className="team-linkedin" aria-label="LinkedIn profile — Branko Zarić">
+                  <span className="ion-social-linkedin"></span>
+                </a>
               </div>
               <div className="team-member fade-in">
                 <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
                 <h4>PhD Danica Zarić</h4>
                 <h6>Founder</h6>
+                <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profile — Danica Zarić">
+                  <span className="ion-social-linkedin"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -101,14 +105,18 @@ export default function AboutEn() {
               <p className="mb-16">
                 Over 30 years of experience leading major food industry companies, with a rich
                 career in executive and management roles across production, sales, procurement
-                and investment development.
+                and investment development:
               </p>
+              <ul className="poziv-topic-list mb-16">
+                <li>Production Director — Soko Štark</li>
+                <li>Sales Director — Fresh&amp;Co</li>
+                <li>Procurement Director — Imlek</li>
+                <li>Chairman of the Board — Bitola Dairy (Bimilk)</li>
+              </ul>
               <p>
-                During his professional career he served as production director at Soko Štark,
-                sales director at Fresh&amp;Co, procurement director at Imlek, and chairman of the
-                board of Bitola Dairy (Bimilk). Today he applies his extensive industry
-                experience to developing innovative projects and providing strategic and
-                technological support to companies in the food sector.
+                Today he applies his extensive industry experience to developing innovative
+                projects and providing strategic and technological support to companies in the
+                food sector.
               </p>
             </div>
           </div>
@@ -124,29 +132,24 @@ export default function AboutEn() {
             <div className="container-narrow" style={{ padding: 0 }}>
               <p className="mb-16">
                 She built a professional career in the food industry spanning more than 15 years
-                in senior product development roles at Soko Štark (Head of Chocolate
-                Development), Delta Holding (Development Director) and Bambi-Banat (Development
-                Director), before founding IHIS-Nutricionizam.
+                in senior product development roles, before founding IHIS-Nutricionizam:
               </p>
-              <p className="mb-16">
-                She began her scientific career in 2011 with a PhD on the production of chocolate
-                using soy milk in ball mills. In 2020 she was elected to the highest scientific
-                title — Research Professor. She is the author and co-author of more than 100
-                scientific papers and holds 11 technical solutions in the field of functional
-                food and confectionery products.
-              </p>
+              <ul className="poziv-topic-list mb-16">
+                <li>Soko Štark — Head of Chocolate Development</li>
+                <li>Delta Holding — Development Director</li>
+                <li>Bambi-Banat — Development Director</li>
+                <li>PhD (2011) — chocolate production using soy milk in ball mills</li>
+                <li>Research Professor (2020) — highest scientific title</li>
+                <li>100+ scientific papers, 11 technical solutions in functional food and confectionery products</li>
+                <li>Member of the Serbian Ministry of Health expert team for the Regulation on Nutrition and Health Claims</li>
+              </ul>
               <p className="mb-16">
                 Her expertise covers research and development of food products, functional food,
                 dietary supplements, food labeling, the application of nutrition and health
                 claims, and the regulatory requirements of the Republic of Serbia and the
-                European Union.
-              </p>
-              <p className="mb-16">
-                She was a member of the expert team of the Ministry of Health of the Republic of
-                Serbia for drafting the Regulation on Nutrition and Health Claims, and regularly
-                participates as a speaker and moderator at professional conferences on product
-                development, food labeling, nutrition and health claims, and food product
-                quality.
+                European Union. She regularly participates as a speaker and moderator at
+                professional conferences on product development, food labeling, nutrition and
+                health claims, and food product quality.
               </p>
               <p>
                 Through IHIS-Nutricionizam, she brings together a multidisciplinary team of

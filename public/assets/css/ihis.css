@@ -598,6 +598,13 @@ footer.mastfoot {
   color: var(--accent);
 }
 .team-member p { font-size: 12px; color: var(--grey); margin-top: 10px; }
+.team-linkedin {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%; margin-top: 12px;
+  border: 1px solid rgba(130,53,54,.3); color: var(--accent); font-size: 16px;
+  transition: background .3s, color .3s;
+}
+.team-linkedin:hover { background: var(--accent); color: #fff; }
 
 /* ─── Call to action ────────────────────────────────────────────── */
 .cta-block {
@@ -1037,6 +1044,32 @@ footer.mastfoot {
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .project-gallery img:hover { transform: translateY(-5px); box-shadow: 0 14px 30px rgba(36,17,19,.12); }
+
+/* Rotating "our projects" hero carousel */
+.project-hero {
+  position: relative; height: 64vh; min-height: 440px; max-height: 640px;
+  overflow: hidden; border-radius: 10px; background: var(--dark);
+}
+.project-hero .hero-slide { background-color: var(--dark); }
+.project-hero .hero-slide--product { background-size: contain; background-color: #fff; }
+.project-hero .hero-overlay { background: linear-gradient(to top, rgba(36,17,19,.85) 0%, rgba(36,17,19,0) 55%); }
+.project-slide-caption {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 4;
+  padding: 40px; color: #fff; text-align: left;
+}
+.project-slide-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--cream); display: block; margin-bottom: 8px;
+}
+.project-slide-caption h3 {
+  font-family: var(--font-raleway), sans-serif; font-size: 24px; font-weight: 600;
+}
+.project-hero .hero-dots { bottom: 20px; }
+@media (max-width: 600px) {
+  .project-hero { height: 50vh; min-height: 340px; }
+  .project-slide-caption { padding: 24px; }
+  .project-slide-caption h3 { font-size: 18px; }
+}
 @media (max-width: 420px) {
   .payslip-row { flex-direction: column; }
   .payslip-value { text-align: left; }

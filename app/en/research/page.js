@@ -35,6 +35,67 @@ export default function ResearchEn() {
 
         <div className="section-white">
           <div className="container">
+            <div className="section-head">
+              <span className="section-tag">References</span>
+              <h2 className="section-h">Realized projects</h2>
+              <span className="liner"></span>
+            </div>
+            <p className="section-lead grey text-center" style={{ margin: '0 auto 30px' }}>
+              The El Grito facility in Orašje (Bosnia and Herzegovina) — realized as a greenfield
+              investment, today manufactures the la Bomba, Chips Way and El Grito brands.
+            </p>
+            <div className="project-hero fade-in">
+              <div className="hero-slide is-active" style={{ backgroundImage: "url('/assets/img/projects/orasje/factory.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Factory · Greenfield project</span>
+                  <h3>El Grito — Orašje, Bosnia and Herzegovina</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/la-bomba-lineup.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Our products</span>
+                  <h3>la Bomba — cream spreads</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/la-bomba-cooking.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Our products</span>
+                  <h3>la Bomba — cooking chocolate</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/chips-way.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Our products</span>
+                  <h3>Chips Way — soft biscuits</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/el-grito.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Our products</span>
+                  <h3>El Grito — tortillas</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/kakaova-ploca.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Our products</span>
+                  <h3>Cocoa bar for eating and cooking</h3>
+                </div>
+              </div>
+              <div className="hero-overlay"></div>
+              <div className="hero-dots">
+                <div className="hero-dot is-active"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-white">
+          <div className="container">
             <div className="row-intro">
               <div className="col-text fade-in">
                 <span className="section-tag">Research & Development (R&amp;D)</span>

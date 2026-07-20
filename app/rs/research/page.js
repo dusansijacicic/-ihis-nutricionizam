@@ -35,6 +35,67 @@ export default function Istrazivanje() {
 
         <div className="section-white">
           <div className="container">
+            <div className="section-head">
+              <span className="section-tag">Reference</span>
+              <h2 className="section-h">Realizovani projekti</h2>
+              <span className="liner"></span>
+            </div>
+            <p className="section-lead grey text-center" style={{ margin: '0 auto 30px' }}>
+              Fabrika El Grito u Orašju (Bosna i Hercegovina) — realizovana kao greenfield
+              investicija, danas proizvodi brendove la Bomba, Chips Way i El Grito.
+            </p>
+            <div className="project-hero fade-in">
+              <div className="hero-slide is-active" style={{ backgroundImage: "url('/assets/img/projects/orasje/factory.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Fabrika · Greenfield projekat</span>
+                  <h3>El Grito — Orašje, Bosna i Hercegovina</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/la-bomba-lineup.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Naši proizvodi</span>
+                  <h3>la Bomba — krem namazi</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/la-bomba-cooking.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Naši proizvodi</span>
+                  <h3>la Bomba — čokolada za kuvanje</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/chips-way.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Naši proizvodi</span>
+                  <h3>Chips Way — slani/slatki keksići</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/el-grito.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Naši proizvodi</span>
+                  <h3>El Grito — tortilje</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/kakaova-ploca.png')" }}>
+                <div className="project-slide-caption">
+                  <span className="project-slide-tag">Naši proizvodi</span>
+                  <h3>Kakaova ploča za jelo i kuvanje</h3>
+                </div>
+              </div>
+              <div className="hero-overlay"></div>
+              <div className="hero-dots">
+                <div className="hero-dot is-active"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-white">
+          <div className="container">
             <div className="row-intro">
               <div className="col-text fade-in">
                 <span className="section-tag">Istraživanje i razvoj (R&amp;D)</span>
