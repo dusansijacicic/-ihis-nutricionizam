@@ -1065,6 +1065,23 @@ footer.mastfoot {
   font-family: var(--font-raleway), sans-serif; font-size: 24px; font-weight: 600;
 }
 .project-hero .hero-dots { bottom: 20px; }
+.hero-arrow-prev,
+.hero-arrow-next {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 20;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(0,0,0,.35); color: #fff; border: none; cursor: pointer;
+  font-size: 22px; line-height: 1; display: flex; align-items: center; justify-content: center;
+  transition: background .3s;
+}
+.hero-arrow-prev:hover,
+.hero-arrow-next:hover { background: var(--accent); }
+.hero-arrow-prev { left: 16px; }
+.hero-arrow-next { right: 16px; }
+@media (max-width: 600px) {
+  .hero-arrow-prev, .hero-arrow-next { width: 36px; height: 36px; font-size: 18px; }
+  .hero-arrow-prev { left: 8px; }
+  .hero-arrow-next { right: 8px; }
+}
 @media (max-width: 600px) {
   .project-hero { height: 50vh; min-height: 340px; }
   .project-slide-caption { padding: 24px; }

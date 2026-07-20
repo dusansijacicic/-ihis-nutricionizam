@@ -91,6 +91,8 @@ export default function Istrazivanje() {
                 </div>
               </div>
               <div className="hero-overlay"></div>
+              <button type="button" className="hero-arrow-prev" aria-label="Prethodna slika">&lsaquo;</button>
+              <button type="button" className="hero-arrow-next" aria-label="Sledeća slika">&rsaquo;</button>
               <div className="hero-dots">
                 <div className="hero-dot is-active"></div>
                 <div className="hero-dot"></div>

@@ -78,6 +78,21 @@
         interval = setInterval(next, 5000);
       });
     });
+
+    document.querySelectorAll('.hero-arrow-prev').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        clearInterval(interval);
+        goTo(current - 1);
+        interval = setInterval(next, 5000);
+      });
+    });
+    document.querySelectorAll('.hero-arrow-next').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        clearInterval(interval);
+        goTo(current + 1);
+        interval = setInterval(next, 5000);
+      });
+    });
   }
 
   /* ── Progress bar animation ────────────────────── */

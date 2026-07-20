@@ -91,6 +91,8 @@ export default function ResearchEn() {
                 </div>
               </div>
               <div className="hero-overlay"></div>
+              <button type="button" className="hero-arrow-prev" aria-label="Previous image">&lsaquo;</button>
+              <button type="button" className="hero-arrow-next" aria-label="Next image">&rsaquo;</button>
               <div className="hero-dots">
                 <div className="hero-dot is-active"></div>
                 <div className="hero-dot"></div>
