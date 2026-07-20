@@ -75,9 +75,27 @@ export default function ResearchEn() {
                   <h3>Cocoa bar for eating and cooking</h3>
                 </div>
               </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/chips-way-strawberry.jpg')" }}>
+                <div className="project-slide-caption">
+                  <h3>Chips Way feel Happy — strawberry</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/chips-way-apricot.png')" }}>
+                <div className="project-slide-caption">
+                  <h3>Chips Way feel Happy — apricot</h3>
+                </div>
+              </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/chips-way-choco.png')" }}>
+                <div className="project-slide-caption">
+                  <h3>Chips Way feel Happy — choco</h3>
+                </div>
+              </div>
               <div className="hero-overlay"></div>
               <div className="hero-dots">
                 <div className="hero-dot is-active"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
+                <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
