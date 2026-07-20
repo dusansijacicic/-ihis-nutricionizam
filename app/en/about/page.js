@@ -77,15 +77,14 @@ export default function AboutEn() {
             </div>
             <div className="team-row">
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}></div>
-                <h4>Dr Danica Zarić</h4>
+                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/branko.jpg')" }}></div>
+                <h4>M.Sc. Tech. Branko Zarić</h4>
                 <h6>Director</h6>
               </div>
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}></div>
-                <h4>Expert team</h4>
-                <h6>Technologists · Nutritionists · Biotechnologists</h6>
-                <p>Brings together the highest-quality specialists in technology, biotechnology, nutrition science, quality and food safety.</p>
+                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
+                <h4>PhD Danica Zarić</h4>
+                <h6>Founder</h6>
               </div>
             </div>
           </div>
@@ -95,26 +94,65 @@ export default function AboutEn() {
           <div className="container">
             <div className="section-head">
               <span className="section-tag">Biography</span>
-              <h2 className="section-h">Dr Danica Zarić</h2>
+              <h2 className="section-h">M.Sc. Tech. Branko Zarić — Director</h2>
               <span className="liner"></span>
             </div>
             <div className="container-narrow" style={{ padding: 0 }}>
               <p className="mb-16">
-                She earned her PhD in 2011 on the production of chocolate using soy milk in ball
-                mills. She built a 15-year professional career in the food industry — at Soko Nada
-                Štark, Delta Holding and Bambi-Banat — before founding IHIS Nutricionizam.
-              </p>
-              <p className="mb-16">
-                She is the author and co-author of more than 100 published scientific papers and
-                holds 8 technical solutions in the field of functional confectionery products.
-                Since 2020 she has also been engaged as a senior research associate at the
-                Innovation Center of the Faculty of Technology and Metallurgy, University of
-                Belgrade.
+                Over 30 years of experience leading major food industry companies, with a rich
+                career in executive and management roles across production, sales, procurement
+                and investment development.
               </p>
               <p>
-                She regularly participates as a speaker and moderator at regional professional
-                conferences on food labeling, nutrition and health claims, and confectionery
-                product quality.
+                During his professional career he served as production director at Soko Štark,
+                sales director at Fresh&amp;Co, procurement director at Imlek, and chairman of the
+                board of Bitola Dairy (Bimilk). Today he applies his extensive industry
+                experience to developing innovative projects and providing strategic and
+                technological support to companies in the food sector.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-white">
+          <div className="container">
+            <div className="section-head">
+              <span className="section-tag">Biography</span>
+              <h2 className="section-h">PhD Danica Zarić — Founder</h2>
+              <span className="liner"></span>
+            </div>
+            <div className="container-narrow" style={{ padding: 0 }}>
+              <p className="mb-16">
+                She built a professional career in the food industry spanning more than 15 years
+                in senior product development roles at Soko Štark (Head of Chocolate
+                Development), Delta Holding (Development Director) and Bambi-Banat (Development
+                Director), before founding IHIS-Nutricionizam.
+              </p>
+              <p className="mb-16">
+                She began her scientific career in 2011 with a PhD on the production of chocolate
+                using soy milk in ball mills. In 2020 she was elected to the highest scientific
+                title — Research Professor. She is the author and co-author of more than 100
+                scientific papers and holds 11 technical solutions in the field of functional
+                food and confectionery products.
+              </p>
+              <p className="mb-16">
+                Her expertise covers research and development of food products, functional food,
+                dietary supplements, food labeling, the application of nutrition and health
+                claims, and the regulatory requirements of the Republic of Serbia and the
+                European Union.
+              </p>
+              <p className="mb-16">
+                She was a member of the expert team of the Ministry of Health of the Republic of
+                Serbia for drafting the Regulation on Nutrition and Health Claims, and regularly
+                participates as a speaker and moderator at professional conferences on product
+                development, food labeling, nutrition and health claims, and food product
+                quality.
+              </p>
+              <p>
+                Through IHIS-Nutricionizam, she brings together a multidisciplinary team of
+                top-tier experts in food technology, biotechnology, nutrition science, quality
+                and food safety, providing companies with science-based, practically applicable
+                solutions for developing innovative products.
               </p>
             </div>
           </div>

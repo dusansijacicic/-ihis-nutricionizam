@@ -75,15 +75,14 @@ export default function ONama() {
             </div>
             <div className="team-row">
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}></div>
-                <h4>Dr Danica Zarić</h4>
+                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/branko.jpg')" }}></div>
+                <h4>M.Sc. Tech. Branko Zarić</h4>
                 <h6>Direktor</h6>
               </div>
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}></div>
-                <h4>Stručni tim</h4>
-                <h6>Tehnolozi · Nutricionisti · Biotehnolozi</h6>
-                <p>Okuplja najkvalitetnije stručnjake iz oblasti tehnologije, biotehnologije, nutricionizma, kvaliteta i bezbednosti hrane.</p>
+                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
+                <h4>PhD Danica Zarić</h4>
+                <h6>Osnivač</h6>
               </div>
             </div>
           </div>
@@ -93,26 +92,65 @@ export default function ONama() {
           <div className="container">
             <div className="section-head">
               <span className="section-tag">Biografija</span>
-              <h2 className="section-h">Dr Danica Zarić</h2>
+              <h2 className="section-h">M.Sc. Tech. Branko Zarić — Direktor</h2>
               <span className="liner"></span>
             </div>
             <div className="container-narrow" style={{ padding: 0 }}>
               <p className="mb-16">
-                Doktorirala je 2011. godine na temu proizvodnje čokolade uz primenu sojinog mleka
-                u kugličnim mlinovima. Profesionalnu karijeru u prehrambenoj industriji gradila je
-                15 godina — u kompanijama Soko Nada Štark, Delta Holding i Bambi-Banat — pre nego
-                što je osnovala IHIS Nutricionizam.
-              </p>
-              <p className="mb-16">
-                Autorka je i koautorka preko 100 objavljenih naučnih radova i nosilac 8 tehničkih
-                rešenja u oblasti funkcionalnih konditorskih proizvoda. Od 2020. godine angažovana je
-                i kao viši naučni saradnik na Inovacionom centru Tehnološko-metalurškog fakulteta
-                Univerziteta u Beogradu.
+                Više od 30 godina iskustva u vođenju najvećih kompanija prehrambene industrije,
+                sa bogatom karijerom na izvršnim i upravljačkim funkcijama u oblastima
+                proizvodnje, prodaje, nabavke i investicionog razvoja.
               </p>
               <p>
-                Redovno učestvuje kao predavač i moderator na regionalnim stručnim savetovanjima
-                iz oblasti deklarisanja hrane, nutritivnih i zdravstvenih izjava, i kvaliteta
-                konditorskih proizvoda.
+                Tokom profesionalne karijere bio je direktor proizvodnje u Soko Štarku, direktor
+                prodaje u Fresh&amp;Co, direktor nabavke u Imleku i predsednik Upravnog odbora
+                Bitoljske mlekare (Bimilk). Danas svoje dugogodišnje industrijsko iskustvo
+                primenjuje kroz razvoj inovativnih projekata i pružanje strateške i tehnološke
+                podrške kompanijama u prehrambenom sektoru.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-white">
+          <div className="container">
+            <div className="section-head">
+              <span className="section-tag">Biografija</span>
+              <h2 className="section-h">PhD Danica Zarić — Osnivač</h2>
+              <span className="liner"></span>
+            </div>
+            <div className="container-narrow" style={{ padding: 0 }}>
+              <p className="mb-16">
+                Profesionalnu karijeru u prehrambenoj industriji gradila je više od 15 godina na
+                rukovodećim pozicijama u razvoju proizvoda u kompanijama Soko Štark (rukovodilac
+                razvoja za čokoladu), Delta Holding (direktor razvoja) i Bambi-Banat (direktor
+                razvoja), nakon čega osniva IHIS-Nutricionizam.
+              </p>
+              <p className="mb-16">
+                Naučnu karijeru započinje 2011. godine doktoratom posvećenim razvoju čokolade sa
+                sojinim mlekom proizvedene u kugličnom mlinu. Godine 2020. izabrana je u najviše
+                naučno zvanje – naučni savetnik. Autor je i koautor više od 100 naučnih radova i
+                nosilac 11 tehničkih rešenja iz oblasti funkcionalne hrane i konditorskih
+                proizvoda.
+              </p>
+              <p className="mb-16">
+                Njena ekspertiza obuhvata istraživanje i razvoj prehrambenih proizvoda,
+                funkcionalnu hranu, dodatke ishrani, deklarisanje prehrambenih proizvoda,
+                primenu nutritivnih i zdravstvenih izjava, kao i regulatorne zahteve Republike
+                Srbije i Evropske unije.
+              </p>
+              <p className="mb-16">
+                Bila je član stručnog tima Ministarstva zdravlja Republike Srbije za izradu
+                Pravilnika o prehrambenim i zdravstvenim izjavama, a redovno učestvuje kao
+                predavač i moderator na stručnim savetovanjima iz oblasti razvoja proizvoda,
+                deklarisanja hrane, nutritivnih i zdravstvenih izjava i kvaliteta prehrambenih
+                proizvoda.
+              </p>
+              <p>
+                Kroz IHIS-Nutricionizam okuplja multidisciplinarni tim vrhunskih stručnjaka iz
+                oblasti prehrambene tehnologije, biotehnologije, nutricionizma, kvaliteta i
+                bezbednosti hrane, pružajući kompanijama naučno utemeljena i praktično
+                primenljiva rešenja za razvoj inovativnih proizvoda.
               </p>
             </div>
           </div>

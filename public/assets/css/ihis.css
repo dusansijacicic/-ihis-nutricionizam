@@ -1010,6 +1010,33 @@ footer.mastfoot {
 }
 .payslip-value--amount { font-weight: 700; color: var(--accent); }
 .payslip-value small { display: block; font-weight: 400; color: var(--grey); font-size: 11px; margin-top: 3px; }
+
+/* ─── Realized projects (Tech page) ─────────────────────────────── */
+.project-showcase {
+  display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch;
+  margin-bottom: 40px;
+}
+.project-photo {
+  flex: 1 1 420px; min-height: 320px; border-radius: 8px;
+  background-size: cover; background-position: center;
+  position: relative; display: flex; align-items: flex-end; padding: 20px;
+}
+.project-badge {
+  background: var(--accent); color: #fff; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 16px; border-radius: 20px;
+}
+.project-info { flex: 1 1 340px; display: flex; flex-direction: column; justify-content: center; }
+.project-info h3 { font-family: var(--font-raleway), sans-serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; }
+.project-info p { font-size: 14px; line-height: 24px; color: #555; }
+.project-gallery {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px;
+}
+.project-gallery img {
+  width: 100%; aspect-ratio: 4/3; object-fit: contain; background: #fff;
+  border: 1px solid rgba(130,53,54,.12); border-radius: 8px; padding: 12px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.project-gallery img:hover { transform: translateY(-5px); box-shadow: 0 14px 30px rgba(36,17,19,.12); }
 @media (max-width: 420px) {
   .payslip-row { flex-direction: column; }
   .payslip-value { text-align: left; }

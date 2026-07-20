@@ -113,6 +113,39 @@ export default function Tehnologija() {
           </div>
         </div>
 
+        <div className="section-white">
+          <div className="container">
+            <div className="section-head">
+              <span className="section-tag">Reference</span>
+              <h2 className="section-h">Realizovani projekti</h2>
+              <span className="liner"></span>
+            </div>
+
+            <div className="project-showcase fade-in">
+              <div className="project-photo" style={{ backgroundImage: "url('/assets/img/projects/orasje/factory.png')" }}>
+                <span className="project-badge">Greenfield projekat</span>
+              </div>
+              <div className="project-info">
+                <h3>El Grito — Orašje, Bosna i Hercegovina</h3>
+                <p>
+                  Nova proizvodna fabrika za prehrambene proizvode, realizovana kao greenfield
+                  investicija — od tehnološkog koncepta i izbora opreme, do pokretanja
+                  proizvodnje. U pogonu se danas proizvode brendovi la Bomba, Chips Way i
+                  El Grito.
+                </p>
+              </div>
+            </div>
+
+            <div className="project-gallery">
+              <div className="fade-in"><img src="/assets/img/projects/orasje/la-bomba-lineup.png" alt="la Bomba" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/la-bomba-cooking.png" alt="la Bomba čokolada za kuvanje" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/chips-way.png" alt="Chips Way" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/el-grito.png" alt="El Grito tortilje" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/kakaova-ploca.png" alt="Kakaova ploča" /></div>
+            </div>
+          </div>
+        </div>
+
         <div className="section-dark text-center">
           <div className="container-cta">
             <h2 className="section-h">Planirate novu investiciju?</h2>

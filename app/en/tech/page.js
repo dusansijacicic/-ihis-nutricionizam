@@ -114,6 +114,38 @@ export default function TechEn() {
           </div>
         </div>
 
+        <div className="section-white">
+          <div className="container">
+            <div className="section-head">
+              <span className="section-tag">References</span>
+              <h2 className="section-h">Realized projects</h2>
+              <span className="liner"></span>
+            </div>
+
+            <div className="project-showcase fade-in">
+              <div className="project-photo" style={{ backgroundImage: "url('/assets/img/projects/orasje/factory.png')" }}>
+                <span className="project-badge">Greenfield project</span>
+              </div>
+              <div className="project-info">
+                <h3>El Grito — Orašje, Bosnia and Herzegovina</h3>
+                <p>
+                  A new food production facility realized as a greenfield investment — from the
+                  technological concept and equipment selection to launching production. The
+                  facility today manufactures the la Bomba, Chips Way and El Grito brands.
+                </p>
+              </div>
+            </div>
+
+            <div className="project-gallery">
+              <div className="fade-in"><img src="/assets/img/projects/orasje/la-bomba-lineup.png" alt="la Bomba" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/la-bomba-cooking.png" alt="la Bomba cooking chocolate" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/chips-way.png" alt="Chips Way" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/el-grito.png" alt="El Grito tortillas" /></div>
+              <div className="fade-in"><img src="/assets/img/projects/orasje/kakaova-ploca.png" alt="Cocoa bar" /></div>
+            </div>
+          </div>
+        </div>
+
         <div className="section-dark text-center">
           <div className="container-cta">
             <h2 className="section-h">Planning a new investment?</h2>
