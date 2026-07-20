@@ -84,7 +84,7 @@ export default function AboutEn() {
               </div>
               <div className="team-member fade-in">
                 <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
-                <h4>PhD Danica Zarić</h4>
+                <h4>PhD. Danica Zarić</h4>
                 <h6>Founder</h6>
                 <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profile — Danica Zarić">
                   <span className="ion-social-linkedin"></span>
@@ -126,7 +126,7 @@ export default function AboutEn() {
           <div className="container">
             <div className="section-head">
               <span className="section-tag">Biography</span>
-              <h2 className="section-h">PhD Danica Zarić — Founder</h2>
+              <h2 className="section-h">PhD. Danica Zarić — Founder</h2>
               <span className="liner"></span>
             </div>
             <div className="container-narrow" style={{ padding: 0 }}>
@@ -138,7 +138,7 @@ export default function AboutEn() {
                 <li>Soko Štark — Head of Chocolate Development</li>
                 <li>Delta Holding — Development Director</li>
                 <li>Bambi-Banat — Development Director</li>
-                <li>PhD (2011) — chocolate production using soy milk in ball mills</li>
+                <li>PhD. (2011) — chocolate production using soy milk in ball mills</li>
                 <li>Research Professor (2020) — highest scientific title</li>
                 <li>100+ scientific papers, 11 technical solutions in functional food and confectionery products</li>
                 <li>Member of the Serbian Ministry of Health expert team for the Regulation on Nutrition and Health Claims</li>

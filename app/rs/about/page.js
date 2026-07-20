@@ -83,7 +83,7 @@ export default function ONama() {
               </div>
               <div className="team-member fade-in">
                 <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
-                <h4>PhD Danica Zarić</h4>
+                <h4>PhD. Danica Zarić</h4>
                 <h6>Osnivač</h6>
                 <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profil — Danica Zarić">
                   <span className="ion-social-linkedin"></span>
@@ -125,7 +125,7 @@ export default function ONama() {
           <div className="container">
             <div className="section-head">
               <span className="section-tag">Biografija</span>
-              <h2 className="section-h">PhD Danica Zarić — Osnivač</h2>
+              <h2 className="section-h">PhD. Danica Zarić — Osnivač</h2>
               <span className="liner"></span>
             </div>
             <div className="container-narrow" style={{ padding: 0 }}>
