@@ -77,7 +77,7 @@ export default function ONama() {
                 <div className="team-photo" style={{ backgroundImage: "url('/assets/img/branko.jpg')" }}></div>
                 <h4>M.Sc. Tech. Branko Zarić</h4>
                 <h6>Direktor</h6>
-                <a href="#" className="team-linkedin" aria-label="LinkedIn profil — Branko Zarić">
+                <a href="https://www.linkedin.com/in/branko-zari%C4%87-274256b8/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profil — Branko Zarić">
                   <span className="ion-social-linkedin"></span>
                 </a>
               </div>
