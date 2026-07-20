@@ -65,6 +65,11 @@ export default function ResearchEn() {
                   <h3>El Grito — tortillas</h3>
                 </div>
               </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/el-grito-chips.png')" }}>
+                <div className="project-slide-caption">
+                  <h3>El Grito — tortilla chips</h3>
+                </div>
+              </div>
               <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/kakaova-ploca.png')" }}>
                 <div className="project-slide-caption">
                   <h3>Cocoa bar for eating and cooking</h3>
@@ -73,6 +78,7 @@ export default function ResearchEn() {
               <div className="hero-overlay"></div>
               <div className="hero-dots">
                 <div className="hero-dot is-active"></div>
+                <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>

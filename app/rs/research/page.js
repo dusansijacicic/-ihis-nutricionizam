@@ -65,6 +65,11 @@ export default function Istrazivanje() {
                   <h3>El Grito — tortilje</h3>
                 </div>
               </div>
+              <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/el-grito-chips.png')" }}>
+                <div className="project-slide-caption">
+                  <h3>El Grito — tortilja čips</h3>
+                </div>
+              </div>
               <div className="hero-slide hero-slide--product" style={{ backgroundImage: "url('/assets/img/projects/orasje/kakaova-ploca.png')" }}>
                 <div className="project-slide-caption">
                   <h3>Kakaova ploča za jelo i kuvanje</h3>
@@ -73,6 +78,7 @@ export default function Istrazivanje() {
               <div className="hero-overlay"></div>
               <div className="hero-dots">
                 <div className="hero-dot is-active"></div>
+                <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
                 <div className="hero-dot"></div>
