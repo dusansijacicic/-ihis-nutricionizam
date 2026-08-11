@@ -50,6 +50,19 @@ export default function Blog() {
           <div className="container-sm">
             <div style={{ display: 'flex', flexDirection: 'column', gap: 30 }}>
               <div className="news-row fade-in">
+                <img src="/assets/img/cover3.jpg" alt="" className="news-thumb" />
+                <div>
+                  <span className="news-eyebrow">Nutricionizam</span>
+                  <h4>Šta je nutricionizam?</h4>
+                  <p>
+                    Definicija nutricionizma, čime se ova nauka bavi i kako se primenjuje u
+                    razvoju i deklarisanju prehrambenih proizvoda.
+                  </p>
+                  <a href="/rs/blog/sta-je-nutricionizam" className="read-more">Pročitajte više &rarr;</a>
+                </div>
+              </div>
+
+              <div className="news-row fade-in">
                 <img src="/assets/img/cover.jpg" alt="" className="news-thumb" />
                 <div>
                   <span className="news-eyebrow">Deklarisanje</span>

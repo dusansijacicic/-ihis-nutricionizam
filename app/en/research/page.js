@@ -177,6 +177,18 @@ export default function ResearchEn() {
           </div>
         </div>
 
+        <div className="section-dark text-center">
+          <div className="container-cta">
+            <h2 className="section-h">From research to finished product</h2>
+            <span className="liner"></span>
+            <p className="mt-10">
+              Also see our <a href="/en/services" style={{ color: '#fff', textDecoration: 'underline' }}>food labeling and product development</a> services, or
+              how we help with <a href="/en/tech" style={{ color: '#fff', textDecoration: 'underline' }}>factory construction and launching new production lines</a>.
+            </p>
+            <a href="/en/contact" className="btn-ihis btn-ihis-white mt-24">Contact us</a>
+          </div>
+        </div>
+
       </section>
 
       <Footer locale="en" />

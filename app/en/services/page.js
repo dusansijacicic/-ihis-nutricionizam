@@ -3,16 +3,17 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Services — IHIS Nutricionizam',
-  description: 'IHIS Nutricionizam services — technology consulting, food labeling and health claims, new product development, alignment with Serbian and EU legislation.',
+  title: 'Food Labeling & Product Development — IHIS Nutricionizam',
+  description: 'Food labeling, new product development and dietary supplement formulation, technology consulting, and alignment with Serbian and EU legislation. Nutrition science in practice.',
+  keywords: ['food labeling', 'food product development', 'nutrition science', 'dietary supplement development'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/services',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
-    title: 'Services — IHIS Nutricionizam',
-    description: 'Technology consulting, food labeling and health claims, new product development.',
+    title: 'Food Labeling & Product Development — IHIS Nutricionizam',
+    description: 'Food labeling, new product development, technology consulting, and alignment with Serbian and EU legislation.',
     url: 'https://ihis-nutricionizam.rs/en/services',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
@@ -28,7 +29,7 @@ export default function ServicesEn() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Services</h1>
+            <h1 className="page-title">Food Labeling &amp; Product Development</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Services</p>
           </div>
         </div>
@@ -133,6 +134,10 @@ export default function ServicesEn() {
             <h2 className="section-h">Request a proposal</h2>
             <span className="liner"></span>
             <p className="mt-10">Tell us about your needs and we'll get back to you shortly with a proposal for cooperation.</p>
+            <p className="mt-10" style={{ fontSize: 13, opacity: .8 }}>
+              Also planning <a href="/en/tech" style={{ color: '#fff', textDecoration: 'underline' }}>factory construction or a new production line</a>? Check out
+              our <a href="/en/research" style={{ color: '#fff', textDecoration: 'underline' }}>research &amp; development team</a>.
+            </p>
             <a href="/en/contact" className="btn-ihis btn-ihis-white mt-24">Contact us</a>
           </div>
         </div>

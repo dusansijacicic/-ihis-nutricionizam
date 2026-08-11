@@ -1,6 +1,7 @@
 import '../public/assets/css/ihis.css';
 import Script from 'next/script';
 import { Sora, Inter } from 'next/font/google';
+import OrgSchema from '../components/OrgSchema';
 
 const sora = Sora({
   subsets: ['latin', 'latin-ext'],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="sr" className={`${sora.variable} ${inter.variable}`}>
       <head>
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <OrgSchema />
       </head>
       <body>
         <div id="preloader"><div className="preloader-ring"></div></div>

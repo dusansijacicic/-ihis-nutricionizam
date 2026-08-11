@@ -4,8 +4,9 @@ import Footer from '../../components/Footer';
 import { POZIV } from '../../lib/content/poziv';
 
 export const metadata = {
-  title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
-  description: 'IHIS Nutricionizam — naučno-istraživačka kompanija za deklarisanje i razvoj prehrambenih proizvoda, Beograd.',
+  title: 'IHIS Nutricionizam — Deklarisanje hrane, razvoj proizvoda, izgradnja fabrika',
+  description: 'IHIS Nutricionizam — naučno-istraživačka kompanija za nutricionizam, deklarisanje prehrambenih proizvoda, razvoj novih proizvoda i izgradnju fabrika (greenfield investicije), Beograd.',
+  keywords: ['nutricionizam', 'deklarisanje hrane', 'razvoj proizvoda', 'izgradnja fabrike', 'nova proizvodna linija'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs',
     languages: {

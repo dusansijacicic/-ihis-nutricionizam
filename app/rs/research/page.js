@@ -3,8 +3,9 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Istraživanje i razvoj (R&D) — IHIS Nutricionizam',
-  description: 'Istraživanje i razvoj IHIS Nutricionizma — razvoj proizvoda, deklarisanje i regulatorna usklađenost, funkcionalni sastojci, nutritivna vrednost i naučna ekspertiza.',
+  title: 'Razvoj prehrambenih proizvoda — Istraživanje i razvoj (R&D)',
+  description: 'Razvoj prehrambenih proizvoda i dodataka ishrani, deklarisanje i regulatorna usklađenost, funkcionalni sastojci i naučna ekspertiza. Nutricionizam zasnovan na nauci.',
+  keywords: ['razvoj prehrambenih proizvoda', 'razvoj proizvoda', 'nutricionizam', 'funkcionalna hrana'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs/research',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
@@ -173,6 +174,18 @@ export default function Istrazivanje() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="section-dark text-center">
+          <div className="container-cta">
+            <h2 className="section-h">Od istraživanja do gotovog proizvoda</h2>
+            <span className="liner"></span>
+            <p className="mt-10">
+              Pogledajte i naše usluge <a href="/rs/services" style={{ color: '#fff', textDecoration: 'underline' }}>deklarisanja hrane i razvoja proizvoda</a>, ili
+              kako pomažemo pri <a href="/rs/tech" style={{ color: '#fff', textDecoration: 'underline' }}>izgradnji fabrika i pokretanju novih proizvodnih linija</a>.
+            </p>
+            <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
           </div>
         </div>
 

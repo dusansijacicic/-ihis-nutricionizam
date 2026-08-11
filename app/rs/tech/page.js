@@ -3,16 +3,17 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Tehnologija i greenfield investicije — IHIS Nutricionizam',
-  description: 'Tehnološki konsalting i greenfield investicije IHIS Nutricionizma — izbor opreme, organizacija proizvodnih linija i realizacija novih proizvodnih kapaciteta.',
+  title: 'Izgradnja fabrika i nove proizvodne linije — IHIS Nutricionizam',
+  description: 'Izgradnja fabrika, nove proizvodne linije i greenfield investicije u prehrambenoj industriji — tehnološki koncept, izbor opreme i pokretanje proizvodnje.',
+  keywords: ['izgradnja fabrike', 'nova proizvodna linija', 'greenfield investicije', 'tehnološki konsalting prehrambena industrija'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs/tech',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/tech', en: 'https://ihis-nutricionizam.rs/en/tech' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
-    title: 'Tehnologija i greenfield investicije — IHIS Nutricionizam',
-    description: 'Izbor opreme, organizacija proizvodnih linija i realizacija novih proizvodnih kapaciteta.',
+    title: 'Izgradnja fabrika i nove proizvodne linije — IHIS Nutricionizam',
+    description: 'Izgradnja fabrika, nove proizvodne linije i greenfield investicije u prehrambenoj industriji.',
     url: 'https://ihis-nutricionizam.rs/rs/tech',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
@@ -28,7 +29,7 @@ export default function Tehnologija() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Tehnologija i greenfield investicije</h1>
+            <h1 className="page-title">Izgradnja fabrika i nove proizvodne linije</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Tehnologija i greenfield investicije</p>
           </div>
         </div>
@@ -118,6 +119,9 @@ export default function Tehnologija() {
             <h2 className="section-h">Planirate novu investiciju?</h2>
             <span className="liner"></span>
             <p className="mt-10">Kontaktirajte nas i razgovarajmo o tehnološkom konceptu koji odgovara vašim planovima.</p>
+            <p className="mt-10" style={{ fontSize: 13, opacity: .8 }}>
+              Nakon pokretanja proizvodnje, tu smo i za <a href="/rs/services" style={{ color: '#fff', textDecoration: 'underline' }}>deklarisanje i razvoj proizvoda</a>.
+            </p>
             <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
           </div>
         </div>

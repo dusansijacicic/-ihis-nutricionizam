@@ -49,6 +49,19 @@ export default function BlogEn() {
           <div className="container-sm">
             <div style={{ display: 'flex', flexDirection: 'column', gap: 30 }}>
               <div className="news-row fade-in">
+                <img src="/assets/img/cover3.jpg" alt="" className="news-thumb" />
+                <div>
+                  <span className="news-eyebrow">Nutrition science</span>
+                  <h4>What is nutrition science?</h4>
+                  <p>
+                    A definition of nutrition science, what it studies, and how it's applied in
+                    food product development and labeling.
+                  </p>
+                  <a href="/en/blog/what-is-nutrition-science" className="read-more">Read more &rarr;</a>
+                </div>
+              </div>
+
+              <div className="news-row fade-in">
                 <img src="/assets/img/cover.jpg" alt="" className="news-thumb" />
                 <div>
                   <span className="news-eyebrow">Labeling</span>

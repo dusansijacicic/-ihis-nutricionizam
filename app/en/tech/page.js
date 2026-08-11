@@ -3,16 +3,17 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Technology & Greenfield Investments — IHIS Nutricionizam',
-  description: 'Technology consulting and greenfield investments by IHIS Nutricionizam — equipment selection, production line organization and realization of new production capacities.',
+  title: 'Factory Construction & New Production Lines — IHIS Nutricionizam',
+  description: 'Factory construction, new production lines and greenfield investments in the food industry — technological concept, equipment selection and production launch.',
+  keywords: ['factory construction', 'new production line', 'greenfield investment', 'food industry technology consulting'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/tech',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/tech', en: 'https://ihis-nutricionizam.rs/en/tech' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
-    title: 'Technology & Greenfield Investments — IHIS Nutricionizam',
-    description: 'Equipment selection, production line organization and realization of new production capacities.',
+    title: 'Factory Construction & New Production Lines — IHIS Nutricionizam',
+    description: 'Factory construction, new production lines and greenfield investments in the food industry.',
     url: 'https://ihis-nutricionizam.rs/en/tech',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
@@ -28,7 +29,7 @@ export default function TechEn() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Technology &amp; Greenfield Investments</h1>
+            <h1 className="page-title">Factory Construction &amp; New Production Lines</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Technology &amp; Greenfield Investments</p>
           </div>
         </div>
@@ -119,6 +120,9 @@ export default function TechEn() {
             <h2 className="section-h">Planning a new investment?</h2>
             <span className="liner"></span>
             <p className="mt-10">Contact us and let's discuss the technological concept that fits your plans.</p>
+            <p className="mt-10" style={{ fontSize: 13, opacity: .8 }}>
+              Once production is running, we're also here for <a href="/en/services" style={{ color: '#fff', textDecoration: 'underline' }}>labeling and product development</a>.
+            </p>
             <a href="/en/contact" className="btn-ihis btn-ihis-white mt-24">Contact us</a>
           </div>
         </div>

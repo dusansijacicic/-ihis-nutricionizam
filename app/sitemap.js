@@ -13,6 +13,7 @@ const PAGES = [
   { sr: '/rs/gallery', en: '/en/gallery', priority: 0.6 },
   { sr: '/rs/news', en: '/en/news', priority: 0.7 },
   { sr: '/rs/blog', en: '/en/blog', priority: 0.6 },
+  { sr: '/rs/blog/sta-je-nutricionizam', en: '/en/blog/what-is-nutrition-science', priority: 0.6 },
   { sr: '/rs/blog/how-to-read-nutrition-label', en: '/en/blog/how-to-read-nutrition-label', priority: 0.5 },
   { sr: '/rs/blog/nutrition-and-health-claims', en: '/en/blog/nutrition-and-health-claims', priority: 0.5 },
   { sr: '/rs/blog/natural-non-gmo-gluten-free-labels', en: '/en/blog/natural-non-gmo-gluten-free-labels', priority: 0.5 },

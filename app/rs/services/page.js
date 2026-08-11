@@ -3,16 +3,17 @@ import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
 export const metadata = {
-  title: 'Usluge — IHIS Nutricionizam',
-  description: 'Usluge IHIS Nutricionizma — tehnološki konsalting, deklarisanje i zdravstvene izjave, razvoj novih prehrambenih proizvoda, usklađivanje sa zakonodavstvom Srbije i EU.',
+  title: 'Deklarisanje hrane i razvoj proizvoda — IHIS Nutricionizam',
+  description: 'Deklarisanje prehrambenih proizvoda, razvoj novih proizvoda i dodataka ishrani, tehnološki konsalting i usklađivanje sa zakonodavstvom Srbije i EU. Nutricionizam u praksi.',
+  keywords: ['deklarisanje hrane', 'deklarisanje prehrambenih proizvoda', 'razvoj proizvoda', 'razvoj prehrambenih proizvoda', 'nutricionizam'],
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/rs/services',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
-    title: 'Usluge — IHIS Nutricionizam',
-    description: 'Tehnološki konsalting, deklarisanje i zdravstvene izjave, razvoj novih prehrambenih proizvoda.',
+    title: 'Deklarisanje hrane i razvoj proizvoda — IHIS Nutricionizam',
+    description: 'Deklarisanje prehrambenih proizvoda, razvoj novih proizvoda, tehnološki konsalting i usklađivanje sa zakonodavstvom Srbije i EU.',
     url: 'https://ihis-nutricionizam.rs/rs/services',
     images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
@@ -28,7 +29,7 @@ export default function Usluge() {
         <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
-            <h1 className="page-title">Usluge</h1>
+            <h1 className="page-title">Deklarisanje hrane i razvoj proizvoda</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Usluge</p>
           </div>
         </div>
@@ -133,6 +134,10 @@ export default function Usluge() {
             <h2 className="section-h">Zatražite ponudu</h2>
             <span className="liner"></span>
             <p className="mt-10">Opišite nam vaše potrebe i kontaktiraćemo vas u najkraćem roku sa predlogom saradnje.</p>
+            <p className="mt-10" style={{ fontSize: 13, opacity: .8 }}>
+              Planirate i <a href="/rs/tech" style={{ color: '#fff', textDecoration: 'underline' }}>izgradnju fabrike ili novu proizvodnu liniju</a>? Pogledajte i
+              naš <a href="/rs/research" style={{ color: '#fff', textDecoration: 'underline' }}>istraživačko-razvojni tim</a>.
+            </p>
             <a href="/rs/contact" className="btn-ihis btn-ihis-white mt-24">Kontaktirajte nas</a>
           </div>
         </div>
