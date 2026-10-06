@@ -67,7 +67,7 @@ header.masthead {
   margin: 0 auto;
   padding: 0 40px;
   height: 100%;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .main-logo img { height: 46px; width: auto; display: block; }
 
@@ -85,6 +85,18 @@ header.masthead {
 }
 .hdr-links li a:hover,
 .hdr-links li a.is-current { color: #fff; }
+.main-logo { flex-shrink: 0; }
+.hdr-links li a { white-space: nowrap; }
+/* Duži natpis "Radionica o deklarisanju" — zbijen meni na srednjim širinama */
+@media (max-width: 1360px) {
+  .hdr-links { gap: 18px; }
+  .hdr-links li a { letter-spacing: 1.5px; }
+  .hdr-highlight { padding: 9px 14px; }
+}
+@media (max-width: 1150px) {
+  .hdr-links { gap: 12px; }
+  .hdr-links li a { font-size: 10px; letter-spacing: 1px; }
+}
 
 /* Highlighted nav item (Radionica) + optional dropdown */
 .hdr-dropdown-wrap { position: relative; }
@@ -145,7 +157,7 @@ header.masthead {
 .menu-trigger.is-active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 /* On desktop: hide mastnav overlay entirely */
-@media (min-width: 901px) {
+@media (min-width: 1001px) {
   nav.mastnav { display: none !important; }
 }
 
@@ -629,7 +641,7 @@ footer.mastfoot {
 .breadcrumb-row a:hover { color: var(--accent); }
 
 /* ─── Responsive ────────────────────────────────────────────────── */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   /* Switch to hamburger on mobile */
   .hdr-links { display: none; }
   .menu-trigger { display: flex; }
@@ -945,9 +957,9 @@ footer.mastfoot {
 .registration-form {
   display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px;
 }
-.registration-form input[name="name"],
-.registration-form input[name="email"],
-.registration-form button { grid-column: 1 / -1; }
+.registration-form .rf-full { grid-column: 1 / -1; }
+.registration-form select.cf-input { cursor: pointer; }
+.registration-form select.cf-input option { color: var(--dark); background: #fff; }
 @media (max-width: 480px) {
   .registration-form { grid-template-columns: 1fr; }
 }
@@ -1279,8 +1291,4 @@ footer.mastfoot {
   display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 12px;
   font-size: 12px; font-weight: 600; color: var(--dark); background: var(--cream-light);
 }
-.workshop-data { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-.workshop-data li {
-  padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,.25);
-  font-size: 13px; color: #fff;
-}
+.workshop-form { margin-top: 36px; }

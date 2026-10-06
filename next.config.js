@@ -13,6 +13,12 @@ const nextConfig = {
         destination: '/rs',
         permanent: true,
       },
+      // 13. savetovanje je održano, a prijava je sada za radionicu — stari poziv i
+      // sponzorstvo vode na radionicu dok ne krene sledeće savetovanje.
+      { source: '/rs/invitation', destination: '/rs/radionica', permanent: false },
+      { source: '/rs/sponsorship', destination: '/rs/radionica', permanent: false },
+      { source: '/en/invitation', destination: '/en/workshop', permanent: false },
+      { source: '/en/sponsorship', destination: '/en/workshop', permanent: false },
     ];
   },
 };

@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
-import { RADIONICA, radionicaMailto } from '../../lib/content/radionica';
+import { RADIONICA } from '../../lib/content/radionica';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Deklarisanje hrane, razvoj proizvoda, izgradnja fabrika',
@@ -45,7 +45,7 @@ export default function Home() {
                   <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
                   <span className="icon-btn-label">Radionica</span>
                 </a>
-                <a href={radionicaMailto(RADIONICA.sr)} className="icon-btn">
+                <a href="/rs/registration" className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-edit"></i></span>
                   <span className="icon-btn-label">Prijava</span>
                 </a>

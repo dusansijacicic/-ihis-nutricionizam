@@ -14,17 +14,20 @@ export default async function AdminDashboard() {
 
   let messages = [];
   let registrations = [];
+  let workshopRegistrations = [];
   let loadError = false;
 
   if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
     const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
-    const [messagesRes, registrationsRes] = await Promise.all([
+    const [messagesRes, registrationsRes, workshopRes] = await Promise.all([
       supabase.from('messages').select('*').order('created_at', { ascending: false }),
       supabase.from('registrations').select('*').order('created_at', { ascending: false }),
+      supabase.from('workshop_registrations').select('*').order('created_at', { ascending: false }),
     ]);
     messages = messagesRes.data || [];
     registrations = registrationsRes.data || [];
-    loadError = Boolean(messagesRes.error || registrationsRes.error);
+    workshopRegistrations = workshopRes.data || [];
+    loadError = Boolean(messagesRes.error || registrationsRes.error || workshopRes.error);
   } else {
     loadError = true;
   }
@@ -38,9 +41,52 @@ export default async function AdminDashboard() {
 
       {loadError && (
         <p className="reg-msg reg-msg--err">
-          Greška pri učitavanju podataka. Proveri da li su SUPABASE_URL i SUPABASE_SERVICE_ROLE_KEY podešeni i da li tabele (messages, registrations) postoje.
+          Greška pri učitavanju podataka. Proveri da li su SUPABASE_URL i SUPABASE_SERVICE_ROLE_KEY podešeni i da li tabele (messages, registrations, workshop_registrations) postoje.
         </p>
       )}
+
+      <section className="admin-section">
+        <h2>Prijave za radionicu ({workshopRegistrations.length})</h2>
+        <div className="admin-table-wrap">
+          <table className="admin-table">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Radionica</th>
+                <th>Polaznika</th>
+                <th>Mesto</th>
+                <th>Predlog termina</th>
+                <th>Ime i prezime</th>
+                <th>Firma</th>
+                <th>PIB</th>
+                <th>Adresa</th>
+                <th>Telefon</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              {workshopRegistrations.map((r) => (
+                <tr key={r.id}>
+                  <td>{new Date(r.created_at).toLocaleString('sr-RS')}</td>
+                  <td>{r.program}</td>
+                  <td>{r.participants ?? '—'}</td>
+                  <td>{r.location || '—'}</td>
+                  <td>{r.dates || '—'}</td>
+                  <td>{r.name}</td>
+                  <td>{r.company || '—'}</td>
+                  <td>{r.pib || '—'}</td>
+                  <td>{r.address || '—'}</td>
+                  <td>{r.phone || '—'}</td>
+                  <td><a href={`mailto:${r.email}`}>{r.email}</a></td>
+                </tr>
+              ))}
+              {workshopRegistrations.length === 0 && (
+                <tr><td colSpan={11}>Još uvek nema prijava.</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <section className="admin-section">
         <h2>Poruke sa kontakt forme ({messages.length})</h2>
@@ -74,7 +120,7 @@ export default async function AdminDashboard() {
       </section>
 
       <section className="admin-section">
-        <h2>Prijave za savetovanje ({registrations.length})</h2>
+        <h2>Prijave za 13. savetovanje ({registrations.length})</h2>
         <div className="admin-table-wrap">
           <table className="admin-table">
             <thead>

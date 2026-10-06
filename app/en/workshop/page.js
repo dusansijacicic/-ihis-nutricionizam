@@ -1,7 +1,8 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import { RADIONICA, radionicaMailto } from '../../../lib/content/radionica';
+import RegistrationForm from '../../../components/RegistrationForm';
+import { RADIONICA } from '../../../lib/content/radionica';
 
 export const metadata = {
   title: 'Food Labeling Workshop — IHIS Nutricionizam',
@@ -77,7 +78,7 @@ export default function WorkshopEn() {
                         </li>
                       ))}
                     </ul>
-                    <a href={radionicaMailto(t, p.name)} className="btn-ihis btn-ihis-color">{t.programCta}</a>
+                    <a href={`?program=${p.id}#prijava`} className="btn-ihis btn-ihis-color">{t.programCta}</a>
                   </div>
                 </div>
               ))}
@@ -89,17 +90,18 @@ export default function WorkshopEn() {
           </div>
         </div>
 
-        <div className="section-dark text-center">
+        <div className="section-dark" id="prijava">
           <div className="container-narrow">
-            <span className="section-tag">Dates by arrangement</span>
-            <h2 className="section-h">{t.applyHeading}</h2>
-            <span className="liner"></span>
-            <p className="section-lead">{t.applyText}</p>
-            <ul className="workshop-data">
-              {t.applyData.map((d) => <li key={d}>{d}</li>)}
-            </ul>
-            <a href={radionicaMailto(t)} className="btn-ihis btn-ihis-color mt-30">{t.applyCta}</a>
-            <p className="mt-24">{t.contact}</p>
+            <div className="text-center">
+              <span className="section-tag">Dates by arrangement</span>
+              <h2 className="section-h">{t.applyHeading}</h2>
+              <span className="liner"></span>
+              <p className="section-lead">{t.formIntro}</p>
+            </div>
+            <div className="workshop-form">
+              <RegistrationForm locale="en" />
+            </div>
+            <p className="mt-24 text-center">{t.contact}</p>
           </div>
         </div>
       </section>
