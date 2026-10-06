@@ -1,7 +1,7 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import { POZIV } from '../../../lib/content/poziv';
+import { RADIONICA, radionicaMailto } from '../../../lib/content/radionica';
 
 export const metadata = {
   title: 'Education — IHIS Nutricionizam',
@@ -20,6 +20,8 @@ export const metadata = {
 };
 
 export default function EducationEn() {
+  const t = RADIONICA.en;
+
   return (
     <>
       <Header locale="en" current="education" langHref="/rs/education" />
@@ -51,31 +53,23 @@ export default function EducationEn() {
           <div className="container">
             <div className="row-intro">
               <div className="col-img-md fade-in">
-                <img src="/assets/img/cover1.jpg" alt="Conference" />
+                <img src="/assets/img/cover1.jpg" alt="Workshop" />
               </div>
               <div className="col-text fade-in">
-                <span className="section-tag">Annual event</span>
-                <h2 className="section-h">13th Conference FOOD, NUTRITION &amp; HEALTH</h2>
+                <span className="section-tag">Workshop</span>
+                <h2 className="section-h">{t.title}</h2>
                 <span className="liner mb-20"></span>
-                <p className="mb-16">{POZIV.en.subtitle}</p>
-                <p className="mb-16">{POZIV.en.when} &middot; {POZIV.en.where}</p>
-                <p>
-                  In one place, learn all the most important changes to the regulations of the
-                  Republic of Serbia and the European Union, directly from their creators,
-                  representatives of the relevant ministries, and leading food safety experts.
-                </p>
+                <p className="mb-16">{t.subtitle}</p>
+                <p className="mb-16">{t.meta}</p>
+                <p>{t.intro}</p>
                 <div className="icon-row icon-row--dark" style={{ justifyContent: 'flex-start', marginTop: 24 }}>
-                  <a href="/en/invitation" className="icon-btn">
-                    <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
-                    <span className="icon-btn-label">Invitation</span>
+                  <a href="/en/workshop" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
+                    <span className="icon-btn-label">Program and fee</span>
                   </a>
-                  <a href="/en/registration" className="icon-btn">
+                  <a href={radionicaMailto(t)} className="icon-btn">
                     <span className="icon-btn-icon"><i className="ion-edit"></i></span>
-                    <span className="icon-btn-label">Registration</span>
-                  </a>
-                  <a href="/en/sponsorship" className="icon-btn">
-                    <span className="icon-btn-icon"><i className="ion-star"></i></span>
-                    <span className="icon-btn-label">Sponsorship</span>
+                    <span className="icon-btn-label">Register</span>
                   </a>
                 </div>
               </div>
@@ -125,6 +119,19 @@ export default function EducationEn() {
               <span className="section-tag">Materials</span>
               <h2 className="section-h">Lectures and gallery from past conferences</h2>
               <span className="liner"></span>
+            </div>
+
+            <div className="archive-entry fade-in">
+              <div className="archive-head">
+                <h3>13th Conference FOOD, NUTRITION &amp; HEALTH</h3>
+              </div>
+              <p>Presentations from the conference are available to participants for viewing on the website, with the password they received by e-mail.</p>
+              <div className="event-block-actions">
+                <a href="/en/education/lectures-13" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Lectures</span>
+                </a>
+              </div>
             </div>
 
             <div className="archive-entry fade-in">

@@ -25,7 +25,7 @@ export default function Header({ locale, current, langHref }) {
               </li>
             ) : (
               <li key={item.key}>
-                <a href={item.href} className={current === item.key ? 'is-current' : ''}>
+                <a href={item.href} className={`${item.highlight ? 'hdr-highlight' : ''}${current === item.key ? ' is-current' : ''}`.trim()}>
                   {item.label}
                 </a>
               </li>

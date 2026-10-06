@@ -1,7 +1,7 @@
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import { POZIV } from '../../../lib/content/poziv';
+import { RADIONICA, radionicaMailto } from '../../../lib/content/radionica';
 
 export const metadata = {
   title: 'Edukacija — IHIS Nutricionizam',
@@ -20,6 +20,8 @@ export const metadata = {
 };
 
 export default function Edukacija() {
+  const t = RADIONICA.sr;
+
   return (
     <>
       <Header locale="sr" current="education" langHref="/en/education" />
@@ -51,31 +53,23 @@ export default function Edukacija() {
           <div className="container">
             <div className="row-intro">
               <div className="col-img-md fade-in">
-                <img src="/assets/img/cover1.jpg" alt="Savetovanje" />
+                <img src="/assets/img/cover1.jpg" alt="Radionica" />
               </div>
               <div className="col-text fade-in">
-                <span className="section-tag">Godišnji event</span>
-                <h2 className="section-h">13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h2>
+                <span className="section-tag">Radionica</span>
+                <h2 className="section-h">{t.title}</h2>
                 <span className="liner mb-20"></span>
-                <p className="mb-16">{POZIV.sr.subtitle}</p>
-                <p className="mb-16">{POZIV.sr.when} &middot; {POZIV.sr.where}</p>
-                <p>
-                  Na jednom mestu saznajte sve najvažnije izmene propisa Republike Srbije i
-                  Evropske unije, direktno od njihovih kreatora, predstavnika nadležnih
-                  ministarstava i vodećih stručnjaka iz oblasti bezbednosti hrane.
-                </p>
+                <p className="mb-16">{t.subtitle}</p>
+                <p className="mb-16">{t.meta}</p>
+                <p>{t.intro}</p>
                 <div className="icon-row icon-row--dark" style={{ justifyContent: 'flex-start', marginTop: 24 }}>
-                  <a href="/rs/invitation" className="icon-btn">
-                    <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
-                    <span className="icon-btn-label">Poziv</span>
+                  <a href="/rs/radionica" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
+                    <span className="icon-btn-label">Program i kotizacija</span>
                   </a>
-                  <a href="/rs/registration" className="icon-btn">
+                  <a href={radionicaMailto(t)} className="icon-btn">
                     <span className="icon-btn-icon"><i className="ion-edit"></i></span>
                     <span className="icon-btn-label">Prijava</span>
-                  </a>
-                  <a href="/rs/sponsorship" className="icon-btn">
-                    <span className="icon-btn-icon"><i className="ion-star"></i></span>
-                    <span className="icon-btn-label">Sponzorstvo</span>
                   </a>
                 </div>
               </div>
@@ -125,6 +119,19 @@ export default function Edukacija() {
               <span className="section-tag">Materijali</span>
               <h2 className="section-h">Predavanja i galerija sa prethodnih savetovanja</h2>
               <span className="liner"></span>
+            </div>
+
+            <div className="archive-entry fade-in">
+              <div className="archive-head">
+                <h3>13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h3>
+              </div>
+              <p>Prezentacije sa savetovanja dostupne su učesnicima za pregled na sajtu, uz šifru koju su dobili mejlom.</p>
+              <div className="event-block-actions">
+                <a href="/rs/education/predavanja-13" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Predavanja</span>
+                </a>
+              </div>
             </div>
 
             <div className="archive-entry fade-in">

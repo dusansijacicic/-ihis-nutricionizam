@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
-import { POZIV } from '../../lib/content/poziv';
+import { RADIONICA, radionicaMailto } from '../../lib/content/radionica';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Deklarisanje hrane, razvoj proizvoda, izgradnja fabrika',
@@ -36,22 +36,22 @@ export default function Home() {
           <div className="hero-slide hero-slide--poziv is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
             <div className="hero-poziv-panel">
               <span className="hero-poziv-tag">Aktuelno</span>
-              <h1 className="hero-poziv-title">Pozivamo vas na 13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h1>
-              <p className="hero-poziv-sub">{POZIV.sr.subtitle}</p>
-              <p className="hero-poziv-meta">{POZIV.sr.when} &middot; {POZIV.sr.where}</p>
-              <p className="hero-poziv-intro">{POZIV.sr.intro[0]}</p>
+              <h1 className="hero-poziv-title">{RADIONICA.sr.title}</h1>
+              <p className="hero-poziv-sub">{RADIONICA.sr.subtitle}</p>
+              <p className="hero-poziv-meta">{RADIONICA.sr.meta}</p>
+              <p className="hero-poziv-intro">{RADIONICA.sr.intro}</p>
               <div className="icon-row icon-row--dark hero-poziv-actions">
-                <a href="/rs/invitation" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
-                  <span className="icon-btn-label">Poziv</span>
+                <a href="/rs/radionica" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
+                  <span className="icon-btn-label">Radionica</span>
                 </a>
-                <a href="/rs/registration" className="icon-btn">
+                <a href={radionicaMailto(RADIONICA.sr)} className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-edit"></i></span>
                   <span className="icon-btn-label">Prijava</span>
                 </a>
-                <a href="/rs/sponsorship" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-star"></i></span>
-                  <span className="icon-btn-label">Poziv za sponzorstvo</span>
+                <a href="/rs/education/predavanja-13" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">Predavanja sa 13. savetovanja</span>
                 </a>
               </div>
             </div>

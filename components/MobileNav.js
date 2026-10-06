@@ -21,7 +21,7 @@ export default function MobileNav({ locale, current }) {
               </li>
             ) : (
               <li key={item.key}>
-                <a href={item.href} className={`main-link${current === item.key ? ' is-current' : ''}`}>
+                <a href={item.href} className={`main-link${item.highlight ? ' mnav-highlight' : ''}${current === item.key ? ' is-current' : ''}`}>
                   {item.label}
                 </a>
               </li>

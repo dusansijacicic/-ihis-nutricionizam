@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
-import { POZIV } from '../../lib/content/poziv';
+import { RADIONICA, radionicaMailto } from '../../lib/content/radionica';
 
 export const metadata = {
   title: 'IHIS Nutricionizam — Food, Nutrition and Health',
@@ -35,22 +35,22 @@ export default function HomeEn() {
           <div className="hero-slide hero-slide--poziv is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
             <div className="hero-poziv-panel">
               <span className="hero-poziv-tag">Latest</span>
-              <h1 className="hero-poziv-title">Join the 13th Conference &quot;FOOD, NUTRITION &amp; HEALTH&quot;</h1>
-              <p className="hero-poziv-sub">{POZIV.en.subtitle}</p>
-              <p className="hero-poziv-meta">{POZIV.en.when} &middot; {POZIV.en.where}</p>
-              <p className="hero-poziv-intro">{POZIV.en.intro[0]}</p>
+              <h1 className="hero-poziv-title">{RADIONICA.en.title}</h1>
+              <p className="hero-poziv-sub">{RADIONICA.en.subtitle}</p>
+              <p className="hero-poziv-meta">{RADIONICA.en.meta}</p>
+              <p className="hero-poziv-intro">{RADIONICA.en.intro}</p>
               <div className="icon-row icon-row--dark hero-poziv-actions">
-                <a href="/en/invitation" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-ios-email-outline"></i></span>
-                  <span className="icon-btn-label">Invitation</span>
+                <a href="/en/workshop" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
+                  <span className="icon-btn-label">Workshop</span>
                 </a>
-                <a href="/en/registration" className="icon-btn">
+                <a href={radionicaMailto(RADIONICA.en)} className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-edit"></i></span>
-                  <span className="icon-btn-label">Registration</span>
+                  <span className="icon-btn-label">Register</span>
                 </a>
-                <a href="/en/sponsorship" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-star"></i></span>
-                  <span className="icon-btn-label">Sponsorship</span>
+                <a href="/en/education/lectures-13" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                  <span className="icon-btn-label">13th Conference lectures</span>
                 </a>
               </div>
             </div>
