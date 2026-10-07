@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const STR = {
-  sr: { pages: 'strana', page: 'Strana', close: 'Zatvori', prev: 'Prethodna strana', next: 'Sledeća strana' },
-  en: { pages: 'pages', page: 'Page', close: 'Close', prev: 'Previous page', next: 'Next page' },
+  sr: { pages: 'strana', page: 'Strana', close: 'Zatvori', prev: 'Prethodna strana', next: 'Sledeća strana', rotate: 'Okrenite telefon za veći prikaz' },
+  en: { pages: 'pages', page: 'Page', close: 'Close', prev: 'Previous page', next: 'Next page', rotate: 'Rotate your phone for a larger view' },
 };
 
 const SWIPE_MIN = 40;
@@ -102,6 +102,7 @@ export default function SlideDecks({ conf, decks, locale }) {
             ></div>
             <button type="button" className="hero-arrow-prev" onClick={() => go(-1)} disabled={page === 1} aria-label={t.prev}>&lsaquo;</button>
             <button type="button" className="hero-arrow-next" onClick={() => go(1)} disabled={page === deck.pages} aria-label={t.next}>&rsaquo;</button>
+            <p className="slide-viewer-hint">{t.rotate}</p>
           </div>
         </div>
       )}

@@ -37,30 +37,32 @@ export default function PrijavaStranica() {
           </div>
         </div>
 
-        <div className="section-white">
-          <div className="container">
-            <div className="grid-3 grid-3--tight">
+        <div className="section-white text-center">
+          <div className="container-sm">
+            <span className="section-tag">Radionica o deklarisanju</span>
+            <h2 className="section-h">{t.subtitle}</h2>
+            <span className="liner"></span>
+            <p className="section-lead grey">{t.intro}</p>
+            <div className="workshop-facts">
               {t.facts.map((f) => (
-                <div className="fade-in" key={f.label}>
-                  <div className="contact-label-box">
-                    <span className={f.icon}></span>
-                    <h4>{f.label}</h4>
-                    <p>{f.value}</p>
-                  </div>
+                <div className="workshop-fact fade-in" key={f.label}>
+                  <i className={f.icon}></i>
+                  <span className="workshop-fact-label">{f.label}</span>
+                  <span className="workshop-fact-value">{f.value}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="section-dark">
+        <div className="section-dark" id="prijava">
           <div className="container">
             <div className="contact-row">
               <div className="col-text fade-in">
                 <span className="section-tag">Prijavite se</span>
                 <h2 className="section-h">Radionica o deklarisanju</h2>
                 <span className="liner mb-20"></span>
-                <p className="mb-20">{t.formIntro}</p>
+                <p className="reg-lead">{t.formIntro}</p>
                 <RegistrationForm locale="sr" />
               </div>
 
@@ -68,12 +70,33 @@ export default function PrijavaStranica() {
                 <span className="section-tag">Kotizacija</span>
                 <h2 className="section-h">Uslovi učešća</h2>
                 <span className="liner"></span>
-                <div className="fee-box mt-10">
-                  {t.programs.map((p) => <p className="fee-box-line" key={p.id}>{p.name}: {p.price}</p>)}
+                <div className="fee-box reg-fee-box">
+                  {t.programs.map((p) => (
+                    <p className="fee-box-line" key={p.id}>
+                      <span className="fee-box-name">{p.name} · {p.time}</span>
+                      {p.price}
+                    </p>
+                  ))}
                 </div>
-                <p className="mt-16" style={{ fontSize: 14, lineHeight: '22px', opacity: .85 }}>{t.discount}. {t.feeNote}</p>
-                <p className="mt-16" style={{ fontSize: 13, opacity: .85 }}>{t.contact}</p>
-                <p className="mt-16"><a href="/rs/radionica" style={{ color: '#fff', textDecoration: 'underline' }}>Pogledajte kompletan program radionice &rarr;</a></p>
+                <ul className="reg-facts">
+                  <li><i className="ion-ios-people"></i>{t.discount}</li>
+                  <li><i className="ion-ios-person"></i>{t.minParticipants}</li>
+                  <li><i className="ion-ios-checkmark-outline"></i>{t.includesHeading}: {t.includes.join(', ').toLowerCase()}</li>
+                </ul>
+                <a href="/rs/radionica" className="btn-ihis btn-ihis-cream reg-program-btn">
+                  <i className="ion-ios-list-outline"></i>{t.programLink}<i className="ion-ios-arrow-thin-right"></i>
+                </a>
+
+                <h3 className="reg-steps-heading">{t.stepsHeading}</h3>
+                <ol className="reg-steps">
+                  {t.steps.map((s) => (
+                    <li key={s.title}>
+                      <strong>{s.title}</strong>
+                      <span>{s.text}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="reg-contact">{t.contact}</p>
               </div>
             </div>
           </div>

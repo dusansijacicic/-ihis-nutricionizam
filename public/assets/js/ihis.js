@@ -19,7 +19,6 @@
   /* ── Menu Trigger ──────────────────────────────── */
   var trigger   = document.querySelector('.menu-trigger');
   var mastnav   = document.querySelector('nav.mastnav');
-  var closeBtn  = document.querySelector('.mastnav-close');
   var body      = document.body;
 
   function openNav() {
@@ -33,8 +32,10 @@
     body.style.overflow = '';
   }
 
-  if (trigger) trigger.addEventListener('click', openNav);
-  if (closeBtn) closeBtn.addEventListener('click', closeNav);
+  // Isto dugme otvara i zatvara meni (kad je meni otvoren, prikazuje se kao X).
+  if (trigger) trigger.addEventListener('click', function () {
+    if (mastnav.classList.contains('is-open')) closeNav(); else openNav();
+  });
 
   // Close nav when a link is clicked
   var navLinks = document.querySelectorAll('.nav-links a');

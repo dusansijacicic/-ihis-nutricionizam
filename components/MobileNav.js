@@ -7,7 +7,6 @@ export default function MobileNav({ locale, current }) {
     <nav className="mastnav">
       <div className="mastnav-left"></div>
       <div className="mastnav-right">
-        <button className="mastnav-close">&times;</button>
         <ul className="nav-links">
           {nav.items.map((item) => (
             item.children ? (

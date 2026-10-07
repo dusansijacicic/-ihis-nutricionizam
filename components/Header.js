@@ -33,7 +33,7 @@ export default function Header({ locale, current, langHref }) {
           ))}
         </ul>
         <a href={langHref} className="lang-switch">{other}</a>
-        <button className="menu-trigger"><span></span><span></span><span></span></button>
+        <button className="menu-trigger" aria-label={locale === 'sr' ? 'Meni' : 'Menu'}><span></span><span></span><span></span></button>
       </div>
     </header>
   );
