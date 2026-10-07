@@ -1429,3 +1429,14 @@ p { font-size: 14px; line-height: 26px; }
 
 /* Klizanje do forme za prijavu staje ispod fiksnog zaglavlja */
 #prijava { scroll-margin-top: var(--nav-h); }
+
+/* Mobilni meni počinje ispod zaglavlja i skroluje se; centriran meni je na nižim
+   ekranima gurao "O nama" iznad vrha ekrana, gde se nije moglo doći. */
+@media (max-width: 1000px) {
+  .mastnav-right { justify-content: flex-start; padding-top: calc(var(--nav-h) + 18px); }
+}
+@media (max-width: 1000px) and (max-height: 760px) {
+  .nav-links { margin-bottom: 24px; }
+  .nav-links li { padding-bottom: 12px; margin-bottom: 12px; }
+  .menu-contact { padding-top: 20px; }
+}
