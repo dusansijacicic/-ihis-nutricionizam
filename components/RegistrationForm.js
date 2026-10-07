@@ -44,10 +44,14 @@ export default function RegistrationForm({ locale }) {
   const [status, setStatus] = useState('idle');
   const [program, setProgram] = useState('');
 
-  // Dugme "Prijavite se" na kartici programa vodi na ?program=..., pa je radionica već izabrana.
+  // Radionica je već izabrana kad se stigne sa ?program=..., ili kad se na istoj
+  // stranici klikne "Prijavite se" na kartici programa (događaj iz ProgramCta).
   useEffect(() => {
-    const id = new URLSearchParams(window.location.search).get('program');
-    if (programs.some((p) => p.id === id)) setProgram(id);
+    const pick = (id) => { if (programs.some((p) => p.id === id)) setProgram(id); };
+    pick(new URLSearchParams(window.location.search).get('program'));
+    const onPick = (e) => pick(e.detail);
+    window.addEventListener('radionica-program', onPick);
+    return () => window.removeEventListener('radionica-program', onPick);
   }, [programs]);
 
   async function onSubmit(e) {

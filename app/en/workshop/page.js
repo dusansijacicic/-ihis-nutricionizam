@@ -2,6 +2,7 @@ import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
+import ProgramCta from '../../../components/ProgramCta';
 import { RADIONICA } from '../../../lib/content/radionica';
 
 export const metadata = {
@@ -78,7 +79,7 @@ export default function WorkshopEn() {
                         </li>
                       ))}
                     </ul>
-                    <a href={`?program=${p.id}#prijava`} className="btn-ihis btn-ihis-color">{t.programCta}</a>
+                    <ProgramCta programId={p.id} label={t.programCta} />
                   </div>
                 </div>
               ))}
