@@ -1446,3 +1446,37 @@ p { font-size: 14px; line-height: 26px; }
 .lb-close, .lb-nav { z-index: 10031; }
 .lb-caption { z-index: 10031; white-space: normal; width: 90%; max-width: 900px; text-align: center; line-height: 18px; }
 
+
+/* ─── Naslovna: fotografije sa 13. savetovanja u pozadini hero sekcije ───
+   6 slika × 5 s = ciklus od 30 s (components/HeroGallery.js); procenti ispod važe za taj
+   ciklus: pretapanje 1,5 s, slika potpuno vidljiva 5 s, uz lagani zum. */
+.hero-gallery { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero-gallery-item {
+  position: absolute; inset: 0; opacity: 0;
+  animation: heroGallery var(--hero-cycle, 30s) linear infinite;
+  will-change: opacity, transform;
+}
+@keyframes heroGallery {
+  0%     { opacity: 0; transform: scale(1.06); }
+  5%     { opacity: 1; }
+  21.67% { opacity: 1; }
+  26.67% { opacity: 0; transform: scale(1); }
+  100%   { opacity: 0; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-gallery-item { animation: none; }
+  .hero-gallery-item:first-child { opacity: 1; }
+}
+.hero-slide--poziv::before {
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(36,17,19,.84), rgba(130,53,54,.58));
+}
+.hero-poziv-panel { text-shadow: 0 2px 14px rgba(0,0,0,.35); }
+@media (max-width: 600px) {
+  /* Četiri dugmeta u hero sekciji kao simetrična mreža 2×2 */
+  .hero-poziv-actions {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 26px 10px !important;
+    width: 100%; max-width: 340px;
+  }
+  .hero-poziv-actions .icon-btn-label { text-align: center; line-height: 16px; }
+}

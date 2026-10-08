@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer';
+import HeroGallery from '../../components/HeroGallery';
 import { RADIONICA } from '../../lib/content/radionica';
 
 export const metadata = {
@@ -32,7 +33,8 @@ export default function HomeEn() {
 
       <section className="mastwrap">
         <div className="hero-slider hero-slider--single">
-          <div className="hero-slide hero-slide--poziv is-active" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
+          <div className="hero-slide hero-slide--poziv is-active">
+            <HeroGallery locale="en" />
             <div className="hero-poziv-panel">
               <span className="hero-poziv-tag">Latest</span>
               <h1 className="hero-poziv-title">{RADIONICA.en.title}</h1>
@@ -51,6 +53,10 @@ export default function HomeEn() {
                 <a href="/en/education/lectures-13" className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">13th Conference lectures</span>
+                </a>
+                <a href="/en/gallery#13-savetovanje" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                  <span className="icon-btn-label">13th Conference gallery</span>
                 </a>
               </div>
             </div>
