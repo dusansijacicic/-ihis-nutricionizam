@@ -25,6 +25,8 @@ export const SITE_URL = 'https://www.ihis-nutricionizam.rs';
 export const siteMetadata = {
   metadataBase: new URL(SITE_URL),
   title: 'IHIS Nutricionizam',
+  // Google Search Console — svojstvo https://www.ihis-nutricionizam.rs/
+  verification: { google: 'qK7rWx1AzAvXG0tzFBwnzf_gLsfaZMu0dMtYROHyWcM' },
 };
 
 export default function SiteDocument({ lang, children }) {
