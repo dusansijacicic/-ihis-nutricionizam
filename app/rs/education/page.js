@@ -2,6 +2,7 @@ import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import { RADIONICA } from '../../../lib/content/radionica';
+import { FOTO_12_SAVETOVANJE, FOTO_9_SAVETOVANJE } from '../../../lib/content/galerija';
 
 export const metadata = {
   title: 'Edukacija — IHIS Nutricionizam',
@@ -142,16 +143,18 @@ export default function Edukacija() {
               <div className="archive-head">
                 <h3>12. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h3>
               </div>
-              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit), a fotografije u galeriji.</p>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit){FOTO_12_SAVETOVANJE.length > 0 && ', a fotografije u galeriji'}.</p>
               <div className="event-block-actions">
                 <a href="/assets/docs/12-savetovanje.zip" download className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Predavanja (ZIP)</span>
                 </a>
-                <a href="/rs/gallery#12-savetovanje" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
-                  <span className="icon-btn-label">Galerija</span>
-                </a>
+                {FOTO_12_SAVETOVANJE.length > 0 && (
+                  <a href="/rs/gallery#12-savetovanje" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                    <span className="icon-btn-label">Galerija</span>
+                  </a>
+                )}
               </div>
             </div>
 
@@ -159,16 +162,18 @@ export default function Edukacija() {
               <div className="archive-head">
                 <h3>9. Regionalno savetovanje konditorske industrije</h3>
               </div>
-              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit), a fotografije u galeriji.</p>
+              <p>Predavanja sa savetovanja dostupna su za preuzimanje kao zaštićen ZIP fajl (lozinka se dobija na upit){FOTO_9_SAVETOVANJE.length > 0 && ', a fotografije u galeriji'}.</p>
               <div className="event-block-actions">
                 <a href="/assets/docs/9-savetovanje.zip" download className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Predavanja (ZIP)</span>
                 </a>
-                <a href="/rs/gallery#9-savetovanje" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
-                  <span className="icon-btn-label">Galerija</span>
-                </a>
+                {FOTO_9_SAVETOVANJE.length > 0 && (
+                  <a href="/rs/gallery#9-savetovanje" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                    <span className="icon-btn-label">Galerija</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>

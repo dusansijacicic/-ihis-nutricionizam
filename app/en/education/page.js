@@ -2,6 +2,7 @@ import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import { RADIONICA } from '../../../lib/content/radionica';
+import { FOTO_12_SAVETOVANJE, FOTO_9_SAVETOVANJE } from '../../../lib/content/galerija';
 
 export const metadata = {
   title: 'Education — IHIS Nutricionizam',
@@ -142,16 +143,18 @@ export default function EducationEn() {
               <div className="archive-head">
                 <h3>12th Conference FOOD, NUTRITION &amp; HEALTH</h3>
               </div>
-              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request), and photos are in the gallery.</p>
+              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request){FOTO_12_SAVETOVANJE.length > 0 && ', and photos are in the gallery'}.</p>
               <div className="event-block-actions">
                 <a href="/assets/docs/12-savetovanje.zip" download className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Lectures (ZIP)</span>
                 </a>
-                <a href="/en/gallery#12-savetovanje" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
-                  <span className="icon-btn-label">Gallery</span>
-                </a>
+                {FOTO_12_SAVETOVANJE.length > 0 && (
+                  <a href="/en/gallery#12-savetovanje" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                    <span className="icon-btn-label">Gallery</span>
+                  </a>
+                )}
               </div>
             </div>
 
@@ -159,16 +162,18 @@ export default function EducationEn() {
               <div className="archive-head">
                 <h3>9th Regional Confectionery Conference</h3>
               </div>
-              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request), and photos are in the gallery.</p>
+              <p>Lectures from the conference are available as a password-protected ZIP file (password available on request){FOTO_9_SAVETOVANJE.length > 0 && ', and photos are in the gallery'}.</p>
               <div className="event-block-actions">
                 <a href="/assets/docs/9-savetovanje.zip" download className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Lectures (ZIP)</span>
                 </a>
-                <a href="/en/gallery#9-savetovanje" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
-                  <span className="icon-btn-label">Gallery</span>
-                </a>
+                {FOTO_9_SAVETOVANJE.length > 0 && (
+                  <a href="/en/gallery#9-savetovanje" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                    <span className="icon-btn-label">Gallery</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import Script from 'next/script';
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import { FOTO_13_SAVETOVANJE } from '../../../lib/content/galerija';
+import { FOTO_13_SAVETOVANJE, FOTO_12_SAVETOVANJE, FOTO_9_SAVETOVANJE } from '../../../lib/content/galerija';
 
 export const metadata = {
   title: 'Gallery — IHIS Nutricionizam',
@@ -22,10 +22,8 @@ export const metadata = {
 };
 
 const conf2026 = [1, 2, 3, 4, 5, 6, 8, 9, 10];
-// Populated once photos from the 12th FOOD, NUTRITION & HEALTH conference are added
-const conf12 = [];
-// Populated once photos from the 9th Regional Confectionery Conference are added
-const conf9 = [];
+const conf12 = FOTO_12_SAVETOVANJE;
+const conf9 = FOTO_9_SAVETOVANJE;
 const conf8 = [
   '1744841312295', '1744841312341', '1744841312924',
   '1744841313446', '1744841313579', '1744841313693', '1744841313793', '1744841314038',
@@ -58,8 +56,8 @@ export default function GalleryEn() {
               <button className="gal-btn active" data-filter="all">All photos</button>
               <button className="gal-btn" data-filter="13-savetovanje">13th Conference</button>
               <button className="gal-btn" data-filter="2026">2026 Conference</button>
-              <button className="gal-btn" data-filter="12-savetovanje">12th Conference</button>
-              <button className="gal-btn" data-filter="9-savetovanje">9th Regional Conference</button>
+              {conf12.length > 0 && <button className="gal-btn" data-filter="12-savetovanje">12th Conference</button>}
+              {conf9.length > 0 && <button className="gal-btn" data-filter="9-savetovanje">9th Regional Conference</button>}
               <button className="gal-btn" data-filter="viii">8th Conference</button>
               <button className="gal-btn" data-filter="arhiva">Photo archive</button>
             </div>

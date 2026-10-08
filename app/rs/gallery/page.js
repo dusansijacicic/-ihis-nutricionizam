@@ -3,7 +3,7 @@ import Script from 'next/script';
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
-import { FOTO_13_SAVETOVANJE } from '../../../lib/content/galerija';
+import { FOTO_13_SAVETOVANJE, FOTO_12_SAVETOVANJE, FOTO_9_SAVETOVANJE } from '../../../lib/content/galerija';
 
 export const metadata = {
   title: 'Galerija — IHIS Nutricionizam',
@@ -22,10 +22,8 @@ export const metadata = {
 };
 
 const conf2026 = [1, 2, 3, 4, 5, 6, 8, 9, 10];
-// Popunjava se kad stignu fotografije sa 12. Savetovanja HRANA, ISHRANA & ZDRAVLJE
-const conf12 = [];
-// Popunjava se kad stignu fotografije sa 9. Regionalnog savetovanja konditorske industrije
-const conf9 = [];
+const conf12 = FOTO_12_SAVETOVANJE;
+const conf9 = FOTO_9_SAVETOVANJE;
 const conf8 = [
   '1744841312295', '1744841312341', '1744841312924',
   '1744841313446', '1744841313579', '1744841313693', '1744841313793', '1744841314038',
@@ -58,8 +56,8 @@ export default function Galerija() {
               <button className="gal-btn active" data-filter="all">Sve slike</button>
               <button className="gal-btn" data-filter="13-savetovanje">13. Savetovanje</button>
               <button className="gal-btn" data-filter="2026">Savetovanje 2026</button>
-              <button className="gal-btn" data-filter="12-savetovanje">12. Savetovanje</button>
-              <button className="gal-btn" data-filter="9-savetovanje">9. Regionalno savetovanje</button>
+              {conf12.length > 0 && <button className="gal-btn" data-filter="12-savetovanje">12. Savetovanje</button>}
+              {conf9.length > 0 && <button className="gal-btn" data-filter="9-savetovanje">9. Regionalno savetovanje</button>}
               <button className="gal-btn" data-filter="viii">VIII Savetovanje</button>
               <button className="gal-btn" data-filter="arhiva">Foto arhiva</button>
             </div>
