@@ -1472,11 +1472,27 @@ p { font-size: 14px; line-height: 26px; }
   background: linear-gradient(135deg, rgba(36,17,19,.84), rgba(130,53,54,.58));
 }
 .hero-poziv-panel { text-shadow: 0 2px 14px rgba(0,0,0,.35); }
+/* Hero dugmad: radionica levo, a prezentacije i galerija 13. savetovanja grupisane
+   desno sa zajedničkim natpisom ispod */
+.hero-poziv-panel .hero-actions {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;
+  gap: 30px 72px !important;
+}
+.hero-actions .icon-row { margin-top: 0; gap: 40px; flex-wrap: nowrap; }
+.hero-action-group { position: relative; display: flex; flex-direction: column; align-items: center; }
+.hero-action-group::before {
+  content: ''; position: absolute; left: -36px; top: 4px; width: 1px; height: 60px;
+  background: rgba(255,255,255,.25);
+}
+.hero-action-caption {
+  align-self: stretch; margin-top: 14px; padding-top: 10px;
+  border-top: 1px solid rgba(244,217,166,.5);
+  font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase;
+  text-align: center; color: var(--cream);
+}
+@media (min-width: 1200px) { .hero-action-caption { font-size: 12px; } }
 @media (max-width: 600px) {
-  /* Četiri dugmeta u hero sekciji kao simetrična mreža 2×2 */
-  .hero-poziv-actions {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 26px 10px !important;
-    width: 100%; max-width: 340px;
-  }
-  .hero-poziv-actions .icon-btn-label { text-align: center; line-height: 16px; }
+  .hero-poziv-panel .hero-actions { flex-direction: column; align-items: center; gap: 28px !important; }
+  .hero-actions .icon-row { gap: 36px; }
+  .hero-action-group::before { display: none; }
 }

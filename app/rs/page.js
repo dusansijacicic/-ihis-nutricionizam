@@ -42,23 +42,30 @@ export default function Home() {
               <p className="hero-poziv-sub">{RADIONICA.sr.subtitle}</p>
               <p className="hero-poziv-meta">{RADIONICA.sr.meta}</p>
               <p className="hero-poziv-intro">{RADIONICA.sr.intro}</p>
-              <div className="icon-row icon-row--dark hero-poziv-actions">
-                <a href="/rs/radionica" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
-                  <span className="icon-btn-label">Radionica</span>
-                </a>
-                <a href="/rs/registration" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-edit"></i></span>
-                  <span className="icon-btn-label">Prijava</span>
-                </a>
-                <a href="/rs/education/predavanja-13" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
-                  <span className="icon-btn-label">Predavanja sa 13. savetovanja</span>
-                </a>
-                <a href="/rs/gallery#13-savetovanje" className="icon-btn">
-                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
-                  <span className="icon-btn-label">Galerija 13. savetovanja</span>
-                </a>
+              <div className="hero-poziv-actions hero-actions">
+                <div className="icon-row icon-row--dark">
+                  <a href="/rs/radionica" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-ios-list-outline"></i></span>
+                    <span className="icon-btn-label">Radionica</span>
+                  </a>
+                  <a href="/rs/registration" className="icon-btn">
+                    <span className="icon-btn-icon"><i className="ion-edit"></i></span>
+                    <span className="icon-btn-label">Prijava</span>
+                  </a>
+                </div>
+                <div className="hero-action-group">
+                  <div className="icon-row icon-row--dark">
+                    <a href="/rs/education/predavanja-13" className="icon-btn">
+                      <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
+                      <span className="icon-btn-label">Prezentacije</span>
+                    </a>
+                    <a href="/rs/gallery#13-savetovanje" className="icon-btn">
+                      <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                      <span className="icon-btn-label">Galerija</span>
+                    </a>
+                  </div>
+                  <span className="hero-action-caption">13. Savetovanje</span>
+                </div>
               </div>
             </div>
           </div>
