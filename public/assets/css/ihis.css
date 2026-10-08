@@ -1496,3 +1496,27 @@ p { font-size: 14px; line-height: 26px; }
   .hero-actions .icon-row { gap: 36px; }
   .hero-action-group::before { display: none; }
 }
+
+/* ─── Stranica 404 ──────────────────────────────────────────────── */
+.nf-section { padding: 70px 0 90px; }
+.nf-logo { display: inline-block; }
+.nf-logo img { width: 84px; height: auto; display: block; margin: 0 auto; }
+.section-dark .nf-code {
+  margin: 10px 0 6px;
+  font-family: var(--font-raleway), sans-serif; font-size: 110px; font-weight: 200;
+  line-height: 1; letter-spacing: 12px; color: var(--cream);
+}
+.nf-contact {
+  margin: 34px auto 0; max-width: 520px; padding: 22px 24px;
+  border: 1px solid rgba(244,217,166,.35); border-radius: 8px; background: rgba(255,255,255,.04);
+}
+.section-dark .nf-contact p { color: rgba(255,255,255,.85); font-size: 15px; }
+.nf-contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; margin-top: 12px; }
+.nf-contact-links a { color: var(--cream); font-size: 16px; font-weight: 600; }
+.nf-contact-links a:hover { color: #fff; }
+.nf-contact-links i { margin-right: 8px; font-size: 20px; vertical-align: -2px; }
+.nf-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 34px; }
+@media (max-width: 600px) {
+  .section-dark .nf-code { font-size: 76px; letter-spacing: 8px; }
+  .nf-actions .btn-ihis { width: 100%; }
+}
