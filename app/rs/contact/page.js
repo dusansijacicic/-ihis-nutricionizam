@@ -1,4 +1,5 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -27,14 +28,14 @@ export default function Kontakt() {
       <MobileNav locale="sr" current="contact" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
+        <PageHero image="/assets/img/cover.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Kontakt</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Kontakt</p>
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Kontakt", "/rs/contact"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-dark">
           <div className="container">

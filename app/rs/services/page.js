@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
+import PreviewOnly from '../../../components/PreviewOnly';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -28,14 +30,14 @@ export default function Usluge() {
       <MobileNav locale="sr" current="services" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Deklarisanje hrane i razvoj proizvoda</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Usluge</p>
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Usluge", "/rs/services"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container">
@@ -91,6 +93,7 @@ export default function Usluge() {
                   <i className="ion-document-text card-icon"></i>
                   <h4 className="card-title">Deklarisanje i regulatorna podrška</h4>
                   <p>Izrađujemo i proveravamo deklaracije prehrambenih proizvoda, usklađujemo ih sa zahtevima zakonodavstva Srbije i EU i savetujemo u primeni nutritivnih i zdravstvenih izjava.</p>
+                  <PreviewOnly><a href="/rs/deklarisanje" className="card-more">Saznajte više o deklarisanju &rarr;</a></PreviewOnly>
                 </div>
               </div>
               <div className="fade-in">
@@ -112,6 +115,7 @@ export default function Usluge() {
                   <i className="ion-university card-icon"></i>
                   <h4 className="card-title">Edukacija i transfer znanja</h4>
                   <p>Organizujemo stručne radionice, savetovanja i edukacije za proizvođače hrane, distributere i stručne timove, sa ciljem unapređenja znanja, kvaliteta i primene savremenih tehnologija i propisa u prehrambenoj industriji.</p>
+                  <PreviewOnly><a href="/rs/radionica" className="card-more">Radionica o deklarisanju &rarr;</a></PreviewOnly>
                 </div>
               </div>
               <div className="fade-in">

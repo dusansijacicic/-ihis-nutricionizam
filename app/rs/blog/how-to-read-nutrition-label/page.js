@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
+import BlogCta from '../../../../components/BlogCta';
 import JsonLd from '../../../../components/JsonLd';
 import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
@@ -31,7 +33,7 @@ export default function PostSr1() {
       <MobileNav locale="sr" current="blog" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
+        <PageHero image="/assets/img/cover.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Nutritivna deklaracija</h1>
@@ -39,7 +41,7 @@ export default function PostSr1() {
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Kako čitati nutritivnu deklaraciju", "/rs/blog/how-to-read-nutrition-label"]])} />
             <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label", headline: "Nutritivna deklaracija", description: "Kako pravilno čitati nutritivnu deklaraciju na prehrambenim proizvodima — šta znače brojevi, referentni unos i energetska vrednost.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container-narrow">
@@ -85,6 +87,8 @@ export default function PostSr1() {
             </p>
           </div>
         </div>
+
+        <BlogCta locale="sr" />
 
         <div className="section-light text-center">
           <div className="container-cta">

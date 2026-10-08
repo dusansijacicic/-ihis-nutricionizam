@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 import { verifySessionToken, ADMIN_COOKIE_NAME } from '../../lib/adminAuth';
 import AdminLogoutButton from '../../components/AdminLogoutButton';
+import { isPreview } from '../../lib/preview';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,6 +38,23 @@ export default async function AdminDashboard() {
       <div className="admin-header">
         <h1>Admin panel — IHIS Nutricionizam</h1>
         <AdminLogoutButton />
+      </div>
+
+      <div className="admin-preview-box">
+        <p>
+          <strong>Admin pregled sajta je {isPreview() ? 'uključen' : 'isključen'}.</strong>{' '}
+          Kad je uključen, na sajtu vidite i nove izmene koje obični posetioci još ne vide.
+        </p>
+        {isPreview() ? (
+          <div className="admin-preview-actions">
+            <a href="/rs" className="btn-ihis btn-ihis-color">Pogledaj sajt sa izmenama</a>
+            <a href="/api/preview?mode=off&redirect=/rs" className="btn-ihis btn-ihis-dark">Pogledaj javnu verziju</a>
+          </div>
+        ) : (
+          <div className="admin-preview-actions">
+            <a href="/api/preview?mode=on&redirect=/rs" className="btn-ihis btn-ihis-color">Uključi admin pregled</a>
+          </div>
+        )}
       </div>
 
       {loadError && (

@@ -1,4 +1,5 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -30,14 +31,14 @@ export default function SponsorshipPage() {
       <MobileNav locale="en" current="home" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero page-hero--accent" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero className="page-hero page-hero--accent" image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay page-hero-overlay--accent"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">{t.title}</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Sponsorship</p>
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Sponsorship", "/en/sponsorship"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white text-center">
           <div className="container-narrow">

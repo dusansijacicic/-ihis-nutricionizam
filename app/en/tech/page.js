@@ -1,4 +1,5 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -28,14 +29,14 @@ export default function TechEn() {
       <MobileNav locale="en" current="tech" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Factory Construction &amp; New Production Lines</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Technology &amp; Greenfield Investments</p>
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Technology & Greenfield Investments", "/en/tech"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container">

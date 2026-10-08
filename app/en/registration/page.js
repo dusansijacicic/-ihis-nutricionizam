@@ -1,4 +1,5 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -31,14 +32,14 @@ export default function RegistrationPage() {
       <MobileNav locale="en" current="workshop" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero page-hero--accent" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
+        <PageHero className="page-hero page-hero--accent" image="/assets/img/cover2.jpg">
           <div className="page-hero-overlay page-hero-overlay--accent"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Workshop Registration</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; <a href="/en/workshop">Workshop</a> &rsaquo; Registration</p>
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Workshop", "/en/workshop"], ["Registration", "/en/registration"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white text-center">
           <div className="container-sm">

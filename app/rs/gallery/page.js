@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Script from 'next/script';
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -38,14 +39,14 @@ export default function Galerija() {
       <MobileNav locale="sr" current="gallery" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Galerija</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Galerija</p>
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Galerija", "/rs/gallery"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container">

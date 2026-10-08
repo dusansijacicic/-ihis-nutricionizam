@@ -1,10 +1,12 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema, courseSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
 import ProgramCta from '../../../components/ProgramCta';
+import WorkshopFaq from '../../../components/WorkshopFaq';
 import { RADIONICA } from '../../../lib/content/radionica';
 
 export const metadata = {
@@ -32,7 +34,7 @@ export default function Radionica() {
       <MobileNav locale="sr" current="workshop" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero page-hero--accent" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
+        <PageHero className="page-hero page-hero--accent" image="/assets/img/cover2.jpg">
           <div className="page-hero-overlay page-hero-overlay--accent"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Radionica o deklarisanju</h1>
@@ -40,7 +42,7 @@ export default function Radionica() {
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Radionica", "/rs/radionica"]])} />
             <JsonLd data={courseSchema('sr')} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white text-center">
           <div className="container-sm">
@@ -94,6 +96,8 @@ export default function Radionica() {
             </div>
           </div>
         </div>
+
+        <WorkshopFaq locale="sr" />
 
         <div className="section-dark" id="prijava">
           <div className="container-narrow">

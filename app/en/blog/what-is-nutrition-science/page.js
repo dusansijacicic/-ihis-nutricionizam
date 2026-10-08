@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
+import BlogCta from '../../../../components/BlogCta';
 import JsonLd from '../../../../components/JsonLd';
 import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
@@ -31,7 +33,7 @@ export default function WhatIsNutritionScience() {
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover3.jpg')" }}>
+        <PageHero image="/assets/img/cover3.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">What Is Nutrition Science?</h1>
@@ -39,7 +41,7 @@ export default function WhatIsNutritionScience() {
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["What Is Nutrition Science?", "/en/blog/what-is-nutrition-science"]])} />
             <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science", headline: "What Is Nutrition Science?", description: "What is nutrition science, what does it study, and how is it applied in food product development, labeling and the food industry.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg", datePublished: "2026-08-11", dateModified: "2026-08-11" })} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container-narrow">
@@ -84,6 +86,8 @@ export default function WhatIsNutritionScience() {
             </p>
           </div>
         </div>
+
+        <BlogCta locale="en" />
 
         <div className="section-light text-center">
           <div className="container-cta">

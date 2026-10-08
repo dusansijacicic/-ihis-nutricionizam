@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
+import TeamPhoto from '../../../components/TeamPhoto';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema, teamSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -27,7 +29,7 @@ export default function ONama() {
       <MobileNav locale="sr" current="about" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
+        <PageHero image="/assets/img/cover.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">O nama</h1>
@@ -35,7 +37,7 @@ export default function ONama() {
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["O nama", "/rs/about"]])} />
             <JsonLd data={teamSchema('sr')} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container">
@@ -78,7 +80,7 @@ export default function ONama() {
             </div>
             <div className="team-row">
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/branko.jpg')" }}></div>
+                <TeamPhoto src="/assets/img/branko.jpg" alt="M.Sc. Tech. Branko Zarić, direktor IHIS Nutricionizma" />
                 <h4>M.Sc. Tech. Branko Zarić</h4>
                 <h6>Direktor</h6>
                 <a href="https://www.linkedin.com/in/branko-zari%C4%87-274256b8/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profil — Branko Zarić">
@@ -86,7 +88,7 @@ export default function ONama() {
                 </a>
               </div>
               <div className="team-member fade-in">
-                <div className="team-photo" style={{ backgroundImage: "url('/assets/img/danica.jpg')" }}></div>
+                <TeamPhoto src="/assets/img/danica.jpg" alt="PhD. Danica Zarić, osnivač IHIS Nutricionizma" />
                 <h4>PhD. Danica Zarić</h4>
                 <h6>Osnivač</h6>
                 <a href="https://www.linkedin.com/in/danica-zaric-32239683/" target="_blank" rel="noreferrer" className="team-linkedin" aria-label="LinkedIn profil — Danica Zarić">

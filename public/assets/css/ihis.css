@@ -1520,3 +1520,11 @@ p { font-size: 14px; line-height: 26px; }
   .section-dark .nf-code { font-size: 76px; letter-spacing: 8px; }
   .nf-actions .btn-ihis { width: 100%; }
 }
+
+/* ─── Admin panel: prekidač za admin pregled sajta ──────────────── */
+.admin-preview-box {
+  margin: -16px 0 40px; padding: 20px 24px; border-radius: 8px;
+  background: var(--cream-light); border: 1px solid rgba(130,53,54,.2);
+}
+.admin-preview-box p { font-size: 14px; line-height: 22px; color: var(--dark); }
+.admin-preview-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }

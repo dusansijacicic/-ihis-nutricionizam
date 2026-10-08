@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
+import BlogCta from '../../../../components/BlogCta';
 import JsonLd from '../../../../components/JsonLd';
 import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
@@ -31,7 +33,7 @@ export default function PostSr2() {
       <MobileNav locale="sr" current="blog" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Zdravstvene izjave</h1>
@@ -39,7 +41,7 @@ export default function PostSr2() {
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Zdravstvene i nutritivne izjave", "/rs/blog/nutrition-and-health-claims"]])} />
             <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims", headline: "Zdravstvene izjave", description: "Šta znače zdravstvene i nutritivne izjave na hrani, ko ih odobrava, i zašto ih proizvođači ne mogu slobodno da koriste.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container-narrow">
@@ -79,6 +81,8 @@ export default function PostSr2() {
             </p>
           </div>
         </div>
+
+        <BlogCta locale="sr" />
 
         <div className="section-light text-center">
           <div className="container-cta">

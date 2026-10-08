@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
+import News13 from '../../../components/News13';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -27,14 +29,16 @@ export default function Vesti() {
       <MobileNav locale="sr" current="news" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
+        <PageHero image="/assets/img/cover2.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Vesti</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Vesti</p>
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Vesti", "/rs/news"]])} />
           </div>
-        </div>
+        </PageHero>
+
+        <News13 locale="sr" />
 
         <div className="section-white">
           <div className="container">

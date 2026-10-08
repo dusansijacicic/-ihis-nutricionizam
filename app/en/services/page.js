@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
+import PreviewOnly from '../../../components/PreviewOnly';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -28,14 +30,14 @@ export default function ServicesEn() {
       <MobileNav locale="en" current="services" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Food Labeling &amp; Product Development</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Services</p>
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Services", "/en/services"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container">
@@ -91,6 +93,7 @@ export default function ServicesEn() {
                   <i className="ion-document-text card-icon"></i>
                   <h4 className="card-title">Labeling &amp; regulatory support</h4>
                   <p>We prepare and review food product labels, align them with the requirements of Serbian and EU legislation, and advise on the use of nutrition and health claims.</p>
+                  <PreviewOnly><a href="/en/food-labeling" className="card-more">More about food labeling &rarr;</a></PreviewOnly>
                 </div>
               </div>
               <div className="fade-in">
@@ -112,6 +115,7 @@ export default function ServicesEn() {
                   <i className="ion-university card-icon"></i>
                   <h4 className="card-title">Education &amp; knowledge transfer</h4>
                   <p>We organize expert workshops, conferences and educational programs for food producers, distributors and expert teams, aimed at advancing knowledge, quality and the application of modern technologies and regulations in the food industry.</p>
+                  <PreviewOnly><a href="/en/workshop" className="card-more">Labeling Workshop &rarr;</a></PreviewOnly>
                 </div>
               </div>
               <div className="fade-in">

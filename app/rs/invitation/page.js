@@ -1,4 +1,5 @@
 import Header from '../../../components/Header';
+import PageHero from '../../../components/PageHero';
 import JsonLd from '../../../components/JsonLd';
 import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
@@ -33,14 +34,14 @@ export default function PozivStranica() {
       <MobileNav locale="sr" current="home" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero page-hero--accent" style={{ backgroundImage: "url('/assets/img/cover.jpg')" }}>
+        <PageHero className="page-hero page-hero--accent" image="/assets/img/cover.jpg">
           <div className="page-hero-overlay page-hero-overlay--accent"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">{t.title}</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Poziv</p>
             <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Poziv", "/rs/invitation"]])} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white text-center">
           <div className="container-narrow">

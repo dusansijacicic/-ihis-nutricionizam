@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
+import BlogCta from '../../../../components/BlogCta';
 import JsonLd from '../../../../components/JsonLd';
 import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
@@ -31,7 +33,7 @@ export default function PostEn2() {
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Health claims</h1>
@@ -39,7 +41,7 @@ export default function PostEn2() {
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["Nutrition and health claims", "/en/blog/nutrition-and-health-claims"]])} />
             <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims", headline: "Health claims", description: "What health and nutrition claims on food actually mean, who approves them, and why manufacturers can't use them freely.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container-narrow">
@@ -79,6 +81,8 @@ export default function PostEn2() {
             </p>
           </div>
         </div>
+
+        <BlogCta locale="en" />
 
         <div className="section-light text-center">
           <div className="container-cta">

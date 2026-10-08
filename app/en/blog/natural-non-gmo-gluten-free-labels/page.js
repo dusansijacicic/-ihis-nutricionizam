@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
+import BlogCta from '../../../../components/BlogCta';
 import JsonLd from '../../../../components/JsonLd';
 import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
@@ -31,7 +33,7 @@ export default function PostEn3() {
       <MobileNav locale="en" current="blog" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero" style={{ backgroundImage: "url('/assets/img/cover2.jpg')" }}>
+        <PageHero image="/assets/img/cover2.jpg">
           <div className="page-hero-overlay"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Product labels</h1>
@@ -39,7 +41,7 @@ export default function PostEn3() {
             <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["Natural, non-GMO, gluten-free", "/en/blog/natural-non-gmo-gluten-free-labels"]])} />
             <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels", headline: "Product labels", description: "What 'natural', 'non-GMO' and 'gluten-free' labels on food products actually mean — which are legally regulated and which are not.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-white">
           <div className="container-narrow">
@@ -83,6 +85,8 @@ export default function PostEn3() {
             </p>
           </div>
         </div>
+
+        <BlogCta locale="en" />
 
         <div className="section-light text-center">
           <div className="container-cta">

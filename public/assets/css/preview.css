@@ -1,0 +1,101 @@
+/* IHIS Nutricionizam — stilovi za izmene koje su za sada vidljive samo u admin pregledu
+   (vidi lib/preview.js). Kad se izmena pusti javno ("spoji"), njen deo prelazi u ihis.css. */
+
+/* ─── Oznaka admin pregleda ─────────────────────────────────────── */
+.preview-bar {
+  position: fixed; right: 16px; bottom: 16px; z-index: 10040;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px;
+  max-width: calc(100vw - 32px); padding: 10px 16px; border-radius: 26px;
+  background: #fff; color: var(--dark); font-size: 13px; line-height: 18px;
+  box-shadow: 0 10px 30px rgba(36,17,19,.28); border: 1px solid rgba(130,53,54,.25);
+}
+.preview-bar-dot { width: 9px; height: 9px; border-radius: 50%; background: #2e9e5b; box-shadow: 0 0 0 4px rgba(46,158,91,.18); }
+.preview-bar a { color: var(--accent); font-weight: 600; text-decoration: underline !important; }
+@media (max-width: 600px) {
+  .preview-bar { left: 12px; right: 12px; bottom: 12px; justify-content: center; font-size: 12px; }
+}
+
+/* ─── Naslovne trake: slika kroz next/image ─────────────────────── */
+.page-hero { background-color: var(--dark); overflow: hidden; }
+.page-hero-img { object-fit: cover; }
+
+/* ─── Česta pitanja (radionica) ─────────────────────────────────── */
+.faq-list { display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--cream-light); border: 1px solid rgba(130,53,54,.14); border-radius: 8px;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+.faq-item[open] { background: #fff; border-color: rgba(130,53,54,.35); box-shadow: 0 10px 26px rgba(36,17,19,.08); }
+.faq-item summary {
+  list-style: none; cursor: pointer; position: relative;
+  padding: 18px 54px 18px 22px;
+  font-size: 16px; font-weight: 600; line-height: 24px; color: var(--dark);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+  width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff; font-size: 18px; font-weight: 400; line-height: 1;
+  transition: transform .25s ease;
+}
+.faq-item[open] summary::after { content: '–'; }
+.faq-item summary:hover { color: var(--accent); }
+.faq-item p { padding: 0 22px 20px; font-size: 15px; line-height: 26px; color: #4a4a4a; }
+
+/* ─── Vest o 13. savetovanju ────────────────────────────────────── */
+.news13 { align-items: stretch; }
+.news13-photo {
+  position: relative; flex: 0 0 560px; min-height: 360px;
+  border-radius: 8px; overflow: hidden; box-shadow: 0 14px 34px rgba(36,17,19,.15);
+}
+.news13-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+@media (max-width: 1100px) { .news13-photo { flex: 1 1 100%; min-height: 260px; } }
+@media (max-width: 600px) {
+  .news13-photo { min-height: 220px; }
+  .news13-actions .btn-ihis { flex: 1 1 100%; text-align: center; }
+}
+
+/* ─── Poziv na kraju blog postova ───────────────────────────────── */
+.blog-cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 30px; }
+@media (max-width: 600px) { .blog-cta-actions .btn-ihis { flex: 1 1 100%; } }
+
+/* ─── Usluge: link sa kartice ───────────────────────────────────── */
+.card-more {
+  display: inline-block; margin-top: 14px;
+  font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--accent);
+}
+.card-more:hover { color: var(--accent-dk); }
+
+/* ─── Stranica usluge deklarisanja ──────────────────────────────── */
+.labeling-regs { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.labeling-regs li {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 22px; border-radius: 8px; background: var(--cream-light);
+  border-left: 3px solid var(--accent);
+  font-size: 16px; font-weight: 600; line-height: 24px; color: var(--dark);
+}
+.labeling-regs i { font-size: 26px; color: var(--accent); line-height: 1; }
+.labeling-regs em {
+  display: block; margin-top: 4px;
+  font-style: normal; font-size: 13px; font-weight: 600; letter-spacing: 1px; color: var(--grey);
+}
+.labeling-workshop { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 30px; }
+.labeling-workshop > div { flex: 1 1 520px; }
+.labeling-workshop .section-lead { margin: 0; max-width: 640px; }
+.labeling-articles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.labeling-article {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 22px 24px; border-radius: 8px; background: #fff;
+  border: 1px solid rgba(130,53,54,.14);
+  font-size: 16px; font-weight: 600; line-height: 23px; color: var(--dark);
+  transition: transform .3s ease, box-shadow .3s ease, color .3s ease;
+}
+.labeling-article i { font-size: 24px; color: var(--accent); }
+.labeling-article:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(36,17,19,.1); color: var(--accent); }
+@media (max-width: 900px) { .labeling-articles { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .labeling-workshop .btn-ihis { width: 100%; text-align: center; }
+  .labeling-regs li { padding: 16px; font-size: 15px; }
+}

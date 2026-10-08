@@ -1,5 +1,6 @@
 import { cookies } from 'next/headers';
 import Header from '../../../../components/Header';
+import PageHero from '../../../../components/PageHero';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 import LectureGate from '../../../../components/LectureGate';
@@ -29,7 +30,7 @@ export default function Predavanja13() {
       <MobileNav locale="sr" current="education" />
 
       <section className="mastwrap top-spaced">
-        <div className="page-hero page-hero--accent" style={{ backgroundImage: "url('/assets/img/cover1.jpg')" }}>
+        <PageHero className="page-hero page-hero--accent" image="/assets/img/cover1.jpg">
           <div className="page-hero-overlay page-hero-overlay--accent"></div>
           <div className="page-hero-inner">
             <h1 className="page-title">Predavanja</h1>
@@ -37,7 +38,7 @@ export default function Predavanja13() {
               <a href="/rs">Početna</a> &rsaquo; <a href="/rs/education">Edukacija</a> &rsaquo; Predavanja
             </p>
           </div>
-        </div>
+        </PageHero>
 
         <div className="section-light">
           <div className="container-sm">

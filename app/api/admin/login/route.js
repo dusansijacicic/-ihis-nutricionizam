@@ -1,3 +1,4 @@
+import { draftMode } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { createSessionToken, ADMIN_COOKIE_NAME, ADMIN_COOKIE_MAX_AGE } from '../../../../lib/adminAuth';
 
@@ -17,6 +18,9 @@ export async function POST(request) {
   if (!process.env.ADMIN_USER || !validPass || !validUsers.includes(user) || password !== validPass) {
     return NextResponse.json({ error: 'Pogrešno korisničko ime ili lozinka.' }, { status: 401 });
   }
+
+  // Admin odmah vidi i nove izmene koje još nisu javne (vidi lib/preview.js).
+  draftMode().enable();
 
   const token = createSessionToken(user);
   const res = NextResponse.json({ ok: true });
