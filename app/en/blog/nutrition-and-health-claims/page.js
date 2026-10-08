@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostEn2() {
           <div className="page-hero-inner">
             <h1 className="page-title">Health claims</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; <a href="/en/blog">Blog</a> &rsaquo; Nutrition and health claims</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["Nutrition and health claims", "/en/blog/nutrition-and-health-claims"]])} />
+            <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims", headline: "Health claims", description: "What health and nutrition claims on food actually mean, who approves them, and why manufacturers can't use them freely.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

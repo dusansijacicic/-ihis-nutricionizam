@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
@@ -34,6 +36,7 @@ export default function PrijavaStranica() {
           <div className="page-hero-inner">
             <h1 className="page-title">Prijava za radionicu</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/radionica">Radionica</a> &rsaquo; Prijava</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Radionica", "/rs/radionica"], ["Prijava", "/rs/registration"]])} />
           </div>
         </div>
 

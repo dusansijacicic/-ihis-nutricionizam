@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema, teamSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
@@ -30,6 +32,8 @@ export default function AboutEn() {
           <div className="page-hero-inner">
             <h1 className="page-title">About Us</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; About Us</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["About Us", "/en/about"]])} />
+            <JsonLd data={teamSchema('en')} />
           </div>
         </div>
 

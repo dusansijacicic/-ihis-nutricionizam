@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostSr1() {
           <div className="page-hero-inner">
             <h1 className="page-title">Nutritivna deklaracija</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Kako čitati nutritivnu deklaraciju</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Kako čitati nutritivnu deklaraciju", "/rs/blog/how-to-read-nutrition-label"]])} />
+            <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label", headline: "Nutritivna deklaracija", description: "Kako pravilno čitati nutritivnu deklaraciju na prehrambenim proizvodima — šta znače brojevi, referentni unos i energetska vrednost.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

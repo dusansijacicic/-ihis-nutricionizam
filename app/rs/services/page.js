@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
@@ -31,6 +33,7 @@ export default function Usluge() {
           <div className="page-hero-inner">
             <h1 className="page-title">Deklarisanje hrane i razvoj proizvoda</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Usluge</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Usluge", "/rs/services"]])} />
           </div>
         </div>
 

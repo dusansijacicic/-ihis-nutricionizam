@@ -2,6 +2,7 @@ import '../public/assets/css/ihis.css';
 import Script from 'next/script';
 import { Sora, Inter } from 'next/font/google';
 import OrgSchema from './OrgSchema';
+import { SITE_URL } from '../lib/schema';
 
 // Zajednički <html> dokument za root layoute /rs, /en i /admin. Sajt ima više root
 // layouta da bi engleske stranice dobile lang="en" (jedan layout ne zna jezik putanje).
@@ -19,8 +20,6 @@ const inter = Inter({
   variable: '--font-montserrat',
   display: 'swap',
 });
-
-export const SITE_URL = 'https://www.ihis-nutricionizam.rs';
 
 export const siteMetadata = {
   metadataBase: new URL(SITE_URL),

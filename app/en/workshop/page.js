@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema, courseSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
@@ -35,6 +37,8 @@ export default function WorkshopEn() {
           <div className="page-hero-inner">
             <h1 className="page-title">Labeling Workshop</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Workshop</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Workshop", "/en/workshop"]])} />
+            <JsonLd data={courseSchema('en')} />
           </div>
         </div>
 

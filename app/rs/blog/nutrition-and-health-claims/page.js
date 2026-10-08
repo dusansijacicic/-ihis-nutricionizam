@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostSr2() {
           <div className="page-hero-inner">
             <h1 className="page-title">Zdravstvene izjave</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Zdravstvene i nutritivne izjave</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Zdravstvene i nutritivne izjave", "/rs/blog/nutrition-and-health-claims"]])} />
+            <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims", headline: "Zdravstvene izjave", description: "Šta znače zdravstvene i nutritivne izjave na hrani, ko ih odobrava, i zašto ih proizvođači ne mogu slobodno da koriste.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

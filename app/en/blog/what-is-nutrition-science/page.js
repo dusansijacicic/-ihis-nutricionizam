@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function WhatIsNutritionScience() {
           <div className="page-hero-inner">
             <h1 className="page-title">What Is Nutrition Science?</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; <a href="/en/blog">Blog</a> &rsaquo; What Is Nutrition Science?</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["What Is Nutrition Science?", "/en/blog/what-is-nutrition-science"]])} />
+            <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science", headline: "What Is Nutrition Science?", description: "What is nutrition science, what does it study, and how is it applied in food product development, labeling and the food industry.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg", datePublished: "2026-08-11", dateModified: "2026-08-11" })} />
           </div>
         </div>
 

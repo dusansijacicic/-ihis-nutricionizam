@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostEn3() {
           <div className="page-hero-inner">
             <h1 className="page-title">Product labels</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; <a href="/en/blog">Blog</a> &rsaquo; Natural, non-GMO, gluten-free</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["Natural, non-GMO, gluten-free", "/en/blog/natural-non-gmo-gluten-free-labels"]])} />
+            <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels", headline: "Product labels", description: "What 'natural', 'non-GMO' and 'gluten-free' labels on food products actually mean — which are legally regulated and which are not.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

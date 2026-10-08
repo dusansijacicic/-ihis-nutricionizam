@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostEn1() {
           <div className="page-hero-inner">
             <h1 className="page-title">Nutrition label</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; <a href="/en/blog">Blog</a> &rsaquo; How to read a nutrition label</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Blog", "/en/blog"], ["How to read a nutrition label", "/en/blog/how-to-read-nutrition-label"]])} />
+            <JsonLd data={articleSchema({ locale: "en", url: "https://www.ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label", headline: "Nutrition label", description: "How to correctly read a nutrition label on food products — what the numbers, reference intake and energy value actually mean.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

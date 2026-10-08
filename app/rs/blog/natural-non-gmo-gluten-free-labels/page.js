@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function PostSr3() {
           <div className="page-hero-inner">
             <h1 className="page-title">Oznake na proizvodu</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Prirodno, bez GMO, bez glutena</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Prirodno, bez GMO, bez glutena", "/rs/blog/natural-non-gmo-gluten-free-labels"]])} />
+            <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels", headline: "Oznake na proizvodu", description: "Šta zapravo znače oznake 'prirodno', 'bez GMO' i 'bez glutena' na prehrambenim proizvodima — koje su regulisane, a koje nisu.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg", datePublished: "2026-07-16", dateModified: "2026-07-16" })} />
           </div>
         </div>
 

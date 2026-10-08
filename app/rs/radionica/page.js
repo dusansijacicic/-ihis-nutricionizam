@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema, courseSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import RegistrationForm from '../../../components/RegistrationForm';
@@ -35,6 +37,8 @@ export default function Radionica() {
           <div className="page-hero-inner">
             <h1 className="page-title">Radionica o deklarisanju</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Radionica</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Radionica", "/rs/radionica"]])} />
+            <JsonLd data={courseSchema('sr')} />
           </div>
         </div>
 

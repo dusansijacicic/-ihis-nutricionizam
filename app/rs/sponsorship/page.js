@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import { SPONSORSHIP } from '../../../lib/content/sponsorship';
@@ -33,6 +35,7 @@ export default function SponzorstvoStranica() {
           <div className="page-hero-inner">
             <h1 className="page-title">{t.title}</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Poziv za sponzorstvo</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Poziv za sponzorstvo", "/rs/sponsorship"]])} />
           </div>
         </div>
 

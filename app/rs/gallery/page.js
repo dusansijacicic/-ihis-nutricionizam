@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Script from 'next/script';
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import { FOTO_13_SAVETOVANJE, FOTO_12_SAVETOVANJE, FOTO_9_SAVETOVANJE } from '../../../lib/content/galerija';
@@ -41,6 +43,7 @@ export default function Galerija() {
           <div className="page-hero-inner">
             <h1 className="page-title">Galerija</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; Galerija</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Galerija", "/rs/gallery"]])} />
           </div>
         </div>
 

@@ -1,4 +1,6 @@
 import Header from '../../../../components/Header';
+import JsonLd from '../../../../components/JsonLd';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/schema';
 import MobileNav from '../../../../components/MobileNav';
 import Footer from '../../../../components/Footer';
 
@@ -34,6 +36,8 @@ export default function StaJeNutricionizam() {
           <div className="page-hero-inner">
             <h1 className="page-title">Šta je nutricionizam?</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; <a href="/rs/blog">Blog</a> &rsaquo; Šta je nutricionizam?</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["Blog", "/rs/blog"], ["Šta je nutricionizam?", "/rs/blog/sta-je-nutricionizam"]])} />
+            <JsonLd data={articleSchema({ locale: "sr", url: "https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam", headline: "Šta je nutricionizam?", description: "Šta je nutricionizam, čime se bavi nauka o ishrani i kako se primenjuje u razvoju prehrambenih proizvoda, deklarisanju i prehrambenoj industriji.", image: "https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg", datePublished: "2026-08-11", dateModified: "2026-08-11" })} />
           </div>
         </div>
 

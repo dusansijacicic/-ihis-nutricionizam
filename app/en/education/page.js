@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 import { RADIONICA } from '../../../lib/content/radionica';
@@ -34,6 +36,7 @@ export default function EducationEn() {
           <div className="page-hero-inner">
             <h1 className="page-title">Education</h1>
             <p className="page-crumbs"><a href="/en">Home</a> &rsaquo; Education</p>
+            <JsonLd data={breadcrumbSchema([["Home", "/en"], ["Education", "/en/education"]])} />
           </div>
         </div>
 

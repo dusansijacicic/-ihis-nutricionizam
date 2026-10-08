@@ -1,4 +1,6 @@
 import Header from '../../../components/Header';
+import JsonLd from '../../../components/JsonLd';
+import { breadcrumbSchema, teamSchema } from '../../../lib/schema';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
 
@@ -30,6 +32,8 @@ export default function ONama() {
           <div className="page-hero-inner">
             <h1 className="page-title">O nama</h1>
             <p className="page-crumbs"><a href="/rs">Početna</a> &rsaquo; O nama</p>
+            <JsonLd data={breadcrumbSchema([["Početna", "/rs"], ["O nama", "/rs/about"]])} />
+            <JsonLd data={teamSchema('sr')} />
           </div>
         </div>
 
