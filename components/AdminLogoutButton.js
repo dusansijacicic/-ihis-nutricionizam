@@ -1,14 +1,11 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-
 export default function AdminLogoutButton() {
-  const router = useRouter();
-
   async function onClick() {
     await fetch('/api/admin/logout', { method: 'POST' });
-    router.push('/admin/login');
-    router.refresh();
+    // Puno učitavanje stranice (ne router.push): prijava/odjava menja admin pregled, a time i
+    // ceo dokument (preloader, ikonice, preview.css), što se ne sme samo delimično osvežiti.
+    window.location.assign('/admin/login');
   }
 
   return (

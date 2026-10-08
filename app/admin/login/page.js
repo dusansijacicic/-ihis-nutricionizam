@@ -1,10 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 export default function AdminLogin() {
-  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -26,8 +24,9 @@ export default function AdminLogin() {
         setLoading(false);
         return;
       }
-      router.push('/admin');
-      router.refresh();
+      // Puno učitavanje stranice (ne router.push): prijava/odjava menja admin pregled, a time i
+      // ceo dokument (preloader, ikonice, preview.css), što se ne sme samo delimično osvežiti.
+      window.location.assign('/admin');
     } catch {
       setError('Greška pri prijavi.');
       setLoading(false);
