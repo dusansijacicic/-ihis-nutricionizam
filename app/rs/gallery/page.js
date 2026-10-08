@@ -9,15 +9,15 @@ export const metadata = {
   title: 'Galerija — IHIS Nutricionizam',
   description: 'Galerija IHIS Nutricionizma — fotografije sa 13. Savetovanja HRANA, ISHRANA & ZDRAVLJE 2026, regionalnih konditorskih savetovanja i konferencija Hrana, ishrana i zdravlje.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/gallery',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/gallery', en: 'https://ihis-nutricionizam.rs/en/gallery' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/gallery',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/gallery', en: 'https://www.ihis-nutricionizam.rs/en/gallery', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/gallery' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Galerija — IHIS Nutricionizam',
     description: 'Fotografije sa 13. Savetovanja HRANA, ISHRANA & ZDRAVLJE 2026 i ranijih savetovanja.',
-    url: 'https://ihis-nutricionizam.rs/rs/gallery',
-    images: ['https://ihis-nutricionizam.rs/assets/img/gallery/13-savetovanje/13-savetovanje-puna-sala-crowne-plaza-02.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/gallery',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/gallery/13-savetovanje/13-savetovanje-puna-sala-crowne-plaza-02.jpg'],
   },
 };
 

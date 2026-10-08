@@ -6,15 +6,15 @@ export const metadata = {
   title: 'O nama — IHIS Nutricionizam',
   description: 'O nama — IHIS Nutricionizam, naučno-istraživačka kompanija za nutricionizam i deklarisanje hrane u Beogradu, osnovana 2012. godine, deo IHIS Naučno Tehnološkog Parka Zemun.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/about',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/about', en: 'https://ihis-nutricionizam.rs/en/about' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/about',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/about', en: 'https://www.ihis-nutricionizam.rs/en/about', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/about' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'O nama — IHIS Nutricionizam',
     description: 'Naučno-istraživačka kompanija za nutricionizam i deklarisanje hrane u Beogradu.',
-    url: 'https://ihis-nutricionizam.rs/rs/about',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/about',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

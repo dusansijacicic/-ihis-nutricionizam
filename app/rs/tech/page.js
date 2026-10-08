@@ -7,15 +7,15 @@ export const metadata = {
   description: 'Izgradnja fabrika, nove proizvodne linije i greenfield investicije u prehrambenoj industriji — tehnološki koncept, izbor opreme i pokretanje proizvodnje.',
   keywords: ['izgradnja fabrike', 'nova proizvodna linija', 'greenfield investicije', 'tehnološki konsalting prehrambena industrija'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/tech',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/tech', en: 'https://ihis-nutricionizam.rs/en/tech' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/tech',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/tech', en: 'https://www.ihis-nutricionizam.rs/en/tech', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/tech' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Izgradnja fabrika i nove proizvodne linije — IHIS Nutricionizam',
     description: 'Izgradnja fabrika, nove proizvodne linije i greenfield investicije u prehrambenoj industriji.',
-    url: 'https://ihis-nutricionizam.rs/rs/tech',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/tech',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

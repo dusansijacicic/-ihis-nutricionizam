@@ -7,15 +7,15 @@ export const metadata = {
   description: 'Razvoj prehrambenih proizvoda i dodataka ishrani, deklarisanje i regulatorna usklađenost, funkcionalni sastojci i naučna ekspertiza. Nutricionizam zasnovan na nauci.',
   keywords: ['razvoj prehrambenih proizvoda', 'razvoj proizvoda', 'nutricionizam', 'funkcionalna hrana'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/research',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/research',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/research', en: 'https://www.ihis-nutricionizam.rs/en/research', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Istraživanje i razvoj (R&D) — IHIS Nutricionizam',
     description: 'Razvoj proizvoda, deklarisanje i regulatorna usklađenost, funkcionalni sastojci, nutritivna vrednost i naučna ekspertiza.',
-    url: 'https://ihis-nutricionizam.rs/rs/research',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/research',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

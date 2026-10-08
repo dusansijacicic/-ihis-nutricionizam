@@ -6,15 +6,15 @@ export const metadata = {
   title: 'About Us — IHIS Nutricionizam',
   description: 'About IHIS Nutricionizam — a scientific research company for nutrition science and food labeling in Belgrade, founded in 2012, part of the IHIS Science and Technology Park Zemun.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/about',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/about', en: 'https://ihis-nutricionizam.rs/en/about' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/about',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/about', en: 'https://www.ihis-nutricionizam.rs/en/about', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/about' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'About Us — IHIS Nutricionizam',
     description: 'A scientific research company for nutrition science and food labeling in Belgrade.',
-    url: 'https://ihis-nutricionizam.rs/en/about',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/about',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Invitation — 13th Conference FOOD, NUTRITION & HEALTH',
   description: 'Invitation to the 13th Conference FOOD, NUTRITION & HEALTH, 6 October 2026, Hotel Crowne Plaza, Belgrade. Topics, speakers, registration fee.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/invitation',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/invitation', en: 'https://ihis-nutricionizam.rs/en/invitation' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/invitation',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/invitation', en: 'https://www.ihis-nutricionizam.rs/en/invitation', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/invitation' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Invitation — 13th Conference FOOD, NUTRITION & HEALTH',
     description: '6 October 2026, Hotel Crowne Plaza, Belgrade. Topics, speakers, registration fee.',
-    url: 'https://ihis-nutricionizam.rs/en/invitation',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/invitation',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

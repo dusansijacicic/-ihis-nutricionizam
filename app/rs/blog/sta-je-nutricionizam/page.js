@@ -6,18 +6,19 @@ export const metadata = {
   title: 'Šta je nutricionizam? — IHIS Nutricionizam',
   description: 'Šta je nutricionizam, čime se bavi nauka o ishrani i kako se primenjuje u razvoju prehrambenih proizvoda, deklarisanju i prehrambenoj industriji.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
-      en: 'https://ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Šta je nutricionizam?',
     description: 'Definicija nutricionizma i njegova primena u razvoju i deklarisanju prehrambenih proizvoda.',
-    url: 'https://ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

@@ -1,17 +1,24 @@
 import { NextResponse } from 'next/server';
 import { createSessionToken, ADMIN_COOKIE_NAME, ADMIN_COOKIE_MAX_AGE } from '../../../../lib/adminAuth';
 
+// Dodatni admin nalozi sa istom lozinkom (ADMIN_PASS). Korisničko ime nije tajna
+// (deo je javne mejl adrese), tajna je samo lozinka.
+const EXTRA_ADMIN_USERS = ['danica.zaric'];
+
+const normalize = (name) => (typeof name === 'string' ? name.trim().toLowerCase() : '');
+
 export async function POST(request) {
   const { username, password } = await request.json();
 
-  const validUser = process.env.ADMIN_USER;
   const validPass = process.env.ADMIN_PASS;
+  const validUsers = [process.env.ADMIN_USER, ...EXTRA_ADMIN_USERS].filter(Boolean).map(normalize);
+  const user = normalize(username);
 
-  if (!validUser || !validPass || username !== validUser || password !== validPass) {
+  if (!process.env.ADMIN_USER || !validPass || !validUsers.includes(user) || password !== validPass) {
     return NextResponse.json({ error: 'Pogrešno korisničko ime ili lozinka.' }, { status: 401 });
   }
 
-  const token = createSessionToken(username);
+  const token = createSessionToken(user);
   const res = NextResponse.json({ ok: true });
   res.cookies.set(ADMIN_COOKIE_NAME, token, {
     httpOnly: true,

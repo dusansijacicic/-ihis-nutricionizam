@@ -6,18 +6,19 @@ export const metadata = {
   title: 'How to correctly read a nutrition label — IHIS Nutricionizam',
   description: 'How to correctly read a nutrition label on food products — what the numbers, reference intake and energy value actually mean.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+    canonical: 'https://www.ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
-      en: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'How to correctly read a nutrition label',
     description: 'What the numbers on the back of the pack mean, reference intake, and energy value.',
-    url: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

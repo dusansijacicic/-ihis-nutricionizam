@@ -6,15 +6,15 @@ export const metadata = {
   title: 'Blog — IHIS Nutricionizam',
   description: 'Blog IHIS Nutricionizma — stručni tekstovi o nutritivnim deklaracijama, zdravstvenim izjavama i oznakama na prehrambenim proizvodima.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/blog',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/blog',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/blog', en: 'https://www.ihis-nutricionizam.rs/en/blog', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Blog — IHIS Nutricionizam',
     description: 'Stručni tekstovi o nutritivnim deklaracijama, zdravstvenim izjavama i oznakama na prehrambenim proizvodima.',
-    url: 'https://ihis-nutricionizam.rs/rs/blog',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/blog',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

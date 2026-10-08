@@ -9,10 +9,11 @@ export const metadata = {
   description: 'IHIS Nutricionizam — naučno-istraživačka kompanija za nutricionizam, deklarisanje prehrambenih proizvoda, razvoj novih proizvoda i izgradnju fabrika (greenfield investicije), Beograd.',
   keywords: ['nutricionizam', 'deklarisanje hrane', 'razvoj proizvoda', 'izgradnja fabrike', 'nova proizvodna linija'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs',
+    canonical: 'https://www.ihis-nutricionizam.rs/rs',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs',
-      en: 'https://ihis-nutricionizam.rs/en',
+      sr: 'https://www.ihis-nutricionizam.rs/rs',
+      en: 'https://www.ihis-nutricionizam.rs/en',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs',
     },
   },
   openGraph: {
@@ -21,8 +22,8 @@ export const metadata = {
     locale: 'sr_RS',
     title: 'IHIS Nutricionizam — Hrana, ishrana i zdravlje',
     description: 'Naučno-istraživačka kompanija za deklarisanje i razvoj prehrambenih proizvoda, Beograd.',
-    url: 'https://ihis-nutricionizam.rs/rs',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

@@ -6,15 +6,15 @@ export const metadata = {
   title: 'Contact — IHIS Nutricionizam',
   description: 'Contact IHIS Nutricionizam — Batajnicki drum 9 deo br. 8, Belgrade. Phone, email and location map.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/contact',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/contact', en: 'https://ihis-nutricionizam.rs/en/contact' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/contact',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/contact', en: 'https://www.ihis-nutricionizam.rs/en/contact', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/contact' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Contact — IHIS Nutricionizam',
     description: 'Batajnicki drum 9 deo br. 8, Belgrade. Phone, email and location map.',
-    url: 'https://ihis-nutricionizam.rs/en/contact',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/contact',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Edukacija — IHIS Nutricionizam',
   description: 'Edukacija i savetovanja IHIS Nutricionizma — godišnje konferencije Hrana, ishrana i zdravlje i Regionalno konditorsko savetovanje.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/education',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education', en: 'https://ihis-nutricionizam.rs/en/education' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/education',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/education', en: 'https://www.ihis-nutricionizam.rs/en/education', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/education' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Edukacija — IHIS Nutricionizam',
     description: 'Godišnje konferencije Hrana, ishrana i zdravlje i Regionalno konditorsko savetovanje.',
-    url: 'https://ihis-nutricionizam.rs/rs/education',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/education',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

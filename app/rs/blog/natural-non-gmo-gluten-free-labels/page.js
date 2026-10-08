@@ -6,18 +6,19 @@ export const metadata = {
   title: 'Šta znače oznake „prirodno", „bez GMO" i „bez glutena" — IHIS Nutricionizam',
   description: "Šta zapravo znače oznake 'prirodno', 'bez GMO' i 'bez glutena' na prehrambenim proizvodima — koje su regulisane, a koje nisu.",
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
-      en: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: "Šta zapravo znače oznake 'prirodno', 'bez GMO' i 'bez glutena'",
     description: 'Koje od ovih oznaka su regulisane zakonom, a koje nisu.',
-    url: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

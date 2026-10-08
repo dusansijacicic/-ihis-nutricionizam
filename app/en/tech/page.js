@@ -7,15 +7,15 @@ export const metadata = {
   description: 'Factory construction, new production lines and greenfield investments in the food industry — technological concept, equipment selection and production launch.',
   keywords: ['factory construction', 'new production line', 'greenfield investment', 'food industry technology consulting'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/tech',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/tech', en: 'https://ihis-nutricionizam.rs/en/tech' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/tech',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/tech', en: 'https://www.ihis-nutricionizam.rs/en/tech', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/tech' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Factory Construction & New Production Lines — IHIS Nutricionizam',
     description: 'Factory construction, new production lines and greenfield investments in the food industry.',
-    url: 'https://ihis-nutricionizam.rs/en/tech',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/tech',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

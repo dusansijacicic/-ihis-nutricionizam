@@ -6,15 +6,15 @@ export const metadata = {
   title: 'Research & Development (R&D) — IHIS Nutricionizam',
   description: 'IHIS Nutricionizam research and development — product development, labeling and regulatory compliance, functional ingredients, nutritional value and scientific expertise.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/research',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/research', en: 'https://ihis-nutricionizam.rs/en/research' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/research',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/research', en: 'https://www.ihis-nutricionizam.rs/en/research', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/research' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Research & Development (R&D) — IHIS Nutricionizam',
     description: 'Product development, labeling and regulatory compliance, functional ingredients, nutritional value and scientific expertise.',
-    url: 'https://ihis-nutricionizam.rs/en/research',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/research',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

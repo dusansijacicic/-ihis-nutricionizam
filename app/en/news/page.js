@@ -6,15 +6,15 @@ export const metadata = {
   title: 'News — IHIS Nutricionizam',
   description: 'IHIS Nutricionizam news — the latest on conferences and company activities.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/news',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/news', en: 'https://ihis-nutricionizam.rs/en/news' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/news',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/news', en: 'https://www.ihis-nutricionizam.rs/en/news', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/news' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'News — IHIS Nutricionizam',
     description: 'The latest on conferences and company activities.',
-    url: 'https://ihis-nutricionizam.rs/en/news',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/news',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

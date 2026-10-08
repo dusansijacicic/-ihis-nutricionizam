@@ -4,8 +4,8 @@ export default function OrgSchema() {
     '@type': 'Organization',
     name: 'IHIS Nutricionizam',
     alternateName: 'IHIS-Nutricionizam',
-    url: 'https://ihis-nutricionizam.rs',
-    logo: 'https://ihis-nutricionizam.rs/assets/img/logo.png',
+    url: 'https://www.ihis-nutricionizam.rs',
+    logo: 'https://www.ihis-nutricionizam.rs/assets/img/logo.png',
     description:
       'Naučno-istraživačka kompanija specijalizovana za nutricionizam, deklarisanje prehrambenih proizvoda, razvoj novih proizvoda, tehnološki konsalting i izgradnju fabrika (greenfield investicije) u prehrambenoj industriji.',
     address: {

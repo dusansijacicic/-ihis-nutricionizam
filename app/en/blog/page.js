@@ -6,15 +6,15 @@ export const metadata = {
   title: 'Blog — IHIS Nutricionizam',
   description: 'IHIS Nutricionizam blog — articles on nutrition labels, health claims, and food product marks.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/blog',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/blog', en: 'https://ihis-nutricionizam.rs/en/blog' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/blog',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/blog', en: 'https://www.ihis-nutricionizam.rs/en/blog', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Blog — IHIS Nutricionizam',
     description: 'Articles on nutrition labels, health claims, and food product marks.',
-    url: 'https://ihis-nutricionizam.rs/en/blog',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/blog',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Education — IHIS Nutricionizam',
   description: 'Education and conferences by IHIS Nutricionizam — the annual Food, Nutrition and Health conference and the Regional Confectionery Conference.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/education',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education', en: 'https://ihis-nutricionizam.rs/en/education' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/education',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/education', en: 'https://www.ihis-nutricionizam.rs/en/education', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/education' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Education — IHIS Nutricionizam',
     description: 'The annual Food, Nutrition and Health conference and the Regional Confectionery Conference.',
-    url: 'https://ihis-nutricionizam.rs/en/education',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/education',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

@@ -6,18 +6,19 @@ export const metadata = {
   title: 'What Is Nutrition Science? — IHIS Nutricionizam',
   description: 'What is nutrition science, what does it study, and how is it applied in food product development, labeling and the food industry.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+    canonical: 'https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
-      en: 'https://ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/sta-je-nutricionizam',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'What Is Nutrition Science?',
     description: 'A definition of nutrition science and its application in food product development and labeling.',
-    url: 'https://ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover3.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/blog/what-is-nutrition-science',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover3.jpg'],
   },
 };
 

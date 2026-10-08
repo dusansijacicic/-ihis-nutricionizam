@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Workshop Registration — IHIS Nutricionizam',
   description: 'Register for the one-day workshop on labeling food products for the EU and Serbian markets. Date and venue by arrangement.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/registration',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/registration', en: 'https://ihis-nutricionizam.rs/en/registration' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/registration',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/registration', en: 'https://www.ihis-nutricionizam.rs/en/registration', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/registration' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Food Labeling Workshop Registration',
     description: 'One-day workshop on labeling food products for the EU and Serbian markets.',
-    url: 'https://ihis-nutricionizam.rs/en/registration',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/registration',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

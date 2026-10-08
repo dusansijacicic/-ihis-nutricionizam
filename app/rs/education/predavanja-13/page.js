@@ -14,7 +14,7 @@ export const metadata = {
   description: 'Prezentacije sa 13. Savetovanja HRANA, ISHRANA & ZDRAVLJE, dostupne učesnicima uz šifru.',
   robots: { index: false, follow: false },
   alternates: {
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education/predavanja-13', en: 'https://ihis-nutricionizam.rs/en/education/lectures-13' },
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/education/predavanja-13', en: 'https://www.ihis-nutricionizam.rs/en/education/lectures-13', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/education/predavanja-13' },
   },
 };
 

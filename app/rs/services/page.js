@@ -7,15 +7,15 @@ export const metadata = {
   description: 'Deklarisanje prehrambenih proizvoda, razvoj novih proizvoda i dodataka ishrani, tehnološki konsalting i usklađivanje sa zakonodavstvom Srbije i EU. Nutricionizam u praksi.',
   keywords: ['deklarisanje hrane', 'deklarisanje prehrambenih proizvoda', 'razvoj proizvoda', 'razvoj prehrambenih proizvoda', 'nutricionizam'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/services',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/services',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/services', en: 'https://www.ihis-nutricionizam.rs/en/services', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Deklarisanje hrane i razvoj proizvoda — IHIS Nutricionizam',
     description: 'Deklarisanje prehrambenih proizvoda, razvoj novih proizvoda, tehnološki konsalting i usklađivanje sa zakonodavstvom Srbije i EU.',
-    url: 'https://ihis-nutricionizam.rs/rs/services',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/services',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

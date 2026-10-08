@@ -9,15 +9,15 @@ export const metadata = {
   title: 'Food Labeling Workshop — IHIS Nutricionizam',
   description: 'One-day workshop on labeling food products for the EU and Serbian markets, with the application of nutrition and health claims. Lecturer: Danica Zarić, PhD.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/workshop',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/radionica', en: 'https://ihis-nutricionizam.rs/en/workshop' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/workshop',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/radionica', en: 'https://www.ihis-nutricionizam.rs/en/workshop', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/radionica' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Food Labeling Workshop',
     description: 'Labeling food products for the EU and Serbian markets, with the application of nutrition and health claims.',
-    url: 'https://ihis-nutricionizam.rs/en/workshop',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/workshop',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

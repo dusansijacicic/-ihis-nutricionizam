@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Prijava za radionicu o deklarisanju — IHIS Nutricionizam',
   description: 'Prijavite se za jednodnevnu radionicu o deklarisanju prehrambenih proizvoda za EU i SRB tržište. Termin i mesto održavanja po dogovoru.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/registration',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/registration', en: 'https://ihis-nutricionizam.rs/en/registration' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/registration',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/registration', en: 'https://www.ihis-nutricionizam.rs/en/registration', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/registration' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Prijava za radionicu o deklarisanju',
     description: 'Jednodnevna radionica o deklarisanju prehrambenih proizvoda za EU i SRB tržište.',
-    url: 'https://ihis-nutricionizam.rs/rs/registration',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/registration',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

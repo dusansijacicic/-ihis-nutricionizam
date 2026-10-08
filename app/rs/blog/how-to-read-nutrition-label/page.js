@@ -6,18 +6,19 @@ export const metadata = {
   title: 'Kako pravilno čitati nutritivnu deklaraciju — IHIS Nutricionizam',
   description: 'Kako pravilno čitati nutritivnu deklaraciju na prehrambenim proizvodima — šta znače brojevi, referentni unos i energetska vrednost.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
-      en: 'https://ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/how-to-read-nutrition-label',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Kako pravilno čitati nutritivnu deklaraciju',
     description: 'Šta znače brojevi na poleđini pakovanja, referentni unos i energetska vrednost.',
-    url: 'https://ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/blog/how-to-read-nutrition-label',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

@@ -7,15 +7,15 @@ export const metadata = {
   title: 'Poziv za sponzorstvo — 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE',
   description: 'Sponzorski paketi za 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE — Generalni sponzor, Glavni sponzor, Sponzor.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/sponsorship',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/sponsorship', en: 'https://ihis-nutricionizam.rs/en/sponsorship' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/sponsorship',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/sponsorship', en: 'https://www.ihis-nutricionizam.rs/en/sponsorship', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/sponsorship' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Poziv za sponzorstvo — 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE',
     description: 'Generalni sponzor, Glavni sponzor, Sponzor — paketi i pogodnosti.',
-    url: 'https://ihis-nutricionizam.rs/rs/sponsorship',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/sponsorship',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

@@ -7,15 +7,15 @@ export const metadata = {
   description: 'Food labeling, new product development and dietary supplement formulation, technology consulting, and alignment with Serbian and EU legislation. Nutrition science in practice.',
   keywords: ['food labeling', 'food product development', 'nutrition science', 'dietary supplement development'],
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/services',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/services', en: 'https://ihis-nutricionizam.rs/en/services' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/services',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/services', en: 'https://www.ihis-nutricionizam.rs/en/services', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/services' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Food Labeling & Product Development — IHIS Nutricionizam',
     description: 'Food labeling, new product development, technology consulting, and alignment with Serbian and EU legislation.',
-    url: 'https://ihis-nutricionizam.rs/en/services',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/services',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

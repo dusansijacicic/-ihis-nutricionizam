@@ -9,15 +9,15 @@ export const metadata = {
   title: 'Gallery — IHIS Nutricionizam',
   description: 'IHIS Nutricionizam gallery — photos from the 13th FOOD, NUTRITION & HEALTH conference 2026, regional confectionery conferences and Food, Nutrition and Health conferences.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/gallery',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/gallery', en: 'https://ihis-nutricionizam.rs/en/gallery' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/gallery',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/gallery', en: 'https://www.ihis-nutricionizam.rs/en/gallery', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/gallery' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Gallery — IHIS Nutricionizam',
     description: 'Photos from the 13th FOOD, NUTRITION & HEALTH conference 2026 and earlier conferences.',
-    url: 'https://ihis-nutricionizam.rs/en/gallery',
-    images: ['https://ihis-nutricionizam.rs/assets/img/gallery/13-savetovanje/13-savetovanje-puna-sala-crowne-plaza-02.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/gallery',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/gallery/13-savetovanje/13-savetovanje-puna-sala-crowne-plaza-02.jpg'],
   },
 };
 

@@ -8,15 +8,15 @@ export const metadata = {
   title: 'Poziv na 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE — IHIS Nutricionizam',
   description: 'Poziv na 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE, 06.10.2026, Hotel Crowne Plaza, Beograd. Teme, predavači, kotizacija.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/invitation',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/invitation', en: 'https://ihis-nutricionizam.rs/en/invitation' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/invitation',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/invitation', en: 'https://www.ihis-nutricionizam.rs/en/invitation', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/invitation' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Poziv na 13. Savetovanje HRANA, ISHRANA & ZDRAVLJE',
     description: '06.10.2026, Hotel Crowne Plaza, Beograd. Teme, predavači, kotizacija.',
-    url: 'https://ihis-nutricionizam.rs/rs/invitation',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/invitation',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

@@ -8,10 +8,11 @@ export const metadata = {
   title: 'IHIS Nutricionizam — Food, Nutrition and Health',
   description: 'IHIS Nutricionizam — a scientific research company for food labeling and product development, Belgrade.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en',
+    canonical: 'https://www.ihis-nutricionizam.rs/en',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs',
-      en: 'https://ihis-nutricionizam.rs/en',
+      sr: 'https://www.ihis-nutricionizam.rs/rs',
+      en: 'https://www.ihis-nutricionizam.rs/en',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs',
     },
   },
   openGraph: {
@@ -20,8 +21,8 @@ export const metadata = {
     locale: 'en_US',
     title: 'IHIS Nutricionizam — Food, Nutrition and Health',
     description: 'A scientific research company for food labeling and product development, Belgrade.',
-    url: 'https://ihis-nutricionizam.rs/en',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover.jpg'],
   },
 };
 

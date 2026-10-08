@@ -6,18 +6,19 @@ export const metadata = {
   title: 'What „natural", „non-GMO" and „gluten-free" labels mean — IHIS Nutricionizam',
   description: "What 'natural', 'non-GMO' and 'gluten-free' labels on food products actually mean — which are legally regulated and which are not.",
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+    canonical: 'https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
-      en: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/natural-non-gmo-gluten-free-labels',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: "What 'natural', 'non-GMO' and 'gluten-free' labels actually mean",
     description: 'Which of these labels are legally regulated, and which are not.',
-    url: 'https://ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/blog/natural-non-gmo-gluten-free-labels',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

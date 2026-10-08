@@ -7,15 +7,15 @@ export const metadata = {
   title: 'Sponsorship — 13th Conference FOOD, NUTRITION & HEALTH',
   description: 'Sponsorship packages for the 13th Conference FOOD, NUTRITION & HEALTH — General Sponsor, Main Sponsor, Sponsor.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/sponsorship',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/sponsorship', en: 'https://ihis-nutricionizam.rs/en/sponsorship' },
+    canonical: 'https://www.ihis-nutricionizam.rs/en/sponsorship',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/sponsorship', en: 'https://www.ihis-nutricionizam.rs/en/sponsorship', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/sponsorship' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Sponsorship — 13th Conference FOOD, NUTRITION & HEALTH',
     description: 'General Sponsor, Main Sponsor, Sponsor — packages and benefits.',
-    url: 'https://ihis-nutricionizam.rs/en/sponsorship',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/sponsorship',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

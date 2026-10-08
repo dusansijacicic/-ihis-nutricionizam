@@ -6,18 +6,19 @@ export const metadata = {
   title: 'What health and nutrition claims on food actually mean — IHIS Nutricionizam',
   description: 'What health and nutrition claims on food actually mean, who approves them, and why manufacturers can\'t use them freely.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
+    canonical: 'https://www.ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
     languages: {
-      sr: 'https://ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
-      en: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
+      sr: 'https://www.ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
+      en: 'https://www.ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
+      'x-default': 'https://www.ihis-nutricionizam.rs/rs/blog/nutrition-and-health-claims',
     },
   },
   openGraph: {
     type: 'article', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'What health and nutrition claims on food actually mean',
     description: 'The difference between nutrition and health claims and who approves their use.',
-    url: 'https://ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/en/blog/nutrition-and-health-claims',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover1.jpg'],
   },
 };
 

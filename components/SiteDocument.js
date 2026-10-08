@@ -1,7 +1,10 @@
 import '../public/assets/css/ihis.css';
 import Script from 'next/script';
 import { Sora, Inter } from 'next/font/google';
-import OrgSchema from '../components/OrgSchema';
+import OrgSchema from './OrgSchema';
+
+// Zajednički <html> dokument za root layoute /rs, /en i /admin. Sajt ima više root
+// layouta da bi engleske stranice dobile lang="en" (jedan layout ne zna jezik putanje).
 
 const sora = Sora({
   subsets: ['latin', 'latin-ext'],
@@ -17,13 +20,16 @@ const inter = Inter({
   display: 'swap',
 });
 
-export const metadata = {
+export const SITE_URL = 'https://www.ihis-nutricionizam.rs';
+
+export const siteMetadata = {
+  metadataBase: new URL(SITE_URL),
   title: 'IHIS Nutricionizam',
 };
 
-export default function RootLayout({ children }) {
+export default function SiteDocument({ lang, children }) {
   return (
-    <html lang="sr" className={`${sora.variable} ${inter.variable}`}>
+    <html lang={lang} className={`${sora.variable} ${inter.variable}`}>
       <head>
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <OrgSchema />

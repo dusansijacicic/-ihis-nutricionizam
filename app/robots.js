@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/admin',
     },
-    sitemap: 'https://ihis-nutricionizam.rs/sitemap.xml',
+    sitemap: 'https://www.ihis-nutricionizam.rs/sitemap.xml',
   };
 }

@@ -9,15 +9,15 @@ export const metadata = {
   title: 'Radionica o deklarisanju prehrambenih proizvoda — IHIS Nutricionizam',
   description: 'Jednodnevna radionica o deklarisanju prehrambenih proizvoda za EU i SRB tržište, sa primenom nutritivnih i zdravstvenih izjava. Predavač: dr Danica Zarić.',
   alternates: {
-    canonical: 'https://ihis-nutricionizam.rs/rs/radionica',
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/radionica', en: 'https://ihis-nutricionizam.rs/en/workshop' },
+    canonical: 'https://www.ihis-nutricionizam.rs/rs/radionica',
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/radionica', en: 'https://www.ihis-nutricionizam.rs/en/workshop', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/radionica' },
   },
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'sr_RS',
     title: 'Radionica o deklarisanju prehrambenih proizvoda',
     description: 'Deklarisanje prehrambenih proizvoda za EU i SRB tržište, sa primenom nutritivnih i zdravstvenih izjava.',
-    url: 'https://ihis-nutricionizam.rs/rs/radionica',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover2.jpg'],
+    url: 'https://www.ihis-nutricionizam.rs/rs/radionica',
+    images: ['https://www.ihis-nutricionizam.rs/assets/img/cover2.jpg'],
   },
 };
 

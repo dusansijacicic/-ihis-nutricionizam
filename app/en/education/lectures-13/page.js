@@ -14,7 +14,7 @@ export const metadata = {
   description: 'Presentations from the 13th Conference FOOD, NUTRITION & HEALTH, available to participants with a password.',
   robots: { index: false, follow: false },
   alternates: {
-    languages: { sr: 'https://ihis-nutricionizam.rs/rs/education/predavanja-13', en: 'https://ihis-nutricionizam.rs/en/education/lectures-13' },
+    languages: { sr: 'https://www.ihis-nutricionizam.rs/rs/education/predavanja-13', en: 'https://www.ihis-nutricionizam.rs/en/education/lectures-13', 'x-default': 'https://www.ihis-nutricionizam.rs/rs/education/predavanja-13' },
   },
 };
 
