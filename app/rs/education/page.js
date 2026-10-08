@@ -125,11 +125,15 @@ export default function Edukacija() {
               <div className="archive-head">
                 <h3>13. Savetovanje HRANA, ISHRANA &amp; ZDRAVLJE</h3>
               </div>
-              <p>Prezentacije sa savetovanja dostupne su učesnicima za pregled na sajtu, uz šifru koju su dobili mejlom.</p>
+              <p>Prezentacije sa savetovanja dostupne su učesnicima za pregled na sajtu, uz šifru koju su dobili mejlom, a fotografije su u galeriji.</p>
               <div className="event-block-actions">
                 <a href="/rs/education/predavanja-13" className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Predavanja</span>
+                </a>
+                <a href="/rs/gallery#13-savetovanje" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                  <span className="icon-btn-label">Galerija</span>
                 </a>
               </div>
             </div>

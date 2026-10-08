@@ -125,11 +125,15 @@ export default function EducationEn() {
               <div className="archive-head">
                 <h3>13th Conference FOOD, NUTRITION &amp; HEALTH</h3>
               </div>
-              <p>Presentations from the conference are available to participants for viewing on the website, with the password they received by e-mail.</p>
+              <p>Presentations from the conference are available to participants for viewing on the website, with the password they received by e-mail, and photos are in the gallery.</p>
               <div className="event-block-actions">
                 <a href="/en/education/lectures-13" className="icon-btn">
                   <span className="icon-btn-icon"><i className="ion-ios-book"></i></span>
                   <span className="icon-btn-label">Lectures</span>
+                </a>
+                <a href="/en/gallery#13-savetovanje" className="icon-btn">
+                  <span className="icon-btn-icon"><i className="ion-images"></i></span>
+                  <span className="icon-btn-label">Gallery</span>
                 </a>
               </div>
             </div>

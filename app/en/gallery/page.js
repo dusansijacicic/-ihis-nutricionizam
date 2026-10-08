@@ -3,10 +3,11 @@ import Script from 'next/script';
 import Header from '../../../components/Header';
 import MobileNav from '../../../components/MobileNav';
 import Footer from '../../../components/Footer';
+import { FOTO_13_SAVETOVANJE } from '../../../lib/content/galerija';
 
 export const metadata = {
   title: 'Gallery — IHIS Nutricionizam',
-  description: 'IHIS Nutricionizam gallery — photos from regional confectionery conferences and Food, Nutrition and Health conferences.',
+  description: 'IHIS Nutricionizam gallery — photos from the 13th FOOD, NUTRITION & HEALTH conference 2026, regional confectionery conferences and Food, Nutrition and Health conferences.',
   alternates: {
     canonical: 'https://ihis-nutricionizam.rs/en/gallery',
     languages: { sr: 'https://ihis-nutricionizam.rs/rs/gallery', en: 'https://ihis-nutricionizam.rs/en/gallery' },
@@ -14,9 +15,9 @@ export const metadata = {
   openGraph: {
     type: 'website', siteName: 'IHIS Nutricionizam', locale: 'en_US',
     title: 'Gallery — IHIS Nutricionizam',
-    description: 'Photos from regional confectionery conferences and Food, Nutrition and Health conferences.',
+    description: 'Photos from the 13th FOOD, NUTRITION & HEALTH conference 2026 and earlier conferences.',
     url: 'https://ihis-nutricionizam.rs/en/gallery',
-    images: ['https://ihis-nutricionizam.rs/assets/img/cover1.jpg'],
+    images: ['https://ihis-nutricionizam.rs/assets/img/gallery/13-savetovanje/13-savetovanje-puna-sala-crowne-plaza-02.jpg'],
   },
 };
 
@@ -55,6 +56,7 @@ export default function GalleryEn() {
 
             <div className="gal-filter">
               <button className="gal-btn active" data-filter="all">All photos</button>
+              <button className="gal-btn" data-filter="13-savetovanje">13th Conference</button>
               <button className="gal-btn" data-filter="2026">2026 Conference</button>
               <button className="gal-btn" data-filter="12-savetovanje">12th Conference</button>
               <button className="gal-btn" data-filter="9-savetovanje">9th Regional Conference</button>
@@ -63,6 +65,13 @@ export default function GalleryEn() {
             </div>
 
             <div className="gal-grid" id="galGrid">
+              {FOTO_13_SAVETOVANJE.map((f) => (
+                <div className="gal-item" data-group="13-savetovanje" data-caption={f.en} data-full={`/assets/img/gallery/13-savetovanje/${f.file}`} key={f.file}>
+                  <Image src={`/assets/img/gallery/13-savetovanje/${f.file}`} alt={f.en} fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />
+                  <div className="gal-overlay"><i className="ion-ios-search-strong"></i></div>
+                </div>
+              ))}
+
               {conf2026.map((n) => (
                 <div className="gal-item" data-group="2026" data-caption="2026 Conference" data-full={`/assets/img/gallery/2026/${n}.JPG`} key={`2026-${n}`}>
                   <Image src={`/assets/img/gallery/2026/${n}.JPG`} alt="2026 Conference" fill sizes="(max-width: 600px) 50vw, 260px" style={{ objectFit: 'cover' }} />

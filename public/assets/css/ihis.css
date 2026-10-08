@@ -1440,3 +1440,9 @@ p { font-size: 14px; line-height: 26px; }
   .nav-links li { padding-bottom: 12px; margin-bottom: 12px; }
   .menu-contact { padding-top: 20px; }
 }
+
+/* Lightbox galerije iznad fiksnog zaglavlja (inače se "×" nije mogao kliknuti), opis se prelama */
+.lb { z-index: 10030; }
+.lb-close, .lb-nav { z-index: 10031; }
+.lb-caption { z-index: 10031; white-space: normal; width: 90%; max-width: 900px; text-align: center; line-height: 18px; }
+
